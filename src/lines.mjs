@@ -4,6 +4,7 @@
 import prompts from '../content/prompts.json' with {type: 'json'};
 import words from '../content/words.json' with {type: 'json'};
 import cur from '../content/curriculum.json' with {type: 'json'};
+import recipes from '../content/recipes.json' with {type: 'json'};
 import {soundButtons} from './reading.mjs';
 
 // Pure sounds (curriculum-v1 P1 V1): one line ps_<grapheme> for every grapheme of the read ladder plus a-z. The text is what the TTS is asked to say;
@@ -80,6 +81,8 @@ export const FIXED = {
   path_roll: 'Roll the dice!', path_where: 'Where will you land?', hide_q: 'How many are hiding in the bag?', buddy_ate: 'Oh no, Buddy ate some!',
   tf_make10: 'How many more make ten?', tf_double: 'Double it!', tf_teen: 'Ten and some more. How many?', coin_tap: 'Tap the coin.', pay_cents: 'Pay with your coins.',
   another_way: 'Can you find another way?', give_change: 'Give the change.', shape_q: 'Tap the shape.', pattern_q: 'What comes next?', compose_q: 'Put the two triangles together!',
+  // kitchen v3 (SPEC §16 VK1): follow the light, trace the word to add it, the recipe book
+  follow_intro: 'Play the key that lights up!', trace_to_add: 'Trace the word to put it in the pot!', trace_again: 'Once more!', recipe_new: 'A new recipe for your book!',
   shape_circle: 'circle', shape_square: 'square', shape_triangle: 'triangle', shape_rectangle: 'rectangle',
 };
 export const P = id => [id, prompts[id].say];          // a prompts.json line
@@ -116,7 +119,10 @@ export const wordSound = w => [`word_${w}`, `${w}.`, [...(soundButtons(w, ALL_GP
 export const tracedLine = ch => [/^[a-z]$/i.test(ch) ? pureSound(ch.toLowerCase()) : /^\d$/.test(ch) ? num(Number(ch)) : null, F('lovely')].filter(Boolean);
 // say_<w>: the word itself. A food reuses item_<w> (nothing new recorded); a few words reuse an existing clip.
 const SAY_REUSE = {cat: 'animal_cat', duck: 'animal_duck', frog: 'animal_frog', goat: 'animal_goat', coin: 'c_coin'};
-export const SAY_WORDS = [...new Set([...cur.read.flatMap(r => [...(r.pictures || []), ...(r.pairs || []).flat(), ...(r.tricky || [])])])];
+export const RECIPES = recipes.recipes || [];
+export const SAY_WORDS = [...new Set([...cur.read.flatMap(r => [...(r.pictures || []), ...(r.pairs || []).flat(), ...(r.tricky || [])]), ...RECIPES.flatMap(r => r.ingredients.map(i => i.word))])];
+// what the customer says for a recipe (SPEC §16 RC7 / VK1): "Popcorn, please!"
+export const recipeLine = r => [`recipe_${r.id}`, `${r.name}, please!`];
 export const sayWord = w => [`say_${w}`, w, FOODS.includes(w) ? [`item_${w}`] : SAY_REUSE[w] ? [SAY_REUSE[w]] : undefined];
 
 // ---- the complete script ----
@@ -134,6 +140,7 @@ export function allLines() {
   for (let h = 2; h <= MAXN; h++) for (let u = 1; u < h; u++) add(useLine(h, u));
   for (const g of GRAPHEMES) add(pureSound(g));
   for (const w of SAY_WORDS) add(sayWord(w));
+  for (const r of RECIPES) add(recipeLine(r));
   for (const w of FOODS) add(wordSound(w));
   for (const food of FOODS) {
     for (const n of range(1, MAXN)) { add(orderLine(n, food)); add(needLine(n, food)); }

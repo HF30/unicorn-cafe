@@ -1,5 +1,6 @@
 // Pure curriculum engine (no DOM): every ladder size, guide, word list, problem range and phrase is read from the curriculum data
 // (app/content/curriculum.json) passed in, never hard-coded, so a new level is a new data entry and no code change.
+import {noteId} from './music.mjs';
 const LADDER = {trace: 'trace', math: 'maths', maths: 'maths', music: 'music'};
 const ladder = (cur, skill) => cur[LADDER[skill] || skill] || [];
 const clamp = (cur, skill, level) => Math.max(1, Math.min(ladder(cur, skill).length || 1, Math.round(level) || 1));
@@ -32,4 +33,10 @@ export function phrasesFor(cur, level, rng = Math.random) {
     return Array.from({length: 4}, () => { const n = l.phraseLengths[Math.floor(rng() * l.phraseLengths.length)]; return Array.from({length: n}, () => notes[Math.floor(rng() * notes.length)]); });
   }
   return notes.length ? [[...notes, ...[...notes].reverse().slice(1)]] : [];
+}
+// SPEC §16 FL2: the notes of a follow-the-light level = the first `take` phrases of its `song` (split at "-"), joined, spelled by noteId. Any other level: [].
+export function followNotes(cur, level) {
+  const l = entry(cur, 'music', level);
+  if (l.mechanic !== 'follow') return [];
+  return splitSong((cur.songs || {})[l.song] || []).slice(0, l.take || 1).flat().map(noteId);
 }

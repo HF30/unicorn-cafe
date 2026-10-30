@@ -104,7 +104,7 @@ header .artbtn img{width:76px;height:76px}
 
 /* ---- Piano (copy-me) ---- */
 .pianoscreen{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;pointer-events:auto;background:#3d3050;user-select:none;-webkit-user-select:none;touch-action:none}
-.pstove{position:relative;flex:0 0 36%;overflow:hidden;background:url(art/bg_kitchen_nopan.png) center 74%/cover,#e8d3ea}
+.pstove{position:relative;flex:0 0 40%;overflow:hidden;background:url(art/bg_kitchen_nopan.png) center 74%/cover,#e8d3ea}
 .pstove::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#00000000 55%,#2a1f3355 100%);pointer-events:none}
 .ppot{position:absolute;left:50%;bottom:2%;translate:-50% 0;width:min(34vh,300px);display:flex;justify-content:center;transform-origin:50% 90%}
 .ppot .panimg{width:100%;height:auto;object-fit:contain;display:block}
@@ -117,7 +117,7 @@ header .artbtn img{width:76px;height:76px}
 .pgirl{position:absolute;left:4%;bottom:0;height:88%;display:flex;align-items:flex-end;transform-origin:50% 100%}
 .pgirl img,.pcust img{height:100%;width:auto;display:block;filter:drop-shadow(0 .8vh .9vh #6b4a7a30)}
 .pcust{position:absolute;right:4%;bottom:0;height:54%;display:flex;align-items:flex-end}
-.pmap{position:relative;flex:0 0 5%;min-height:26px;margin:0;background:#3a3045;border-top:2px solid #2a2234;border-bottom:2px solid #2a2234;padding:0}
+.pmap{position:relative;flex:0 0 6%;min-height:26px;margin:0;background:#3a3045;border-top:2px solid #2a2234;border-bottom:2px solid #2a2234;padding:0}
 .pmap .mm{position:absolute;top:0;display:block}
 .pmap .mm.w{height:100%;background:#f4efe6;border-right:1px solid #8c8296}
 .pmap .mm.b{height:60%;background:#3a3345;z-index:1}
@@ -171,8 +171,10 @@ header .artbtn img{width:76px;height:76px}
 .trace-panel{position:relative}
 .trace-model{position:absolute;right:calc(100% + 22px);top:26%;width:190px;height:190px;background:#fffaf5;border:6px solid #e7d6f4;border-radius:34px;padding:10px}
 /* curriculum-v1 P2: the pot-lid beat button, the note card, faded keys (no colour, no animal), dimmed keys */
-.pianoscreen.lidmode .kb{display:none}
-.plidwrap{flex:1;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#4a3b5e,#35294a)}
+/* kitchen v3 (SPEC FL7): the keyboard is half the screen at EVERY piano level, so on the beat level it stays (dimmed, untouchable) and the pot lid sits on top of it */
+.pianoscreen.lidmode .pkeys{position:relative}
+.plidwrap{position:absolute;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.plidwrap .lidbtn{pointer-events:auto}
 .lidbtn{width:min(46vh,420px);height:min(46vh,420px);border-radius:50%;padding:0;background:radial-gradient(circle at 50% 40%,#fff6df,#f0d9a8 70%,#d9b878);border:8px solid #fff;box-shadow:0 10px 26px #0007;display:flex;align-items:center;justify-content:center;touch-action:none}
 .lidbtn .lidimg{width:78%;height:78%;object-fit:contain;pointer-events:none}
 .lidbtn:active{transform:translateY(4px) scale(.98)}
@@ -293,3 +295,45 @@ img.followbasket{width:auto;height:auto;max-height:200px;min-width:0;max-width:6
 .moneypanel.dense .coins{min-height:0}
 .moneypanel.dense .coins button{min-width:60px;min-height:60px}
 .moneypanel.dense .coins img{width:50px;height:50px}
+
+/* ---- kitchen v3 (SPEC §16): recipe card, trace the word, the pot count, start over ---- */
+.recipe-card{display:flex;flex-direction:column;align-items:center;gap:6px;background:#fffdf3;border:5px solid #f0dca8;border-radius:28px;padding:8px 14px 10px;max-width:100%}
+.recipe-card .rc-name{font-weight:900;font-size:22px;color:#6b5577;line-height:1}
+.recipe-card .rc-rings{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.recipe-card .ring{display:flex;align-items:center;justify-content:center;gap:2px;min-width:66px;height:66px;padding:0 8px;border:4px solid #e7c98a;border-radius:34px;background:#fff}
+.recipe-card .rc-img{width:46px;height:46px;object-fit:contain}
+.recipe-card.small{padding:4px 8px 6px;border-width:3px;border-radius:18px;gap:3px}
+.recipe-card.small .rc-name{font-size:14px}
+.recipe-card.small .ring{min-width:38px;height:38px;border-width:2px;padding:0 4px;gap:1px}
+.recipe-card.small .rc-img{width:26px;height:26px}
+.orderpanel .recipe-card{flex:1 1 auto}
+.book{max-height:calc(100svh - 150px);overflow:auto}
+.book .sticker-b{max-width:104px}
+.book .recipes{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.ktrace{display:flex;flex-direction:column;align-items:center;gap:8px;width:auto;background:#fffaf5f4;border:8px solid #fff;border-radius:42px;padding:10px 24px 12px;box-shadow:0 16px 40px #79596426}
+.ktrace .krow{display:flex;align-items:center;gap:18px;background:transparent;padding:0}
+.ktrace .trace-wrap{width:min(40vh,380px);height:min(40vh,380px)}
+.ktrace .kicon{width:76px;height:76px;object-fit:contain}
+.kword{display:flex;gap:8px;font-size:80px;font-weight:900;line-height:1.05;color:#8f7ca3}
+.kletter{min-width:56px;text-align:center;border-radius:18px;padding:0 6px}
+.kletter.current{color:#574762;background:#ffe9a3;box-shadow:0 0 0 5px #ffcf4d}
+.kletter.done{color:#3fae6a}
+.ktrace .kbody{display:grid;grid-template-columns:150px auto 230px;gap:22px;align-items:center;justify-content:center}
+.ktrace .kmodel .trace-model{position:static;width:150px;height:150px}
+.kpot{display:flex;flex-direction:column;align-items:center;gap:8px;background:#fffaf5cc;border-radius:34px;padding:12px}
+.kpot .kpan{position:relative;width:200px}
+.kpot .kpan .panimg{width:200px;height:auto;display:block}
+.kpot .inpan{bottom:20%;flex-wrap:wrap;padding:0 14px}
+.kpot .inpan .mini{width:38px;height:38px}
+.potcount{font-size:34px;font-weight:900;min-height:40px;color:#574762}
+.potdots{display:flex;gap:10px;min-height:26px}
+.potdot{width:26px;height:26px;border-radius:50%;background:#e4d9ea;border:3px solid #cdbdd8}
+.potdot.on{background:#3fae6a;border-color:#2c8650}
+.qtydots{display:flex;justify-content:center;gap:5px;margin-top:4px;pointer-events:none}
+.qtydots .potdot{width:14px;height:14px;border-width:2px}
+.startover-box{margin-top:26px;padding-top:18px;border-top:3px dashed #e1d3e7}
+.adult .startover{position:relative;overflow:hidden;min-width:260px;background:#ffe4e1;box-shadow:0 7px 0 #e0a6a0;font-size:22px;font-weight:800;color:#8a3b3b;touch-action:none}
+.startover .so-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:#f5a8a0;z-index:0}
+.startover.holding .so-fill{animation:sofill var(--hold,2s) linear forwards}
+.startover .so-text{position:relative;z-index:1}
+@keyframes sofill{to{width:100%}}

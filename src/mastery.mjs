@@ -1,8 +1,9 @@
 import {maxLevel, phrasesFor} from './curriculum.mjs';
-// SPEC §14 MU9, from the level's DATA (its mechanic and keys, never its number): beat:<bpm> · rhythm:<pattern> · hl:<note> · penta:<length> · time:<song> · none for free play · else phrase:<notes joined by ,> per distinct phrase.
+// SPEC §14 MU9, from the level's DATA (its mechanic and keys, never its number): follow:<song> · beat:<bpm> · rhythm:<pattern> · hl:<note> · penta:<length> · time:<song> · none for free play · else phrase:<notes joined by ,> per distinct phrase.
 function musicItems(cur, level) {
   const l = cur.music[level - 1] || {};
   if (l.mechanic === 'beat') return (Array.isArray(l.bpm) ? l.bpm : [l.bpm]).map(b => 'beat:' + b);
+  if (l.mechanic === 'follow') return ['follow:' + l.song];
   if (l.mechanic === 'rhythm') return (l.patterns || []).map(p => 'rhythm:' + p);
   if (l.mechanic === 'highlow') return (l.notes || []).map(n => 'hl:' + n);
   if (l.mechanic === 'free') return [];

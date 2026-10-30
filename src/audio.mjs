@@ -66,5 +66,6 @@ function applyMusic() {
 }
 export function setMusic(on) { musicOn = !!on; applyMusic(); }
 export const isMusicOn = () => musicOn;
+export const context = () => ctx; // the sound-effects/music-bed context (armUnlock wakes it with the piano's)
 document.addEventListener('visibilitychange', () => { if (!ctx) return; if (document.hidden) ctx.suspend?.(); else if (musicOn) ctx.resume?.(); });
 export const _state = () => ({unlocked, musicOn, ctx: ctx?.state || null, playing: !!timer});

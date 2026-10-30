@@ -34,7 +34,7 @@ export function mathTask(cur, item, rng = Math.random) {
   const i = String(item).indexOf(':'), kind = String(item).slice(0, i), rest = String(item).slice(i + 1), x = rest.split(':')[0], n = Number(x);
   const level = ownerLevel(cur, item), e = entryOf(cur, level), mechanic = e.mechanic, hi = (e.range && e.range[1]) || 10;
   const base = {mechanic, item, level};
-  if (kind === 'sub') return {...base, n, flashMs: e.flashMs || 1500, answer: n, choices: numChoices(n, 1, Math.max(hi, 3), rng)};
+  if (kind === 'sub') return {...base, n, answer: n, choices: numChoices(n, 1, Math.max(hi, 3), rng)};
   if (kind === 'count') return {...base, n, answer: n, tenframe: hi > 5, choices: numChoices(n, 1, Math.max(hi, n + 1), rng)};
   if (kind === 'cmp') {
     let a, b; const top = Math.min(10, hi);

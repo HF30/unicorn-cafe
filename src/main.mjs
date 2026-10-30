@@ -6,17 +6,20 @@ import cur from '../content/curriculum.json' with {type:'json'};
 import prompts from '../content/prompts.json' with {type:'json'};
 import {scoreTrace,scoreFree,strokeArrows} from './trace.mjs';
 import {sessionPhase} from './session.mjs';
-import {maxLevel,guideFor,scoopStep,phrasesFor} from './curriculum.mjs';
+import {maxLevel,guideFor,phrasesFor,followNotes} from './curriculum.mjs';
 import {mathTask,shapeTask,coinWays,payOk} from './maths.mjs';
 import {pickItem,recordItem,masteryLevel,nextGuide,dayKey,levelItems} from './mastery.mjs';
 import {surpriseSticker} from './rewards.mjs';
 import {readTask,pictureArt,decodable,decodableFoods,cumulativeGpcs} from './reading.mjs';
 import words from '../content/words.json' with {type:'json'};
 import {ticketQueue,afterReward} from './flow.mjs';
-import {pickIngredients,wordQueue,orderFood} from './kitchen.mjs';
-import {createCopyMe,noteId,beatTimes,rhythmTimes,scoreTaps,beatPass,keyRange} from './music.mjs';
+import {wordQueue,orderFood,recipeTier,pickRecipe,traceSteps} from './kitchen.mjs';
+import recipes from '../content/recipes.json' with {type:'json'};
+import {freshProgress,startOver} from './progress.mjs';
+import {armUnlock} from './unlock.mjs';
+import {createCopyMe,createFollow,noteId,beatTimes,rhythmTimes,scoreTaps,beatPass,keyRange} from './music.mjs';
 import {mountPiano} from './piano.mjs';
-import {initPianoAudio,warmPiano,playNote,setPianoMusic} from './piano-audio.mjs';
+import {initPianoAudio,pianoContext,warmPiano,playNote,setPianoMusic} from './piano-audio.mjs';
 import {imgHtml,armArt,panFrames,frames,status as artStatus,STICKERS} from './art.mjs';
 import {createStage} from './stage.mjs';
 import * as sound from './audio.mjs';
@@ -34,16 +37,16 @@ let saved;try{saved=JSON.parse(localStorage.getItem('unicorn-cafe')||'null');}ca
 // Q8: a saved profile with no `items` key is kitchen-v2 or older: its read/trace levels meant something else, so they restart at 1 with an empty ledger and no guide steps; maths, music, stickers and settings are kept.
 const migrated=!!saved&&typeof saved==='object'&&!Array.isArray(saved)&&!('items' in saved);
 if(migrated)saved={...saved,read:1,trace:1,items:{},guide:{},readHistory:[],traceHistory:[],taskCount:{read:0,trace:0}};
-const progress={read:1,trace:1,math:1,music:1,readHistory:[],traceHistory:[],mathHistory:[],musicHistory:[],items:{},guide:{},taskCount:{read:0,trace:0,music:0,math:0,shapes:0},shapes:1,shapesHistory:[],served:[],stickerDays:[],sparkles:0,stickers:0,stickerIds:[],settings:{limit:cfg.sessionLimitMinutes,read:0,trace:0,math:0,musicLevel:0,music:true},...saved};
+const progress={...freshProgress(cfg),...saved}; // SPEC SO1: the day-1 profile lives in progress.mjs (Start over uses the same one)
 progress.settings={music:true,limit:cfg.sessionLimitMinutes,read:0,trace:0,math:0,musicLevel:0,...progress.settings};
 for(const k of ['readHistory','traceHistory','mathHistory'])if(!Array.isArray(progress[k]))progress[k]=[];
 if(!(progress.read>=1))progress.read=1;if(!progress.items||typeof progress.items!=='object')progress.items={};if(!progress.guide||typeof progress.guide!=='object')progress.guide={};progress.taskCount={read:0,trace:0,music:0,math:0,shapes:0,...progress.taskCount};if(!Array.isArray(progress.shapesHistory))progress.shapesHistory=[];if(!(progress.shapes>=1))progress.shapes=1;if(!Array.isArray(progress.served))progress.served=[];if(!Array.isArray(progress.stickerDays))progress.stickerDays=[];
-if(!Array.isArray(progress.musicHistory))progress.musicHistory=[];if(!(progress.music>=1))progress.music=1;
+if(!Array.isArray(progress.musicHistory))progress.musicHistory=[];if(!(progress.music>=1))progress.music=1;if(!Array.isArray(progress.recipeBook))progress.recipeBook=[];
 if(!Array.isArray(progress.stickerIds))progress.stickerIds=[];
 progress.stickers=progress.stickerIds.length;
 if(migrated&&!jump)try{localStorage.setItem('unicorn-cafe',JSON.stringify(progress));}catch{}
 let demoShelf=null,surpriseOff=false; // ?screen= jumps only: a demo shelf and no random sticker, so a screenshot route never changes the saved profile
-let kit={ings:[],done:[],pot:[]},traceItem='jam',scoops=0,scoopTask=null,pianoUI=null;
+let kit={recipe:null,ings:[],reps:[],pot:[],cur:0},pianoUI=null,newRecipe=false;
 let stage_='welcome',started=0,customer=0,order,traceQueue=[],traceAt=0,traceNext,misses=0,demonstrated=false,amount=0,paid=0,winddown=false,closed=false,gateTimer,viewToken=0,adultOpen=false,lastBg=null;
 let clockCfg={limitMinutes:progress.settings.limit,windDownMinutes:cfg.windDownMinutes};
 // ?today=YYYY-MM-DD overrides the day a pass is recorded on (testing the two-day mastery rule); otherwise the local date.
@@ -107,13 +110,17 @@ function cafe(){if(checkClock())return;stage_='cafe';const id='cust-'+idx();cons
  if(fresh){const a=stage.actor(id);const walkSound=setInterval(()=>sound.sfx('plop',{rate:1.4}),500);a?.moveTo(76,2600,()=>{clearInterval(walkSound);a.play(skin(),'idle');});setTimeout(()=>clearInterval(walkSound),3000);}
  document.getElementById('customer')?.classList.add('hint');
  bind('book',stickerBook);bind('pianoFree',pianoFree);bind('customer',()=>newOrder());}
-function stickerBook(){stage_='book';const scene=frame('bg_cafe',5,[girl({anim:'idle'})],'counter');scene.innerHTML=`<div class="panel book">${Array.from({length:STICKERS},(_,i)=>`<span class="slotcell">${art('sticker_'+pad(i),'sticker-b'+(progress.stickerIds.includes(i)?'':' locked'))}</span>`).join('')}${button('back',art('ui_back'),'Back to café','artbtn')}</div>`;say(L.F('sticker_book_v2'));bind('back',()=>{sound.sfx('back');cafe();});}
-function newOrder(){if(checkClock())return;if(afterReward(customer)==='closing'){goodbye(true);return;}customer++;const tw=foodList();pending=chooseRead();const food=orderFood(tw,pending.t,Math.random);mpend=chooseMath();const mk=mpend.market;order={food,word:food};order.n=mk&&mk.t.mechanic==='market'?mk.t.answer:1+Math.floor(Math.random()*5);
- const request=L.orderLine(order.n,food);stage_='order';
+function stickerBook(){stage_='book';const scene=frame('bg_cafe',5,[girl({anim:'idle'})],'counter');scene.innerHTML=`<div class="panel book">${Array.from({length:STICKERS},(_,i)=>`<span class="slotcell">${art('sticker_'+pad(i),'sticker-b'+(progress.stickerIds.includes(i)?'':' locked'))}</span>`).join('')}${progress.recipeBook.length?`<div class="recipes">${progress.recipeBook.map(id=>recipes.recipes.find(r=>r.id===id)).filter(Boolean).map(r=>recipeCard(r,'small')).join('')}</div>`:''}${button('back',art('ui_back'),'Back to café','artbtn')}</div>`;say(L.F('sticker_book_v2'));bind('back',()=>{sound.sfx('back');cafe();});}
+// The recipe card (SPEC §16 RC7): one ring per ingredient, in order, each holding `qty` pictures of its art (pictures only: the word is for tracing).
+const recipeCard=(r,cls='')=>`<div class="recipe-card ${cls}" data-recipe="${r.id}" aria-label="Recipe: ${r.name}"><div class="rc-name">${r.name}</div><div class="rc-rings">${r.ingredients.map(i=>`<span class="ring">${Array.from({length:i.qty},()=>art(i.art,'rc-img')).join('')}</span>`).join('')}</div></div>`;
+function newOrder(){if(checkClock())return;if(afterReward(customer)==='closing'){goodbye(true);return;}customer++;const tw=foodList();pending=chooseRead();const food=orderFood(tw,pending.t,Math.random);mpend=chooseMath();const mk=mpend.market;
+ const rcp=pickRecipe(recipes,recipeTier(recipes,level('read'),level('trace')),pending.t,Math.random); // the recipe never contains the read task's answer word (RC5)
+ order={food,word:food,recipe:rcp};order.n=mk&&mk.t.mechanic==='market'?mk.t.answer:1+Math.floor(Math.random()*5);newRecipe=false;showOrder();}
+function showOrder(){stage_='order';const rcp=order.recipe;
  const talk=cust({anim:'order',keepPos:true});const scene=frame('bg_cafe',0,[girl({anim:'idle'}),talk,buddy()],'counter');
- scene.innerHTML=`<div class="panel orderpanel"><div class="orderrow">${item(food,'food')}</div><div class="tray">${Array.from({length:order.n},()=>item(food)).join('')}</div>${button('ticket','&#128221;','Read the note','primary')}</div>`;
+ scene.innerHTML=`<div class="panel orderpanel">${recipeCard(rcp)}${button('ticket','&#128221;','Read the note','primary')}</div>`;
  const token=viewToken;setTimeout(()=>{if(viewToken===token)stage.actor(talk.id)?.play(skin(),'idle');},5200);
- say(request,L.F('read_note'));bind('ticket',()=>startRead());}
+ say(L.recipeLine(rcp),L.F('read_note'));bind('ticket',()=>startRead());}
 // ---- the read step (screen `read`): ONE read task chosen by pickItem between the order and the ticket (SPEC §13 E1-E5) ----
 let task=null,readState=null,traceReview=false,traceWorst='first',traceKey='',traceIcon='jam',studyHold=0;
 const lastKey={read:undefined,trace:undefined},outcomes=[];
@@ -177,9 +184,12 @@ function glyphDone(name,o,kt){progress.guide[name]=nextGuide(progress.guide[name
 function finishTraceItem(){const o=traceWorst;progress.items=recordItem(progress.items,traceKey,o,today());progress.traceHistory=[...progress.traceHistory,o].slice(-50);
  progress.trace=masteryLevel(cur,'trace',progress.trace,progress.items,progress.traceHistory,{guides:progress.guide,readLevel:level('read')});outcomes.push({skill:'trace',item:traceKey,outcome:o});save();}
 function traceScreen(){const kt=stage_==='kitchen_trace',name=traceQueue[traceAt],glyph=glyphs[name],gs0=progress.guide[name]||{g:1,run:0,demos:0},gs=!kt&&/^(word|caption):/.test(traceKey)?{...gs0,g:5}:gs0,gd=guideFor(cur,gs.g)||{},free=gd.scorer==='free',arrows=strokeArrows(glyph);
- task={skill:'trace',kind:kt?'word':'trace',item:traceKey,glyph:name,glyphs:traceQueue,guide:gs.g,review:kt?false:traceReview,answer:null,screen:stage_};
+ task={skill:'trace',kind:kt?'word':'trace',item:traceKey,glyph:name,glyphs:traceQueue,guide:gs.g,review:kt?false:traceReview,answer:null,screen:stage_,...(kt?{word:traceIcon,rep:stepNow().rep,qty:stepNow().qty}:{})};
  const scene=frame(kt?'bg_kitchen_nopan':'bg_ticket',kt?4:1,[girl({anim:'think',x:12,y:108,s:.9,back:false}),...(kt?[]:[cust({anim:'idle',x:88,y:106,s:.8})])]);
- scene.innerHTML=`<div class="panel trace-panel">${gd.model?modelHtml(glyph,gd.model==='memory'&&gd.studyArrows):''}<div class="row">${traceQueue.map((c,k)=>`<span class="trace-target${k===traceAt?'':' dim'}" data-glyph="${c}">${markOf(c)}</span>`).join('')}${item(traceIcon,'mini')}</div><div class="trace-wrap"><canvas id="trace" width="600" height="600" aria-label="Finger tracing board"></canvas></div><div class="row">${button('erase',art('ui_undo'),'Clear trace','artbtn')}${button('done',art('ui_check'),'Check trace','artbtn')}</div></div>`;
+ const modelH=gd.model?modelHtml(glyph,gd.model==='memory'&&gd.studyArrows):'',padH=`<div class="trace-wrap"><canvas id="trace" width="600" height="600" aria-label="Finger tracing board"></canvas></div>`,btnH=`<div class="row">${button('erase',art('ui_undo'),'Clear trace','artbtn')}${button('done',art('ui_check'),'Check trace','artbtn')}</div>`;
+ // kitchen (SPEC §16 KT2): the WHOLE word #kword stays up the whole task, one .kletter per letter, the one being traced is .current; the pot with its "rep of qty" count sits beside the pad
+ scene.innerHTML=kt?`<div class="panel trace-panel ktrace"><div class="krow">${art(kit.ings[kit.cur].art,'kicon')}<div id="kword" class="kword" data-rep="${stepNow().rep}" data-qty="${stepNow().qty}" aria-label="The word to trace">${traceQueue.map((c,k)=>`<span class="kletter${k===traceAt?' current':''}${k<traceAt?' done':''}">${c}</span>`).join('')}</div></div><div class="kbody"><div class="kmodel">${modelH}</div>${padH}${kPotHtml()}</div>${btnH}</div>`
+  :`<div class="panel trace-panel">${modelH}<div class="row">${traceQueue.map((c,k)=>`<span class="trace-target${k===traceAt?'':' dim'}" data-glyph="${c}">${markOf(c)}</span>`).join('')}${item(traceIcon,'mini')}</div>${padH}${btnH}</div>`;
  const canvas=document.getElementById('trace'),ctx=canvas.getContext('2d');let strokes=[],active=null,busy=gd.model==='memory';const token=viewToken;
  const X=v=>60+v*480;
  const path=(s,color,width)=>{if(!s.length)return;ctx.beginPath();s.forEach(([x,y],i)=>i?ctx.lineTo(X(x),X(y)):ctx.moveTo(X(x),X(y)));ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineCap=ctx.lineJoin='round';ctx.stroke();};
@@ -216,8 +226,8 @@ function traceScreen(){const kt=stage_==='kitchen_trace',name=traceQueue[traceAt
  bind('done',()=>{if(active!==null||busy)return;const res=free?scoreFree(glyph,strokes,cfg.trace.free):scoreTrace(glyph,strokes,cfg.trace);
   if(res.pass){busy=true;const o=outcomeNow(),last=traceAt+1>=traceQueue.length;glyphDone(name,o,kt);if(gd.model==='memory'){const tg=document.querySelector('.trace-target:not(.dim)');if(tg)tg.textContent=markOf(name);}if(last&&!kt)finishTraceItem();
    const pr=last&&!kt?(traceWorst==='first'?(gs.g>=4?'praise_memory':'praise_path'):traceWorst==='retry'?'praise_try':null):null;
-   sound.sfx('sparkle');sparkleBurst(canvas,{n:14});stage.actor('girl')?.play('girl','cheer',{loop:false,then:()=>stage.actor('girl')?.play('girl','think')});say(...L.tracedLine(name),...(kt&&last?[L.wordSound(traceIcon)]:[]),...(pr?[L.F(pr)]:[]));traceAt++;
-   if(!last)setTimeout(()=>{if(viewToken===token){const r=traceScreen();if(r.model)say(...r.lines);}},700);else{const next=traceNext;setTimeout(()=>{if(viewToken===token)next();},pr?5200:1800);}}
+   sound.sfx('sparkle');sparkleBurst(canvas,{n:14});stage.actor('girl')?.play('girl','cheer',{loop:false,then:()=>stage.actor('girl')?.play('girl','think')});const tl=L.tracedLine(name);say(...(kt?[...tl.slice(0,1),...(last?[L.sayWord(traceIcon)]:[])]:[...tl,...(pr?[L.F(pr)]:[])]));if(kt)document.querySelectorAll('.kletter')[traceAt]?.classList.add('done');traceAt++;
+   if(!last)setTimeout(()=>{if(viewToken===token){const r=traceScreen();if(r.model)say(...r.lines);}},700);else{const next=traceNext;setTimeout(()=>{if(viewToken===token)next();},kt?900:pr?5200:1800);}}
   else{misses++;if(misses>=cfg.retry.maxBeforeDemo){demonstrated=true;busy=true;speak('demo');const template=glyph.strokes.flatMap((s,i)=>s.map((p,j)=>({p,i,j})));let at=0;strokes=glyph.strokes.map(()=>[]);const animate=()=>{if(viewToken!==token)return;if(at<template.length){const {p,i}=template[at++];strokes[i].push(p);paint();setTimeout(animate,200);}else{const final=glyph.strokes.at(-1);strokes[strokes.length-1]=[final[0]];busy=false;paint();say(L.F('your_turn'));}};animate();}else speak('trace_hint');}});
  // g5: the model with numbered arrows stays for studyMs, then goes (removed from the page) before she writes.
  if(gd.model==='memory')setTimeout(()=>{if(viewToken!==token)return;document.querySelector('.trace-model')?.remove();document.querySelectorAll('.trace-target').forEach(el=>{if(el.dataset.glyph!==name)return;el.style.display='inline-block';el.style.minWidth=Math.max(24,el.getBoundingClientRect().width)+'px';el.textContent='';});busy=false;lift=performance.now();say(L.F('trace_memory'));},studyHold||gd.studyMs||3000);
@@ -264,16 +274,13 @@ const mathSay=(again,pre=[])=>say(...pre,...(again?[L.F('read_listen')]:[]),...m
 function mathStart(host,pend){const sk=pend.skill==='shapes'?'shapes':'math',t=pend.t;
  mstate={...pend,host,picks:[],done:false,rolled:false,way:0,first:null,coins:[],follow:false,fruit:FRUIT[Math.floor(Math.random()*FRUIT.length)]};misses=0;demonstrated=false;
  task={skill:pend.skill,mechanic:t.mechanic,kind:t.mechanic,item:t.item,review:!!pend.review,answer:t.answer,choices:t.choices&&[...t.choices],level:level(sk),guide:null,screen:host,outcome:null};
- mathDraw();if(t.mechanic==='flash')flashRun(!!pend.keep);if(t.mechanic==='kitchen'&&t.item.startsWith('take'))eatRun();mathSay();}
-function flashRun(keep){const m=mstate,tok=viewToken,op=document.querySelector('.onplate'),sl=document.getElementById('mslot');if(!m||!op||!sl)return;op.innerHTML=fr(m.t.n,m.fruit);
- const show=()=>{if(viewToken!==tok||m.done)return;if(!keep)op.innerHTML='';sl.innerHTML=cardsHtml(m.t,ttext);m.t.choices.forEach((_,i)=>bind('pick'+i,()=>mathPick(i)));};
- sl.innerHTML='';if(keep)show();else setTimeout(show,m.t.flashMs);}
+ mathDraw();if(t.mechanic==='kitchen'&&t.item.startsWith('take'))eatRun();mathSay();}
 // Buddy eats b of the a things on the plate: they fade, only the rest stay solid.
 function eatRun(){const m=mstate,tok=viewToken,op=document.querySelector('.onplate'),t=m.t;if(!op)return;op.innerHTML=fr(t.a,m.fruit);setTimeout(()=>{if(viewToken!==tok||m.done)return;op.innerHTML=fr(t.a-t.b,m.fruit)+fr(t.b,m.fruit,'ghost');},1300);}
 function mathDraw(){const m=mstate,t=m.t,mech=t.mechanic,till=m.host==='till',f=m.fruit;
  const actors=[girl({anim:'idle',x:till?12:20.5,y:till?108:99,s:.95,back:false})];if(mech==='kitchen'&&t.item.startsWith('take'))actors.push(buddy({x:88,y:99,anim:'wag',loop:true}));
  const scene=frame(till?'bg_till':'bg_market',3,actors);let body='',wide=false,fmt=ttext;
- if(mech==='flash'){body=`${plateHtml(t.n,f)}<div id="mslot" class="mslot"></div>${hearBtn()}`;}
+ if(mech==='flash'){body=`${plateHtml(t.n,f)}<div id="mslot" class="mslot">${cardsHtml(t,ttext)}</div>${hearBtn()}`;}
  else if(mech==='compare'){wide=true;body=`<div class="cmprow"><div class="side">${art('unicorn_idle_00','cface')}${button('pick0',plateHtml(t.a,f),'Left plate','plate-btn')}</div>${button('pick2','=','The same','same-btn')}<div class="side">${art('kitty_idle_00','cface')}${button('pick1',plateHtml(t.b,f),'Right plate','plate-btn')}</div></div>${hearBtn()}`;}
  else if(mech==='path'){wide=true;const dieFace=m.rolled?(t.step<0?`<span class="back">&#8630;</span><b>1</b>`:Array.from({length:t.step},()=>'<i class="pip"></i>').join('')):'<b>?</b>',at=m.at||t.from;
   body=`<div class="path" id="path">${Array.from({length:10},(_,k)=>button('sq'+(k+1),`<b>${k+1}</b>${at===k+1?art('sticker_02','token'):''}`,'Square '+(k+1),'path-square'+(m.hop&&k+1>Math.min(t.from,t.answer)&&k+1<=Math.max(t.from,t.answer)?' hop':'')+(m.demoSq===k+1?' demo':''))).join('')}</div><div class="row">${button('die',dieFace,'Roll the dice','die'+(m.rolled?' rolled':' pulse')+(t.step<0?' minus':''))}${hearBtn()}</div>`;}
@@ -292,7 +299,7 @@ function mathDraw(){const m=mstate,t=m.t,mech=t.mechanic,till=m.host==='till',f=
  scene.innerHTML=`<div class="panel mathpanel mm-${mech}${wide?' wide':''}">${body}</div>`;
  bind('mhear',()=>mathSay());
  if(mech==='shapes'&&t.kind==='compose')for(const k of[0,1])bind('tri'+k,()=>mathCompose(k));
- if(mech!=='flash')(t.choices||[]).forEach((_,i)=>bind('pick'+i,()=>mathPick(i)));
+ (t.choices||[]).forEach((_,i)=>bind('pick'+i,()=>mathPick(i)));
  if(mech==='path'){bind('die',mathRoll);for(let k=1;k<=10;k++)bind('sq'+k,()=>mathSquare(k));}
  if(mech==='till'&&t.item.startsWith('skip'))for(let i=0;i<t.count;i++)bind('sc'+i,()=>{sound.coin();say(COIN_ART[t.step]?L.centCoin(t.step):L.centsLine(t.step));});
  if(mech==='till_change'||(mech==='till'&&t.item.startsWith('price'))){for(const c of(mech==='till'?t.coins:t.coins.filter(c=>c<=t.answer)))bind('c'+c,()=>mathCoin(c));m.coins.forEach((_,i)=>bind('paid'+i,()=>{m.coins.splice(i,1);sound.sfx('back');mathDraw();}));bind('till',mathCheckPay);}}
@@ -300,8 +307,8 @@ function mathDraw(){const m=mstate,t=m.t,mech=t.mechanic,till=m.host==='till',f=
 function mathPick(i){const m=mstate;if(!m||m.done)return;const t=m.t,c=t.choices[i],card=document.getElementById('pick'+i);m.picks.push(i);
  if(c===t.answer){card?.classList.add('right');sound.sfx('sparkle');if(card)sparkleBurst(card,{n:12});mathFinish(ansLines(t));return;}
  misses++;card?.classList.add('dim');
- if(misses>=cfg.retry.maxBeforeDemo){demonstrated=true;if(t.mechanic==='flash')flashRun(true);if(t.mechanic==='kitchen'&&t.item.startsWith('take')){const op=document.querySelector('.onplate');if(op)op.innerHTML=fr(t.a-t.b,m.fruit)+fr(t.b,m.fruit,'ghost');}document.getElementById('pick'+t.choices.indexOf(t.answer))?.classList.add('demo');say(L.F('watch_me'),...ansLines(t));}
- else{if(t.mechanic==='flash')flashRun();else if(t.mechanic==='kitchen'&&t.item.startsWith('take'))eatRun();mathSay(true,t.mechanic==='till'&&t.item.startsWith('coin')?[L.centCoin(c)]:[]);}}
+ if(misses>=cfg.retry.maxBeforeDemo){demonstrated=true;if(t.mechanic==='kitchen'&&t.item.startsWith('take')){const op=document.querySelector('.onplate');if(op)op.innerHTML=fr(t.a-t.b,m.fruit)+fr(t.b,m.fruit,'ghost');}document.getElementById('pick'+t.choices.indexOf(t.answer))?.classList.add('demo');say(L.F('watch_me'),...ansLines(t));}
+ else{if(t.mechanic==='kitchen'&&t.item.startsWith('take'))eatRun();mathSay(true,t.mechanic==='till'&&t.item.startsWith('coin')?[L.centCoin(c)]:[]);}}
 function mathCompose(k){const m=mstate;if(!m||m.done)return;m.placed=(m.placed|0)+1;sound.sfx('plop');mathDraw();
  if(m.placed>=2){sound.sfx('sparkle');const o=document.getElementById('outline');if(o)sparkleBurst(o,{n:12});mathFinish(ansLines(m.t));}}
 function mathRoll(){const m=mstate;if(!m||m.done||m.rolled)return;m.rolled=true;sound.sfx('plop');mathDraw();say(L.F('path_where'));}
@@ -354,30 +361,34 @@ function till(){stage_='till';buddyAnim='sleep';clearTimeout(buddyTimer);paid=0;
 function drawTill(anim=''){const budget=order.n;const scene=frame('bg_till',3,[girl({anim:'idle',x:12,y:108,s:.95,back:false})]);scene.innerHTML=`<div class="panel moneypanel${budget>6?' dense':''}">${purse(budget,budget-paid,true,!!anim)}<div class="tray">${Array.from({length:order.n},(_,i)=>priced(order.food,i)).join('')}</div><div class="row coins" id="paid">${Array.from({length:paid},(_,i)=>button('paid'+i,art('coin_s'),'Take one coin back','paidcoin')).join('')}</div>${button('till',art('ui_check'),'Check payment','artbtn')}</div>`;
  if(anim==='pay')landLast('#paid button',el=>coinDrop(el,document.querySelector('#paid img').currentSrc));
  for(let i=0;i<budget-paid;i++)bind('coin'+i,()=>{paid++;sound.coin();drawTill('pay');say(L.num(paid));});for(let i=0;i<paid;i++)bind('paid'+i,()=>{paid--;sound.sfx('back');drawTill('back');say(L.num(paid));});bind('till',()=>{if(paid===order.n){sound.coin();sound.sfx('sparkle',{delay:200});sparkleBurst(document.getElementById('till'));setTimeout(kitchen,900);}else{misses++;if(misses>=cfg.retry.maxBeforeDemo){demonstrated=true;paid=order.n-1;drawTill('pay');say(L.F('watch_me'),...(paid?[L.countTo(paid)]:[]),L.F('pay_one_more'));}else say(L.itCosts(order.n),L.P('hint_pay'));}});}
-function kitchen(){stage_='kitchen';kit={ings:pickIngredients(order.food,foodList(),Math.random),done:[false,false],pot:[]};drawKitchen();say(L.F('kitchen_tap'));}
+// A recipe (SPEC §16): one LOCKED tile per ingredient. Tap a tile -> stage kitchen_trace: the whole word stays up, she traces each letter on the pad, one picture of the
+// ingredient flies into the pot ("1 of 2" with dots); qty 2 = trace it again. Every tile done -> the piano cooks the dish. No maths in the kitchen (KT4).
+// kit.steps = traceSteps(recipe): one {word, rep, qty} per trace, in order; kit.first[i] = where ingredient i's steps start, kit.reps[i] = how many of them are done.
+const mkKit=(r,reps)=>{const first=[];let n=0;for(const g of r.ingredients){first.push(n);n+=g.qty;}return {recipe:r,steps:traceSteps(r),first,ings:r.ingredients,reps:reps||r.ingredients.map(()=>0),pot:[],cur:0};};
+const stepNow=()=>kit.steps[kit.first[kit.cur]+kit.reps[kit.cur]]||{word:kit.ings[kit.cur].word,rep:kit.reps[kit.cur]+1,qty:kit.ings[kit.cur].qty};
+function kitchen(){stage_='kitchen';kit=mkKit(order.recipe);drawKitchen();say(L.F('kitchen_tap'));}
+const kitDone=()=>kit.ings.every((g,i)=>kit.reps[i]>=g.qty);
 // Cycle the pan_cooking frames on <img> `el` at ~12 fps while this view is current.
 async function cookPan(el,token){const fr=await panFrames();if(!fr||!el)return;let i=0;const t=setInterval(()=>{if(viewToken!==token||!el.isConnected){clearInterval(t);return;}i=(i+1)%fr.length;el.src=fr[i];},1000/12);el.src=fr[0];el.classList.remove('fb');}
-// Two LOCKED ingredient tiles: tap one -> trace the whole word -> one scoop step -> the ingredient flies into the pot. Both in -> the copy-me piano cooks the dish.
-function drawKitchen({fly=-1}={}){const scene=frame('bg_kitchen_nopan',4,[girl({anim:'idle',x:12,y:106,s:1,back:false,loop:true}),buddy({x:80,y:99})]);const first=kit.done.indexOf(false);
- scene.innerHTML=`<div class="kitchenpanel"><div id="pan" class="pan-zone">${art(kit.pot.length?'pan_cooking_00':'pan','panimg')}<div class="inpan">${kit.pot.map(key=>item(key,'mini')).join('')}</div></div><div class="row ingrow">${kit.ings.map((key,i)=>`<button id="tile${i}" class="tile ${kit.done[i]?'done':'locked'}${i===first?' hint':''}" aria-label="${kit.done[i]?'In the pot':'Locked ingredient'}">${item(key)}<span class="lock">${kit.done[i]?'&#10003;':'&#128274;'}</span></button>`).join('')}</div></div>`;
+const potDots=(rep,qty)=>Array.from({length:qty},(_,k)=>`<span class="potdot${k<rep?' on':''}"></span>`).join('');
+// The pot beside the pad: the pictures already in it, "rep of qty" in words and qty dots (rep of them lit).
+function kPotHtml(){const g=kit.ings[kit.cur],done=kit.reps[kit.cur];return `<div class="kpot" id="kpot"><div class="kpan">${art(kit.pot.length?'pan_cooking_00':'pan','panimg')}<div class="inpan">${kit.pot.map(a=>art(a,'mini')).join('')}</div></div><div id="potCount" class="potcount">${done?`${done} of ${g.qty}`:''}</div><div class="potdots">${potDots(done,g.qty)}</div></div>`;}
+function drawKitchen(){const scene=frame('bg_kitchen_nopan',4,[girl({anim:'idle',x:12,y:106,s:1,back:false,loop:true}),buddy({x:80,y:99})]);const first=kit.ings.findIndex((g,i)=>kit.reps[i]<g.qty);
+ scene.innerHTML=`<div class="kitchenpanel"><div id="pan" class="pan-zone">${art(kit.pot.length?'pan_cooking_00':'pan','panimg')}<div class="inpan">${kit.pot.map(a=>art(a,'mini')).join('')}</div></div><div class="row ingrow">${kit.ings.map((g,i)=>{const done=kit.reps[i]>=g.qty;return `<button id="tile${i}" class="tile ${done?'done':'locked'}${i===first?' hint':''}" aria-label="${done?'In the pot':'Locked ingredient'}">${art(g.art)}<span class="qtydots">${potDots(done?g.qty:0,g.qty)}</span><span class="lock">${done?'&#10003;':'&#128274;'}</span></button>`;}).join('')}</div></div>`;
  if(kit.pot.length)cookPan(document.querySelector('.panimg'),viewToken);
- kit.ings.forEach((key,i)=>bind('tile'+i,()=>{if(!kit.done[i]&&fly<0)openIngredient(i);}));
- if(fly>=0){const token=viewToken,tile=document.getElementById('tile'+fly),src=tile.querySelector('img').currentSrc;
-  flyTo(snap(tile),document.getElementById('pan'),src,{size:96}).then(()=>{if(viewToken!==token)return;kit.pot.push(kit.ings[fly]);sound.sfx('plop');sound.sfx('sizzle',{delay:150});drawKitchen();const pan=document.getElementById('pan');pan.insertAdjacentHTML('beforeend','<span class="splashring"></span>');sparkleBurst(pan,{n:12,radius:110});bounce(pan,1.1);cheerBuddy();const t2=viewToken;
-   if(kit.done.every(Boolean))setTimeout(()=>{if(viewToken===t2)pianoCook();},1500);else say(L.F('kitchen_tap'));});}}
-// She writes the whole word only when she can read it at her read level AND her trace level is at least 4; otherwise the tile goes straight to the scoop step.
-const canWriteWord=w=>decodable(w,cumulativeGpcs(cur,level('read')))&&level('trace')>=4;
-function openIngredient(i){kit.cur=i;const w=kit.ings[i];if(!canWriteWord(w)){kitchenMath(i);return;}stage_='kitchen_trace';traceIcon=w;traceKey='word:'+w;traceReview=false;traceQueue=wordQueue(w);traceAt=0;traceNext=()=>kitchenMath(i);misses=0;demonstrated=false;if(!traceQueue.every(c=>glyphs[c])){kitchenMath(i);return;}const r=traceScreen();say(L.F('kitchen_word'),...r.lines);}
-const scoopSay=t=>[L.scoopLine(t.target)];
-function kitchenMath(i){stage_='kitchen_math';kit.cur=i;scoops=0;misses=0;demonstrated=false;scoopTask=scoopStep(cur,level('math'));drawScoop();say(...scoopSay(scoopTask));}
-// One maths "scoop" step by the maths level's scoop kind: count N / add a+b / "you have X, use Y". Tap the scoop target times, then the tick; 1 miss = hint, 2 = demo.
-function drawScoop(){const t=scoopTask,ing=kit.ings[kit.cur],scene=frame('bg_kitchen_nopan',4,[girl({anim:'idle',x:12,y:106,s:1,back:false,loop:true})]);const n=Math.max(t.target,scoops);
- const head=`${t.target}`;
- scene.innerHTML=`<div class="panel scoop-panel"><div class="row">${item(ing,'mini')}<span class="bignum">${head}</span></div><div class="slots">${Array.from({length:n},(_,k)=>`<span class="slot${k<scoops?' on':''}"></span>`).join('')}</div><div class="row">${button('scoop',art('spoon'),'Add a scoop','scoopbtn')}${button('unscoop',art('ui_undo'),'Take one back','artbtn')}${button('tick',art('ui_check'),'Check scoops','artbtn')}</div></div>`;
- bind('scoop',()=>{if(scoops<12){scoops++;sound.sfx('plop',{rate:1.2});drawScoop();say(L.num(scoops));}});
- bind('unscoop',()=>{scoops=Math.max(0,scoops-1);sound.sfx('back');drawScoop();say(L.num(scoops));});
- bind('tick',()=>{if(scoops===t.target){sound.sfx('sparkle');sparkleBurst(document.getElementById('tick'));const i=kit.cur;setTimeout(()=>{kit.done[i]=true;stage_='kitchen';drawKitchen({fly:i});},800);}
-  else{misses++;if(misses>=cfg.retry.maxBeforeDemo){demonstrated=true;scoops=t.target;drawScoop();say(L.F('watch_count'),L.countTo(t.target),L.F('scoop_tick'));}else say(...scoopSay(t));}});}
+ kit.ings.forEach((g,i)=>bind('tile'+i,()=>{if(kit.reps[i]<g.qty)openIngredient(i);}));}
+function openIngredient(i){kit.cur=i;const g=kit.ings[i];stage_='kitchen_trace';traceIcon=g.word;traceKey='word:'+g.word;traceReview=false;traceQueue=wordQueue(g.word);traceAt=0;traceNext=()=>wordDone(i);misses=0;demonstrated=false;
+ const r=traceScreen();say(L.F('trace_to_add'),...r.lines);}
+// The word is complete: one picture of the ingredient flies from the word into the pot, the count reads "rep of qty". More reps -> the pad clears for another go; the last rep -> back to the tiles.
+async function wordDone(i){const g=kit.ings[i],token=viewToken,src=document.querySelector('.kicon')?.currentSrc;
+ await flyTo(document.getElementById('kword'),document.getElementById('kpot'),src,{size:96});if(viewToken!==token)return;
+ kit.reps[i]++;kit.pot.push(g.art);const rep=kit.reps[i],last=rep>=g.qty;
+ document.querySelector('.kpot .inpan')?.insertAdjacentHTML('beforeend',art(g.art,'mini'));const pc=document.getElementById('potCount');if(pc)pc.textContent=`${rep} of ${g.qty}`;
+ document.querySelectorAll('.potdot').forEach((d,k)=>d.classList.toggle('on',k<rep));
+ sound.sfx('plop');sound.sfx('sizzle',{delay:150});const kp=document.querySelector('.kpan');if(kp){sparkleBurst(kp,{n:10,radius:90});bounce(kp,1.1);}cheerBuddy();
+ if(!last){say(L.F('trace_again'));setTimeout(()=>{if(viewToken===token){traceQueue=wordQueue(g.word);traceAt=0;misses=0;demonstrated=false;const r=traceScreen();say(...r.lines);}},1600);return;}
+ setTimeout(()=>{if(viewToken!==token)return;stage_='kitchen';drawKitchen();const pan=document.getElementById('pan');if(pan){pan.insertAdjacentHTML('beforeend','<span class="splashring"></span>');sparkleBurst(pan,{n:12,radius:110});bounce(pan,1.1);}const t2=viewToken;
+  if(kitDone())setTimeout(()=>{if(viewToken===t2)pianoCook();},1500);else say(L.F('kitchen_tap'));},1500);}
 // ---- the piano step (replaces stirring), SPEC §6 + §14: one music task per dish. pickItem chooses the item; the item's level decides the mechanic ----
 //   beat (U1): the unicorn plays hot_cross_buns on the beat, she taps the pot lid #lid · rhythm (U2): the unicorn plays a pattern on C4, she taps it back · highlow (U3): the cat (C4) or the chick (C5)
 //   copy (U4-U12): copy-me phrase by phrase, with `recall` no key is lit before her first miss, U12 has a metronome · card (U13): play the notes on #notecard, the keys are .faded · free (U14): black keys, the unicorn answers.
@@ -394,6 +405,7 @@ function musicTask(forceKey,forceLevel){
  const key=p.key||'free',kind=key.split(':')[0],arg=key.slice(kind.length+1),il=forceLevel||(key==='free'?lv:itemLevel(key)),e=musicEntry(il);
  const T={key,review:p.review,level:il,recall:!!e.recall,bpm:null,tol:null,targets:[],notes:[],mechanic:'copy',card:false,pent:(e.notes||[]).map(noteId)};
  if(key==='free')T.mechanic='free';
+ else if(kind==='follow'){T.mechanic='follow';T.notes=followNotes(cur,il);T.low=e.low;T.high=e.high;}
  else if(kind==='beat'){T.mechanic='beat';T.bpm=Number(arg);const n=e.beats||8;T.tol=e.toleranceMs||200;T.notes=flatSong(e.song||'hot_cross_buns').slice(0,n);T.targets=beatTimes(T.bpm,n);}
  else if(kind==='rhythm'){T.mechanic='rhythm';T.bpm=e.bpm||90;T.tol=150;T.targets=rhythmTimes(arg,T.bpm);T.notes=T.targets.map(()=>'C4');}
  else if(kind==='hl'){T.mechanic='highlow';T.notes=[noteId(arg)];}
@@ -411,20 +423,21 @@ function freePiano(){let lastSpoken=0;
  const ctl=mountPiano(ui,{keys:cur.keys,low:48,high:72,girl:'girl_idle_00',customer:skin()+'_idle_00',ingredients:[],onPress:note=>{playNote(note);ctl.sparkle(note);const k=cur.keys.find(x=>x.note===note);if(k?.white&&Date.now()-lastSpoken>700){lastSpoken=Date.now();say(NOTE_SAY[k.letter]);}}});pianoUI=ctl;
  ctl.root.insertAdjacentHTML('beforeend',button('back',art('ui_back'),'Back to café','artbtn pback'));bind('back',()=>{sound.sfx('back');cafe();});}
 function musicPlay(token,T){
- const range=keyRange(T.notes),M=T.mechanic;let ctl,over=false,attempt=1,tapsRel=[],tickTimer=null,idleTimer=null,missed=false,mine=0,timeHandler=null;
+ const range=T.mechanic==='follow'?{low:T.low,high:T.high}:keyRange(T.notes),M=T.mechanic;let ctl,over=false,attempt=1,tapsRel=[],tickTimer=null,idleTimer=null,missed=false,mine=0,timeHandler=null;
  const live=()=>viewToken===token&&pianoUI===ctl;
  task={skill:'music',kind:M,mechanic:M,item:T.key,notes:T.time?T.phrases[0]:T.notes,targets:T.targets,t0:null,turn:false,seq:0,review:T.review,recall:T.recall,guide:null,answer:null,screen:'piano',hits:null,outcome:null};
- ctl=mountPiano(ui,{keys:cur.keys,low:range.low,high:range.high,girl:'girl_idle_00',customer:skin()+'_idle_00',ingredients:kit.ings,lid:M==='beat',card:T.card,faded:T.card,onPress:note=>press(note),onLid:t=>lidTap(t)});pianoUI=ctl;
- const listen=(notes,cb)=>{let i=0;const step=()=>{if(!live())return;if(i>=notes.length){cb();return;}const n=notes[i++];playNote(n);ctl.flash(n,460);setTimeout(step,640);};step();};
+ ctl=mountPiano(ui,{keys:cur.keys,low:range.low,high:range.high,girl:'girl_idle_00',customer:skin()+'_idle_00',ingredients:kit.pot,lid:M==='beat',card:T.card,faded:T.card,onPress:note=>press(note),onLid:t=>lidTap(t)});pianoUI=ctl;
+ const listen=(notes,cb,gap=640)=>{let i=0;const step=()=>{if(!live())return;if(i>=notes.length){cb();return;}const n=notes[i++];playNote(n);ctl.flash(n,460);setTimeout(step,gap);};step();};
  const lit=cp=>ctl.setNext((T.recall||M==='highlow')&&!missed?null:cp.next()); // recall: nothing is lit before her first miss; high/low never lights the answer
  // the outcome: ledger + history + the mastery level (never nextLevel); then the unicorn plays the phrase back, praise, and the dish goes to serve
  function finish(o,hits){if(over)return;over=true;task.turn=false;task.outcome=o;task.hits=hits;clearInterval(tickTimer);clearTimeout(idleTimer);ctl.setLocked(true);ctl.setNext(null);
   if(T.key!=='free')progress.items=recordItem(progress.items,T.key,o,today());
   progress.musicHistory=[...progress.musicHistory,o].slice(-50);progress.music=masteryLevel(cur,'music',progress.music,progress.items,progress.musicHistory,{});
   outcomes.push({skill:'music',item:T.key,outcome:o});save();cheerBuddy();ctl.bubble();sound.sfx('sparkle',{rate:1.3});
-  const praise=M==='beat'?(o==='first'?'praise_beat':o==='retry'?'praise_try':null):M==='free'?null:o==='first'?'praise_listen':o==='retry'?'praise_try':null;
+  const praise=M==='beat'?(o==='first'?'praise_beat':o==='retry'?'praise_try':null):M==='follow'?(o==='retry'?'praise_try':null):M==='free'?null:o==='first'?'praise_listen':o==='retry'?'praise_try':null;
   const bye=()=>{if(!live())return;ctl.cheer();say(L.F('piano_done'),...(praise?[L.F(praise)]:[]));sound.cheer();setTimeout(()=>{if(live())serve();},praise?4800:2200);};
-  if((M==='copy'||M==='card')&&T.notes.length&&T.notes.length<=16)setTimeout(()=>{if(!live())return;if(T.level>=6)say(L.F('sing_along'));listen(T.notes,bye);},700);else setTimeout(bye,700);}
+  if(M==='follow')setTimeout(()=>{if(!live())return;listen(T.notes,bye,560);},700); // her own tune plays back, each note lit, as the reward (FL5)
+  else if((M==='copy'||M==='card')&&T.notes.length&&T.notes.length<=16)setTimeout(()=>{if(!live())return;if(T.level>=10)say(L.F('sing_along'));listen(T.notes,bye);},700);else setTimeout(bye,700);}
  // a miss: a soft boop, the phrase plays again, the hint lights (errorless: 2 misses = the key pulses)
  const missThen=(r,notes)=>{missed=true;ctl.setLocked(true);task.turn=false;ctl.setNext(null);sound.sfx('back',{rate:.6});setTimeout(()=>listen(notes,()=>{if(!live())return;ctl.setLocked(false);ctl.setNext(r.hint,{pulse:r.demo});task.turn=true;say(L.F('piano_turn'));}),550);};
  // ---- U1 beat ----
@@ -440,9 +453,15 @@ function musicPlay(token,T){
  function rhythmScore(){clearTimeout(idleTimer);if(over||!tapsRel.length)return;task.turn=false;const base=tapsRel[0],r=scoreTaps(T.targets.map(t=>t-T.targets[0]),tapsRel.map(t=>t-base),T.tol);task.hits=r.hits;
   if(r.hits===T.targets.length&&r.extra===0)finish(attempt===1?'first':'retry',r.hits);else if(attempt===1){attempt++;ctl.setLocked(true);say(L.F('read_listen'));setTimeout(runRhythm,1800);}else finish('demo',r.hits);}
  // ---- U3 high or low, U4-U12 copy-me, U13 card ----
- const cp=M==='highlow'||M==='copy'||M==='card'?createCopyMe(T.notes,{maxBeforeDemo:cfg.retry.maxBeforeDemo,octaveFree:M==='card'}):null;
+ const cp=M==='highlow'||M==='copy'||M==='card'?createCopyMe(T.notes,{maxBeforeDemo:cfg.retry.maxBeforeDemo,octaveFree:M==='card'}):null,fo=M==='follow'?createFollow(T.notes):null;
+ // ---- follow the light (L1-L4): one key glows; she plays it and hears it; the next one glows. A wrong key is a soft nudge: the glowing key pulses and stays lit. ----
+ function followPress(note){playNote(note);const r=fo.press(note);
+  if(r.result==='nudge'){ctl.setNext(r.expect,{pulse:true});return;}
+  ctl.sparkle(note);if(r.result==='correct'){ctl.bubble();sound.sfx('sparkle',{rate:1.3});ctl.setNext(fo.next());return;}
+  task.hits=T.notes.length;finish(fo.outcome(),task.hits);}
  const turn=()=>{if(!live())return;ctl.setLocked(false);lit(cp);task.turn=true;say(L.F('piano_turn'));};
  function press(note){if(over||!task.turn)return;
+  if(M==='follow'){followPress(note);return;}
   if(timeHandler){timeHandler(note);return;}
   if(M==='rhythm'){playNote('C4');tapsRel.push(performance.now());ctl.sparkle('C4');clearTimeout(idleTimer);if(tapsRel.length>=T.targets.length)rhythmScore();else idleTimer=setTimeout(rhythmScore,3000);return;}
   if(M==='free'){playNote(note);ctl.sparkle(note);mine++;if(mine>=12){finish('first',12);return;}
@@ -485,11 +504,12 @@ function musicPlay(token,T){
  else if(M==='highlow'){ctl.only(n=>n==='C4'||n==='C5');say(L.F('highlow_q'));setTimeout(()=>{if(!live())return;playNote(T.notes[0]);ctl.flash(T.notes[0],460);setTimeout(turn,900);},2800);}
  else if(M==='free'){ctl.only(n=>cur.keys.find(k=>k.note===n)?.white===false);say(L.F('free_intro'));setTimeout(()=>{if(!live())return;ctl.setLocked(false);task.turn=true;},2200);}
  else if(M==='card'){ctl.setCard(T.notes.map(n=>n[0]).join(' '));say(L.F('card_intro'));setTimeout(turn,2600);}
+ else if(M==='follow'){say(L.F('follow_intro'));ctl.setLocked(false);task.turn=true;ctl.setNext(fo.next());}
  else if(T.time){say(L.F('piano_listen'));setTimeout(runTime,2600);}
  else{say(L.F('piano_listen'));setTimeout(()=>listen(T.notes,turn),2600);}}
-function serve(){stage_='serve';const scene=frame('bg_serve',5,[girl({anim:'idle',x:11,y:104,s:.95,back:false}),cust({anim:'idle',x:84,y:104,s:.9})]);scene.innerHTML=`<div class="servewrap">${button('serve',art('dish_'+order.food,'dish'),'Give plate to customer','hero-button')}</div>`;say(L.F('serve_plate'));bind('serve',async()=>{const b=document.getElementById('serve');if(!b||b.dataset.done)return;b.dataset.done='1';const a=stage.actor(cust().id);sound.sfx('plop');await flyTo(snap(b),{getBoundingClientRect:()=>{const r=document.getElementById('stage').getBoundingClientRect(),w=r.width,h=r.height;return new DOMRect(r.left+w*.8-10,r.top+h*.7-10,20,20);}},b.querySelector('img').currentSrc,{size:140,ms:600});b.style.visibility='hidden';a?.play(skin(),'happy');sound.cheer();sparkleBurst({x:innerWidth*.8,y:innerHeight*.6},{n:22,radius:200});stage.actor('girl')?.play('girl','cheer');progress.sparkles++;progress.served=[...progress.served,order.food].slice(-60);save();setTimeout(reward,2200);});}
+function serve(){stage_='serve';const scene=frame('bg_serve',5,[girl({anim:'idle',x:11,y:104,s:.95,back:false}),cust({anim:'idle',x:84,y:104,s:.9})]);scene.innerHTML=`<div class="servewrap">${button('serve',art('dish_'+order.food,'dish'),'Give plate to customer','hero-button')}</div>`;say(L.F('serve_plate'));bind('serve',async()=>{const b=document.getElementById('serve');if(!b||b.dataset.done)return;b.dataset.done='1';const a=stage.actor(cust().id);sound.sfx('plop');await flyTo(snap(b),{getBoundingClientRect:()=>{const r=document.getElementById('stage').getBoundingClientRect(),w=r.width,h=r.height;return new DOMRect(r.left+w*.8-10,r.top+h*.7-10,20,20);}},b.querySelector('img').currentSrc,{size:140,ms:600});b.style.visibility='hidden';a?.play(skin(),'happy');sound.cheer();sparkleBurst({x:innerWidth*.8,y:innerHeight*.6},{n:22,radius:200});stage.actor('girl')?.play('girl','cheer');progress.sparkles++;progress.served=[...progress.served,order.food].slice(-60);const rid=order.recipe&&order.recipe.id;if(rid&&!progress.recipeBook.includes(rid)){progress.recipeBook=[...progress.recipeBook,rid];newRecipe=true;}save();setTimeout(reward,2200);});}
 function nextSticker(){const have=new Set(progress.stickerIds),pool=[...Array(STICKERS).keys()].filter(i=>!have.has(i));const id=pool.length?pool[Math.floor(Math.random()*pool.length)]:Math.floor(Math.random()*STICKERS);progress.stickerIds.push(id);progress.stickerIds=progress.stickerIds.slice(-200);progress.stickers=progress.stickerIds.length;save();return id;}
-function reward(){stage_='reward';const scene=frame('bg_cafe',5,[girl({anim:'cheer'}),cust({anim:'happy',keepPos:false,x:76}),buddy()],'counter');const rt=viewToken;setTimeout(()=>{if(viewToken===rt)cheerBuddy();},450);scene.innerHTML=`<div class="rewardwrap"><div class="glow"></div>${button('reward',art('dish_'+order.food,'bigsticker'),'Put your dish on the café shelf','hero-button')}${earnedRow(8,'row-bottom')}</div>${shelfHtml()}`;say(L.P('serve_thanks'),L.F('shelf_line'));const b=document.getElementById('reward');popIn(b,800);sound.cheer();setTimeout(()=>sparkleBurst({x:innerWidth/2,y:innerHeight/2},{n:26,radius:260}),250);bind('reward',()=>{sound.sfx('sparkle');sparkleBurst(b,{n:10,radius:120});if(checkClock())return;setTimeout(()=>{if(afterReward(customer)==='closing')goodbye(true);else cafe();},350);});}
+function reward(){stage_='reward';const scene=frame('bg_cafe',5,[girl({anim:'cheer'}),cust({anim:'happy',keepPos:false,x:76}),buddy()],'counter');const rt=viewToken;setTimeout(()=>{if(viewToken===rt)cheerBuddy();},450);scene.innerHTML=`<div class="rewardwrap"><div class="glow"></div>${button('reward',art('dish_'+order.food,'bigsticker'),'Put your dish on the café shelf','hero-button')}${earnedRow(8,'row-bottom')}</div>${shelfHtml()}`;say(L.P('serve_thanks'),...(newRecipe?[L.F('recipe_new')]:[]),L.F('shelf_line'));const b=document.getElementById('reward');popIn(b,800);sound.cheer();setTimeout(()=>sparkleBurst({x:innerWidth/2,y:innerHeight/2},{n:26,radius:260}),250);bind('reward',()=>{sound.sfx('sparkle');sparkleBurst(b,{n:10,radius:120});if(checkClock())return;setTimeout(()=>{if(afterReward(customer)==='closing')goodbye(true);else cafe();},350);});}
 // The café grows: the last <= 12 dishes served stand on the shelf (progress.served, newest last), as dish_<food> pictures.
 function shelfHtml(){return `<div class="cafe-shelf" aria-hidden="true">${(demoShelf||progress.served).slice(-12).map(f=>art('dish_'+f,'shelfdish')).join('')}</div>`;}
 function waiting(){stage_='wait';const scene=frame('bg_cafe',5,[girl({anim:'wave'}),cust({anim:'idle'}),buddy()],'counter');const n=Math.min(progress.stickerIds.length,8);scene.innerHTML=`<div class="stars waitstars">${progress.stickerIds.slice(-n).map((id,i)=>button('star'+i,art('sticker_'+pad(id%STICKERS),'sticker-s'),'Make decoration sparkle','sticker-btn')).join('')}</div>${button('pianoFree','&#127929;','Play the piano','glyph pianobtn')}`;bind('pianoFree',pianoFree);for(let i=0;i<n;i++)bind('star'+i,()=>{const el=document.getElementById('star'+i);bounce(el,1.3);sparkleBurst(el,{n:10,radius:110});sound.sfx('sparkle');say(L.F('sparkle_deco'));});speak('wait');}
@@ -499,19 +519,29 @@ function newDay(){sound.sfx('sparkle');closed=false;started=Date.now();customer=
 function checkClock(){if(!started||closed)return closed;const current=phase();if(current==='end'){adultOpen=false;goodbye();return true;}if(current==='winddown'&&!winddown){winddown=true;speak('session_winddown');}return false;}
 function adultGate(){if(adultOpen)return;adultOpen=true;const panel=document.createElement('section');panel.className='adult';panel.innerHTML=`${button('closeParent','×','Close parent controls','exit')}<h1>Grown-ups</h1><label>7 + 8 = <input id="answer" inputmode="numeric" autocomplete="off" aria-label="Answer to written sum"></label>${button('unlock','Continue','Continue')}`;root.append(panel);bind('closeParent',()=>{panel.remove();adultOpen=false;});bind('unlock',()=>{if(document.getElementById('answer').value.trim()==='15')settings(panel);else document.getElementById('answer').value='';});}
 function settings(panel){const mx=skill=>maxLevel(cur,skill),opts=cfg.sessionLimitOptions;
- panel.innerHTML=`${button('closeParent','×','Close parent controls','exit')}<h1>Parent settings</h1><p>Progress stays on this iPad. ${progress.sparkles} sparkles · ${progress.stickers} stickers. Reading level ${progress.read}/${mx('read')} · Tracing level ${progress.trace}/${mx('trace')} · Maths level ${progress.math}/${mx('math')} · Music level ${progress.music}/${mx('music')}.</p><label>Session limit<select id="limit">${opts.map(n=>`<option value="${n}" ${progress.settings.limit===n?'selected':''}>${n===0?'Off':n+' minutes'}</option>`).join('')}</select></label><label>Reading difficulty<select id="readLevel"><option value="0">Adaptive</option>${Array.from({length:mx('read')},(_,i)=>`<option value="${i+1}" ${progress.settings.read===i+1?'selected':''}>${i+1}</option>`).join('')}</select></label>${[['trace','Tracing difficulty','traceLevel','trace'],['math','Maths difficulty','mathLevel','math'],['music','Music difficulty','musicLevel','musicLevel']].map(([skill,name,id,key])=>`<label>${name}<select id="${id}"><option value="0">Adaptive</option>${Array.from({length:mx(skill)},(_,i)=>`<option value="${i+1}" ${progress.settings[key]===i+1?'selected':''}>${i+1}</option>`).join('')}</select></label>`).join('')}<p>Reading attempts: ${progress.readHistory.join(', ')||'None yet'}.<br>Tracing attempts: ${progress.traceHistory.join(', ')||'None yet'}.<br>Maths attempts: ${progress.mathHistory.join(', ')||'None yet'}.<br>Music attempts: ${progress.musicHistory.join(', ')||'None yet'}.</p><p>Setup: open in Safari and use Share → Add to Home Screen. Guided Access is optional when a grown-up is nearby. Install while online, wait for the app to finish caching, then test in airplane mode. Voices are recorded and ship with the game; the iPad’s own English voice (iPad Settings → Accessibility → Spoken Content → Voices) is only the fallback for a line with no recording. There is no session limit unless you pick one above: with a limit set, the café winds down near the end and closes after the current task, never in the middle of one.</p>${button('newSession','Start new café day','Start new café day')}`;
- const update=()=>{progress.settings={...progress.settings,limit:Number(document.getElementById('limit').value),read:Number(document.getElementById('readLevel').value),trace:Number(document.getElementById('traceLevel').value),math:Number(document.getElementById('mathLevel').value),musicLevel:Number(document.getElementById('musicLevel').value)};clockCfg={limitMinutes:progress.settings.limit,windDownMinutes:cfg.windDownMinutes};save();};for(const id of ['limit','readLevel','traceLevel','mathLevel','musicLevel'])document.getElementById(id).onchange=update;bind('closeParent',()=>{panel.remove();adultOpen=false;});bind('newSession',()=>{update();closed=false;started=0;customer=0;winddown=false;adultOpen=false;root.classList.remove('closed');welcome();});}
+ panel.innerHTML=`${button('closeParent','×','Close parent controls','exit')}<h1>Parent settings</h1><p>Progress stays on this iPad. ${progress.sparkles} sparkles · ${progress.stickers} stickers. Reading level ${progress.read}/${mx('read')} · Tracing level ${progress.trace}/${mx('trace')} · Maths level ${progress.math}/${mx('math')} · Music level ${progress.music}/${mx('music')}.</p><label>Session limit<select id="limit">${opts.map(n=>`<option value="${n}" ${progress.settings.limit===n?'selected':''}>${n===0?'Off':n+' minutes'}</option>`).join('')}</select></label><label>Reading difficulty<select id="readLevel"><option value="0">Adaptive</option>${Array.from({length:mx('read')},(_,i)=>`<option value="${i+1}" ${progress.settings.read===i+1?'selected':''}>${i+1}</option>`).join('')}</select></label>${[['trace','Tracing difficulty','traceLevel','trace'],['math','Maths difficulty','mathLevel','math'],['music','Music difficulty','musicLevel','musicLevel']].map(([skill,name,id,key])=>`<label>${name}<select id="${id}"><option value="0">Adaptive</option>${Array.from({length:mx(skill)},(_,i)=>`<option value="${i+1}" ${progress.settings[key]===i+1?'selected':''}>${i+1}</option>`).join('')}</select></label>`).join('')}<p>Reading attempts: ${progress.readHistory.join(', ')||'None yet'}.<br>Tracing attempts: ${progress.traceHistory.join(', ')||'None yet'}.<br>Maths attempts: ${progress.mathHistory.join(', ')||'None yet'}.<br>Music attempts: ${progress.musicHistory.join(', ')||'None yet'}.</p><p>Setup: open in Safari and use Share → Add to Home Screen. Guided Access is optional when a grown-up is nearby. Install while online, wait for the app to finish caching, then test in airplane mode. Voices are recorded and ship with the game; the iPad’s own English voice (iPad Settings → Accessibility → Spoken Content → Voices) is only the fallback for a line with no recording. There is no session limit unless you pick one above: with a limit set, the café winds down near the end and closes after the current task, never in the middle of one.</p>${button('newSession','Start new café day','Start new café day')}<div class="startover-box"><button id="startOver" class="startover" aria-label="Start over"><span class="so-fill"></span><span class="so-text">Start over</span></button><p>Hold the button for ${Math.round(cfg.startOver.holdMs/1000)} seconds to put everything back to day 1: levels, stickers, recipe book and progress. The session limit and the other settings stay.</p></div>`;
+ const update=()=>{progress.settings={...progress.settings,limit:Number(document.getElementById('limit').value),read:Number(document.getElementById('readLevel').value),trace:Number(document.getElementById('traceLevel').value),math:Number(document.getElementById('mathLevel').value),musicLevel:Number(document.getElementById('musicLevel').value)};clockCfg={limitMinutes:progress.settings.limit,windDownMinutes:cfg.windDownMinutes};save();};for(const id of ['limit','readLevel','traceLevel','mathLevel','musicLevel'])document.getElementById(id).onchange=update;bind('closeParent',()=>{panel.remove();adultOpen=false;});bind('newSession',()=>{update();closed=false;started=0;customer=0;winddown=false;adultOpen=false;root.classList.remove('closed');welcome();});
+ const so=document.getElementById('startOver');let soTimer=null;
+ const soStop=()=>{clearTimeout(soTimer);so.classList.remove('holding');};
+ so.addEventListener('pointerdown',e=>{e.preventDefault();try{so.setPointerCapture(e.pointerId);}catch{}so.style.setProperty('--hold',cfg.startOver.holdMs+'ms');so.classList.add('holding');clearTimeout(soTimer);soTimer=setTimeout(()=>{soStop();doStartOver(panel);},cfg.startOver.holdMs);});
+ for(const ev of ['pointerup','pointercancel','lostpointercapture'])so.addEventListener(ev,soStop);}
+// Start over (SPEC §16 SO2): everything back to day 1 (startOver keeps the grown-up's settings), saved, and the café opens at the welcome screen with customer 0.
+function doStartOver(panel){const fresh=startOver(progress,cfg);for(const k of Object.keys(progress))delete progress[k];Object.assign(progress,fresh);
+ clockCfg={limitMinutes:progress.settings.limit,windDownMinutes:cfg.windDownMinutes};lastKey.read=lastKey.trace=lastKey.math=lastKey.music=lastKey.shapes=undefined;task=null;readState=null;pending=null;mpend=null;mstate=null;order=null;demoShelf=null;newRecipe=false;
+ save();panel.remove();adultOpen=false;closed=false;started=0;customer=0;winddown=false;root.classList.remove('closed');welcome();}
 // Every button press: a soft tap sound + a scale-bounce. First touch anywhere unlocks audio (iOS needs a gesture).
-document.addEventListener('pointerdown',()=>{sound.unlock();initPianoAudio();},{capture:true});
+// SPEC §16 AU2: the first touch wakes BOTH audio contexts (the piano's is created inside the gesture) and starts the piano samples loading; it stops listening once everything runs.
+const unlockArm=armUnlock(document,()=>{try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch{} /* iOS: the ring/silent switch must not mute the piano (AU4) */ sound.unlock();const cs=[pianoContext(),sound.context()];warmPiano();return cs;});
 document.addEventListener('click',e=>{const b=e.target.closest?.('button');if(!b)return;if(!b.matches('#ticket,#basket,#till,#reward,#serve,#food,[id^=coin],#scoop,#tick,[id^=tile]'))sound.sfx('tap');bounce(b.classList.contains('hit')?b.parentElement:b);},true);
 setInterval(checkClock,1000);
 // Testing hook (read-only for the screens-check tool): which art files rendered as real art, fallback or placeholder.
 if(SILENT)console.log('dg-silent-on');
-window.__dg={silent:SILENT,said,task:()=>task&&{...task,choices:task.choices&&[...task.choices]},outcomes,art:artStatus,stage:()=>({bg:stage.bg,actors:[...stage.actors.keys()]}),screen:()=>stage_,kitchen:()=>({ings:[...kit.ings]})};
-// ?screen=<name> jumps straight to a screen (testing only). Names: welcome cafe order read_rhyme read_blend read_gpc read_word read_tricky trace trace_copy trace_memory market till kitchen kitchen_trace kitchen_math kitchen2 piano piano_beat piano_rhythm piano_highlow piano_recall piano_card piano_free serve reward book wait closing settings
+window.__dg={silent:SILENT,said,task:()=>task&&{...task,choices:task.choices&&[...task.choices]},outcomes,art:artStatus,stage:()=>({bg:stage.bg,actors:[...stage.actors.keys()]}),screen:()=>stage_,order:()=>order&&{n:order.n,food:order.food,recipe:order.recipe&&order.recipe.id},unlock:()=>({fired:unlockArm.fired(),armed:unlockArm.armed()}),kitchenArts:()=>kit.ings.map(g=>g.art),kitchen:()=>({recipe:kit.recipe&&kit.recipe.id,tier:kit.recipe&&kit.recipe.tier,ings:kit.ings.map(g=>g.word),ingredients:kit.ings.map(g=>({word:g.word,qty:g.qty}))})};
+// ?screen=<name> jumps straight to a screen (testing only). Names: welcome cafe order read_rhyme read_blend read_gpc read_word read_tricky trace trace_copy trace_memory market till kitchen kitchen_trace kitchen_qty kitchen2 recipe_card recipe_book piano_follow piano piano_beat piano_rhythm piano_highlow piano_recall piano_card piano_free serve reward book wait closing settings
 // A maths jump screen: one graded task of that item on the market (or the till), for screenshots; it never answers anything.
-function jumpMath(key,host,skill='math'){const t=skill==='shapes'?shapeTask(cur,key,Math.random):mathTask(cur,key,Math.random),g={t,skill,review:false,keep:new URLSearchParams(location.search).get('hold')==='1'};mpend={market:host==='market'?g:null,till:host==='till'?g:null};stage_=host;mathStart(host,g);}
-function jumpTo(name){started=Date.now();customer=1;order={food:'jam',word:'jam',n:3};kit={ings:['jam','bun'],done:[false,false],pot:[]};
+function jumpMath(key,host,skill='math'){const t=skill==='shapes'?shapeTask(cur,key,Math.random):mathTask(cur,key,Math.random),g={t,skill,review:false};mpend={market:host==='market'?g:null,till:host==='till'?g:null};stage_=host;mathStart(host,g);}
+const jumpKit=(id,doneFirst=0)=>{const r=recipes.recipes.find(x=>x.id===id)||recipes.recipes[0];kit=mkKit(r,r.ingredients.map((g,i)=>i<doneFirst?g.qty:0));return r;}; // the first `doneFirst` ingredients already in the pot
+function jumpTo(name){started=Date.now();customer=1;const jr=jumpKit('popcorn');order={food:'jam',word:'jam',n:3,recipe:jr};
  switch(name){
   case 'welcome':welcome();break;
   case 'cafe':customer=0;demoShelf=['jam','bun','ham'];cafe();break;
@@ -527,16 +557,19 @@ function jumpTo(name){started=Date.now();customer=1;order={food:'jam',word:'jam'
   case 'market':market();amount=1;drawMarket();break;
   case 'till':paid=1;till();paid=1;drawTill('pay');break;
   case 'kitchen':drawKitchen();break;
-  case 'kitchen_trace':progress.settings={...progress.settings,read:13,trace:4};kit.ings=['jam','bun'];openIngredient(0);traceAt=1;traceScreen();break;
-  case 'kitchen_math':kitchenMath(0);scoops=1;drawScoop();break;
-  case 'kitchen2':kit.done=[true,true];kit.pot=[...kit.ings];drawKitchen();break;
-  case 'piano':{kit.done=[true,true];kit.pot=[...kit.ings];const lv=level('music'),its=levelItems(cur,'music',lv); // a probe plays an item of her own level, never a review of an older one
+  case 'kitchen_trace':openIngredient(1);traceAt=1;traceScreen();break;
+  case 'kitchen_qty':jumpKit('popcorn');kit.reps[0]=1;kit.pot=['pic_corn'];openIngredient(0);break; // a qty-2 word after its first rep: "1 of 2"
+  case 'kitchen2':jumpKit('popcorn',3);kit.pot=kit.ings.flatMap(g=>Array(g.qty).fill(g.art));drawKitchen();break;
+  case 'recipe_card':showOrder();break;
+  case 'recipe_book':progress.recipeBook=['popcorn','jam_toast','pancakes','soup'];progress.stickerIds=[0,1,2,5,7,9];stickerBook();break;
+  case 'piano_follow':jumpKit('popcorn',3);kit.pot=kit.ings.flatMap(g=>Array(g.qty).fill(g.art));showPiano(false,'follow:hot_cross_buns',1);break;
+  case 'piano':{jumpKit('popcorn',3);kit.pot=kit.ings.flatMap(g=>Array(g.qty).fill(g.art));const lv=level('music'),its=levelItems(cur,'music',lv); // a probe plays an item of her own level, never a review of an older one
    showPiano(false,its.length?its[Math.floor(Math.random()*its.length)]:undefined,its.length?lv:undefined);break;}
-  case 'piano_beat':kit.done=[true,true];kit.pot=[...kit.ings];showPiano(false,'beat:96',1);break;
-  case 'piano_rhythm':kit.done=[true,true];kit.pot=[...kit.ings];showPiano(false,'rhythm:'+cur.music[1].patterns[0],2);break;
-  case 'piano_highlow':kit.done=[true,true];kit.pot=[...kit.ings];showPiano(false,'hl:C4',3);break;
-  case 'piano_recall':kit.done=[true,true];kit.pot=[...kit.ings];showPiano(false,'phrase:'+phrasesFor(cur,8)[0].join(','),8);break;
-  case 'piano_card':kit.done=[true,true];kit.pot=[...kit.ings];showPiano(false,'phrase:'+cur.music[12].phrases[0].join(','),13);break;
+  case 'piano_beat':jumpKit('popcorn',3);kit.pot=kit.ings.map(g=>g.art);showPiano(false,'beat:96',5);break;
+  case 'piano_rhythm':jumpKit('popcorn',3);kit.pot=kit.ings.map(g=>g.art);showPiano(false,'rhythm:'+cur.music[5].patterns[0],6);break;
+  case 'piano_highlow':jumpKit('popcorn',3);kit.pot=kit.ings.map(g=>g.art);showPiano(false,'hl:C4',7);break;
+  case 'piano_recall':jumpKit('popcorn',3);kit.pot=kit.ings.map(g=>g.art);showPiano(false,'phrase:'+phrasesFor(cur,12)[0].join(','),12);break;
+  case 'piano_card':jumpKit('popcorn',3);kit.pot=kit.ings.map(g=>g.art);showPiano(false,'phrase:'+cur.music[16].phrases[0].join(','),17);break;
   case 'piano_free':pianoFree();break;
   case 'math_crate':mpend={market:{t:mathTask(cur,'count:8',Math.random),skill:'math',review:false},till:null};order.n=8;market();amount=5;drawMarket();break; // M4: the basket is the ten-frame crate (not in screens-check; device-test names it)
   case 'math_flash':jumpMath('sub:4','market');break;

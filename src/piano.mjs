@@ -1,6 +1,6 @@
 // Piano screen UI (no sound here: main.mjs plays notes through piano-audio.mjs).
-// Layout (kitchen-v2 brief §7): top ~40% = the stove with the bubbling pot, the girl and a small customer, with the 88-key mini-map strip
-// under it; bottom ~60% = a full-width realistic keyboard drawn from keyLayout(): ivory white keys with thin dark gaps, glossy black keys in the
+// Layout (kitchen v3, SPEC FL7): top 40% = the stove with the bubbling pot, the girl and a small customer, then the 88-key mini-map strip (6%);
+// bottom 54% (the keyboard itself ~50% of the screen) = a full-width realistic keyboard drawn from keyLayout(): ivory white keys with thin dark gaps, glossy black keys in the
 // 2-3 grouping at ~60% length, a slim dark felt strip along the top, a press-down + tint, and the next key lit in its colour.
 // Keys use pointer events keyed by pointerId (multi-touch safe). If a key_animal_* png is missing the key still draws as a CSS key (css-key)
 // with a coloured circle (key-dot). The old cabinet art is not used.
@@ -24,7 +24,7 @@ function miniMapHtml(low, high) {
   return html + hl;
 }
 
-// opts: keys (curriculum keys), low/high midi of the visible octave, customer/girl art names, ingredients in the pot, onPress(note, el), onRelease(note)
+// opts: keys (curriculum keys), low/high midi of the visible octave, customer/girl art names, ingredients in the pot (art names, e.g. pic_corn), onPress(note, el), onRelease(note)
 // curriculum-v1 P2 opts: lid (U1: a pot-lid button #lid in place of the keys), card (U13: a #notecard of note letters; pair with faded), faded (the keys lose colour + animal: class `faded`),
 // onLid(fn). Only the keys from low to high (midi) are drawn: C4..C5 normally, C3..C5 when the task needs it (keyRange) and in free play.
 export function mountPiano(host, {keys, low = 60, high = 72, girl = 'girl_idle_00', customer = 'unicorn_idle_00', ingredients = [], onPress = () => {}, onRelease = () => {}, lid = false, card = false, faded = false, onLid = () => {}} = {}) {
@@ -38,12 +38,13 @@ export function mountPiano(host, {keys, low = 60, high = 72, girl = 'girl_idle_0
     if (!l.white) return `<div class="key black css-key${fd}" data-note="${l.note}" style="${style}"><span class="key-label">${k.label}</span></div>`;
     return `<div class="key white css-key${fd}" data-note="${l.note}" style="${style}"><span class="key-art"><img class="key-animal" src="art/${animalArt(k)}.png" alt="" draggable="false"></span><span class="key-dot"></span><span class="key-label">${k.label}</span><span class="key-strip"></span></div>`;
   };
-  root.innerHTML = `<div class="pstove"><div class="pcust">${imgHtml(customer, 'pcustimg')}</div><div class="ppot" id="ppot"><div class="pbubbles"></div>${imgHtml('pan_cooking_00', 'panimg ppanimg')}<div class="inpan">${ingredients.map(n => imgHtml('item_' + n, 'mini')).join('')}</div></div><div class="pgirl">${imgHtml(girl, 'pgirlimg')}</div>${card ? '<div class="notecard" id="notecard"></div>' : ''}</div>`
+  root.innerHTML = `<div class="pstove"><div class="pcust">${imgHtml(customer, 'pcustimg')}</div><div class="ppot" id="ppot"><div class="pbubbles"></div>${imgHtml('pan_cooking_00', 'panimg ppanimg')}<div class="inpan">${ingredients.map(n => imgHtml(n, 'mini')).join('')}</div></div><div class="pgirl">${imgHtml(girl, 'pgirlimg')}</div>${card ? '<div class="notecard" id="notecard"></div>' : ''}</div>`
     + `<div class="pmap" aria-hidden="true">${miniMapHtml(low, high)}</div>`
     + `<div class="pkeys"><div class="felt"></div>${lid ? `<div class="plidwrap"><button id="lid" class="lidbtn" aria-label="Tap the pot lid">${imgHtml('pic_lid', 'lidimg')}</button></div>` : ''}<div class="kb" id="kb">${lay.filter(l => l.white).map(keyHtml).join('')}${lay.filter(l => !l.white).map(keyHtml).join('')}</div></div>`;
   host.append(root);
   // keys whose animal art is missing keep working: show the coloured circle instead
   for (const img of root.querySelectorAll('.key-animal')) img.addEventListener('error', () => img.closest('.key')?.classList.add('noart'));
+  if (lid) for (const el of root.querySelectorAll('.kb .key')) el.classList.add('off'); // the beat level: the keys stay, dimmed and untouchable, under the pot lid
   const kb = root.querySelector('#kb'), pot = root.querySelector('#ppot'), bubbles = root.querySelector('.pbubbles'), girlEl = root.querySelector('.pgirl');
   const keyEl = n => kb.querySelector(`.key[data-note="${n}"]`);
   let locked = false, timer = null;

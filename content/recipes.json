@@ -1,0 +1,296 @@
+{
+ "version": 1,
+ "tiers": [
+  {
+   "tier": 1,
+   "minRead": 1,
+   "minTrace": 1
+  },
+  {
+   "tier": 2,
+   "minRead": 4,
+   "minTrace": 4
+  },
+  {
+   "tier": 3,
+   "minRead": 8,
+   "minTrace": 8
+  }
+ ],
+ "recipes": [
+  {
+   "id": "popcorn",
+   "name": "Popcorn",
+   "tier": 1,
+   "ingredients": [
+    {
+     "word": "corn",
+     "qty": 2,
+     "art": "pic_corn"
+    },
+    {
+     "word": "oil",
+     "qty": 1,
+     "art": "pic_oil"
+    },
+    {
+     "word": "salt",
+     "qty": 1,
+     "art": "pic_salt"
+    }
+   ]
+  },
+  {
+   "id": "flatbread",
+   "name": "Flatbread",
+   "tier": 1,
+   "ingredients": [
+    {
+     "word": "flour",
+     "qty": 1,
+     "art": "pic_flour"
+    },
+    {
+     "word": "water",
+     "qty": 1,
+     "art": "pic_water"
+    },
+    {
+     "word": "salt",
+     "qty": 1,
+     "art": "pic_salt"
+    }
+   ]
+  },
+  {
+   "id": "lemonade",
+   "name": "Lemonade",
+   "tier": 1,
+   "ingredients": [
+    {
+     "word": "lemon",
+     "qty": 1,
+     "art": "pic_lemon"
+    },
+    {
+     "word": "water",
+     "qty": 1,
+     "art": "pic_water"
+    },
+    {
+     "word": "sugar",
+     "qty": 1,
+     "art": "pic_sugar"
+    }
+   ]
+  },
+  {
+   "id": "jam_toast",
+   "name": "Jam toast",
+   "tier": 1,
+   "ingredients": [
+    {
+     "word": "bread",
+     "qty": 1,
+     "art": "pic_bread"
+    },
+    {
+     "word": "jam",
+     "qty": 2,
+     "art": "item_jam"
+    }
+   ]
+  },
+  {
+   "id": "pancakes",
+   "name": "Pancakes",
+   "tier": 2,
+   "ingredients": [
+    {
+     "word": "flour",
+     "qty": 1,
+     "art": "pic_flour"
+    },
+    {
+     "word": "milk",
+     "qty": 1,
+     "art": "pic_milk"
+    },
+    {
+     "word": "egg",
+     "qty": 2,
+     "art": "pic_egg"
+    }
+   ]
+  },
+  {
+   "id": "fruit_salad",
+   "name": "Fruit salad",
+   "tier": 2,
+   "ingredients": [
+    {
+     "word": "plum",
+     "qty": 2,
+     "art": "pic_plum"
+    },
+    {
+     "word": "fig",
+     "qty": 1,
+     "art": "pic_fig"
+    },
+    {
+     "word": "grape",
+     "qty": 1,
+     "art": "pat_grape"
+    }
+   ]
+  },
+  {
+   "id": "butter",
+   "name": "Butter",
+   "tier": 2,
+   "ingredients": [
+    {
+     "word": "cream",
+     "qty": 2,
+     "art": "pic_cream"
+    },
+    {
+     "word": "salt",
+     "qty": 1,
+     "art": "pic_salt"
+    }
+   ]
+  },
+  {
+   "id": "simple_bread",
+   "name": "Simple bread",
+   "tier": 2,
+   "ingredients": [
+    {
+     "word": "flour",
+     "qty": 1,
+     "art": "pic_flour"
+    },
+    {
+     "word": "water",
+     "qty": 1,
+     "art": "pic_water"
+    },
+    {
+     "word": "yeast",
+     "qty": 1,
+     "art": "pic_yeast"
+    }
+   ]
+  },
+  {
+   "id": "muffins",
+   "name": "Muffins",
+   "tier": 3,
+   "ingredients": [
+    {
+     "word": "flour",
+     "qty": 1,
+     "art": "pic_flour"
+    },
+    {
+     "word": "egg",
+     "qty": 1,
+     "art": "pic_egg"
+    },
+    {
+     "word": "milk",
+     "qty": 1,
+     "art": "pic_milk"
+    },
+    {
+     "word": "jam",
+     "qty": 1,
+     "art": "item_jam"
+    }
+   ]
+  },
+  {
+   "id": "pizza",
+   "name": "Pizza",
+   "tier": 3,
+   "ingredients": [
+    {
+     "word": "flour",
+     "qty": 1,
+     "art": "pic_flour"
+    },
+    {
+     "word": "oil",
+     "qty": 1,
+     "art": "pic_oil"
+    },
+    {
+     "word": "ham",
+     "qty": 1,
+     "art": "item_ham"
+    },
+    {
+     "word": "corn",
+     "qty": 1,
+     "art": "pic_corn"
+    }
+   ]
+  },
+  {
+   "id": "soup",
+   "name": "Soup",
+   "tier": 3,
+   "ingredients": [
+    {
+     "word": "water",
+     "qty": 1,
+     "art": "pic_water"
+    },
+    {
+     "word": "corn",
+     "qty": 1,
+     "art": "pic_corn"
+    },
+    {
+     "word": "ham",
+     "qty": 1,
+     "art": "item_ham"
+    },
+    {
+     "word": "salt",
+     "qty": 1,
+     "art": "pic_salt"
+    }
+   ]
+  },
+  {
+   "id": "cookies",
+   "name": "Cookies",
+   "tier": 3,
+   "ingredients": [
+    {
+     "word": "oats",
+     "qty": 1,
+     "art": "pic_oats"
+    },
+    {
+     "word": "sugar",
+     "qty": 1,
+     "art": "pic_sugar"
+    },
+    {
+     "word": "egg",
+     "qty": 1,
+     "art": "pic_egg"
+    },
+    {
+     "word": "jam",
+     "qty": 1,
+     "art": "item_jam"
+    }
+   ]
+  }
+ ]
+}

@@ -26,6 +26,9 @@
     "holdMs": 3000,
     "spoken": false
   },
+  "startOver": {
+    "holdMs": 2000
+  },
   "rewards": {
     "stickerChancePerDay": 0.34
   }

@@ -494,8 +494,68 @@
    "width": 358,
    "height": 356,
    "bytes": 81625
+  },
+  {
+   "file": "pic_oil.png",
+   "width": 436,
+   "height": 512,
+   "bytes": 74899
+  },
+  {
+   "file": "pic_salt.png",
+   "width": 512,
+   "height": 423,
+   "bytes": 77167
+  },
+  {
+   "file": "pic_flour.png",
+   "width": 444,
+   "height": 451,
+   "bytes": 77147
+  },
+  {
+   "file": "pic_water.png",
+   "width": 389,
+   "height": 343,
+   "bytes": 81549
+  },
+  {
+   "file": "pic_lemon.png",
+   "width": 512,
+   "height": 321,
+   "bytes": 71336
+  },
+  {
+   "file": "pic_sugar.png",
+   "width": 512,
+   "height": 292,
+   "bytes": 77821
+  },
+  {
+   "file": "pic_bread.png",
+   "width": 512,
+   "height": 400,
+   "bytes": 78575
+  },
+  {
+   "file": "pic_egg.png",
+   "width": 512,
+   "height": 332,
+   "bytes": 72911
+  },
+  {
+   "file": "pic_cream.png",
+   "width": 512,
+   "height": 263,
+   "bytes": 72682
+  },
+  {
+   "file": "pic_yeast.png",
+   "width": 512,
+   "height": 370,
+   "bytes": 77352
   }
  ],
- "total_bytes": 6423772,
+ "total_bytes": 7185211,
  "missing": []
 }

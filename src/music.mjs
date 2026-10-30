@@ -14,6 +14,22 @@ export function createCopyMe(notes, {maxBeforeDemo = 2, octaveFree = false} = {}
     misses: () => misses,
   };
 }
+// SPEC §16 FL4, follow-the-light: one key glows at a time; the right key moves on, a wrong key is a soft nudge that never advances or punishes.
+// outcome: 0-1 misses = first, 2-3 = retry, 4+ = demo.
+export function createFollow(notes) {
+  let pos = 0, misses = 0;
+  return {
+    next: () => (pos < notes.length ? notes[pos] : null),
+    press(note) {
+      if (pos >= notes.length) return {result: 'done'};
+      if (note === notes[pos]) { pos++; return {result: pos >= notes.length ? 'done' : 'correct'}; }
+      misses++;
+      return {result: 'nudge', expect: notes[pos], pulse: true};
+    },
+    outcome: () => (misses <= 1 ? 'first' : misses <= 3 ? 'retry' : 'demo'),
+    misses: () => misses,
+  };
+}
 export const canSound = ({silent, musicOn}) => !silent && !!musicOn;
 // One {note,white,x,w,h} per key, in white-key widths: whites at x = 0,1,2..., blacks centred on the boundary after the white key a semitone below (2-3 grouping).
 export function keyLayout(keys) {

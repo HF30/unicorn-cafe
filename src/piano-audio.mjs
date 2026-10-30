@@ -23,20 +23,37 @@ export function initPianoAudio() {
   try { ctx.resume?.(); } catch {}
   return true;
 }
+// The piano's AudioContext (SPEC §16 AU2): created (when sound is allowed) and asked to resume, so main.mjs can hand it to armUnlock inside the first touch.
+export function pianoContext() {
+  if (!canSound({silent: SILENT, musicOn: true})) return null;
+  initPianoAudio();
+  return ctx;
+}
 function voice(note) {
   let v = voices.get(note);
   if (!v) { v = {els: [], i: 0}; voices.set(note, v); }
   if (v.els.length < 2) {
     const el = new Audio(SAMPLE.get(note)); el.preload = 'auto';
-    try { ctx.createMediaElementSource(el).connect(master); } catch {}
+    try { const g = ctx.createGain(); ctx.createMediaElementSource(el).connect(g); g.connect(master); el._gain = g; } catch {}
+    try { el.load(); } catch {}
     v.els.push(el); return el;
   }
   v.i = (v.i + 1) % v.els.length; return v.els[v.i];
 }
-// Start loading every sample (call when the piano screen opens, after a tap).
+// iOS lets a media element play outside a touch only after it has been played INSIDE one. Called from the first touch: every sample element is
+// started silent (its own gain at 0) and stopped at once, so the unicorn's tune and the playback can sound later, from a timer.
+function prime(el) {
+  if (el._primed || el._priming) return; el._priming = true;
+  const g = el._gain; if (g) g.gain.value = 0;
+  const back = () => { try { el.pause(); el.currentTime = 0; } catch {} if (g) g.gain.value = 1; };
+  // primed ONLY once play() resolved: a play iOS refused (pointerdown may not count as a gesture) stays unprimed and is retried on the next touchend / click
+  try { const p = el.play(); if (p && p.then) p.then(() => { el._primed = true; el._priming = false; back(); }, () => { el._priming = false; back(); }); else { el._primed = true; el._priming = false; back(); } } catch { el._priming = false; back(); }
+}
+// Start loading every sample (call from the first touch, and again when the piano screen opens).
 export function warmPiano() {
   if (!canSound({silent: SILENT, musicOn}) || !initPianoAudio()) return;
-  for (const n of SAMPLE.keys()) voice(n);
+  for (const n of SAMPLE.keys()) { voice(n); voice(n); }
+  for (const v of voices.values()) for (const el of v.els) prime(el);
 }
 export function playNote(note) {
   if (!canSound({silent: SILENT, musicOn})) return false;

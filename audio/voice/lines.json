@@ -72,10 +72,6 @@
   "text": "Let’s write the order ticket. Tap the pencil."
  },
  {
-  "id": "sticker_book",
-  "text": "Your sticker book! Every customer you serve earns a sticker. Tap the curled arrow to visit the café."
- },
- {
   "id": "lovely",
   "text": "Lovely tracing!"
  },
@@ -292,6 +288,186 @@
   "text": "chick"
  },
  {
+  "id": "beat_intro",
+  "text": "Tap the lid with the music!"
+ },
+ {
+  "id": "rhythm_intro",
+  "text": "Listen, then tap it back!"
+ },
+ {
+  "id": "highlow_q",
+  "text": "High or low? Tap the one you heard!"
+ },
+ {
+  "id": "card_intro",
+  "text": "Play the notes on the card!"
+ },
+ {
+  "id": "free_intro",
+  "text": "Play anything on the black keys!"
+ },
+ {
+  "id": "sing_along",
+  "text": "Sing it with me!"
+ },
+ {
+  "id": "sticker_surprise",
+  "text": "A surprise! A sticker for your book!"
+ },
+ {
+  "id": "shelf_line",
+  "text": "Your dish goes on the café shelf!"
+ },
+ {
+  "id": "sticker_book_v2",
+  "text": "Your sticker book! Tap the curled arrow to visit the café."
+ },
+ {
+  "id": "praise_path",
+  "text": "You started at the green dot and followed the whole path!"
+ },
+ {
+  "id": "praise_listen",
+  "text": "You listened and played it back!"
+ },
+ {
+  "id": "praise_blend",
+  "text": "You said each sound and blended the word!"
+ },
+ {
+  "id": "praise_count",
+  "text": "You counted every one!"
+ },
+ {
+  "id": "praise_try",
+  "text": "You kept trying until you got it!"
+ },
+ {
+  "id": "praise_memory",
+  "text": "You looked carefully and wrote it yourself!"
+ },
+ {
+  "id": "praise_beat",
+  "text": "You kept the beat!"
+ },
+ {
+  "id": "praise_rhyme",
+  "text": "You listened and found the rhyme!"
+ },
+ {
+  "id": "praise_sound",
+  "text": "You heard it and found it!"
+ },
+ {
+  "id": "flash_q",
+  "text": "How many did you see?"
+ },
+ {
+  "id": "how_many",
+  "text": "How many?"
+ },
+ {
+  "id": "cmp_more",
+  "text": "Which plate has more?"
+ },
+ {
+  "id": "cmp_fewer",
+  "text": "Which plate has fewer?"
+ },
+ {
+  "id": "cmp_same",
+  "text": "Or are they the same?"
+ },
+ {
+  "id": "path_roll",
+  "text": "Roll the dice!"
+ },
+ {
+  "id": "path_where",
+  "text": "Where will you land?"
+ },
+ {
+  "id": "hide_q",
+  "text": "How many are hiding in the bag?"
+ },
+ {
+  "id": "buddy_ate",
+  "text": "Oh no, Buddy ate some!"
+ },
+ {
+  "id": "tf_make10",
+  "text": "How many more make ten?"
+ },
+ {
+  "id": "tf_double",
+  "text": "Double it!"
+ },
+ {
+  "id": "tf_teen",
+  "text": "Ten and some more. How many?"
+ },
+ {
+  "id": "coin_tap",
+  "text": "Tap the coin."
+ },
+ {
+  "id": "pay_cents",
+  "text": "Pay with your coins."
+ },
+ {
+  "id": "another_way",
+  "text": "Can you find another way?"
+ },
+ {
+  "id": "give_change",
+  "text": "Give the change."
+ },
+ {
+  "id": "shape_q",
+  "text": "Tap the shape."
+ },
+ {
+  "id": "pattern_q",
+  "text": "What comes next?"
+ },
+ {
+  "id": "compose_q",
+  "text": "Put the two triangles together!"
+ },
+ {
+  "id": "follow_intro",
+  "text": "Play the key that lights up!"
+ },
+ {
+  "id": "trace_to_add",
+  "text": "Trace the word to put it in the pot!"
+ },
+ {
+  "id": "trace_again",
+  "text": "Once more!"
+ },
+ {
+  "id": "recipe_new",
+  "text": "A new recipe for your book!"
+ },
+ {
+  "id": "shape_circle",
+  "text": "circle"
+ },
+ {
+  "id": "shape_square",
+  "text": "square"
+ },
+ {
+  "id": "shape_triangle",
+  "text": "triangle"
+ },
+ {
+  "id": "shape_rectangle",
+  "text": "rectangle"
+ },
+ {
   "id": "num_0",
   "text": "zero"
  },
@@ -342,6 +518,158 @@
  {
   "id": "num_12",
   "text": "twelve"
+ },
+ {
+  "id": "num_13",
+  "text": "thirteen"
+ },
+ {
+  "id": "num_14",
+  "text": "fourteen"
+ },
+ {
+  "id": "num_15",
+  "text": "fifteen"
+ },
+ {
+  "id": "num_16",
+  "text": "sixteen"
+ },
+ {
+  "id": "num_17",
+  "text": "seventeen"
+ },
+ {
+  "id": "num_18",
+  "text": "eighteen"
+ },
+ {
+  "id": "num_19",
+  "text": "nineteen"
+ },
+ {
+  "id": "num_20",
+  "text": "twenty"
+ },
+ {
+  "id": "num_30",
+  "text": "thirty"
+ },
+ {
+  "id": "num_40",
+  "text": "forty"
+ },
+ {
+  "id": "num_50",
+  "text": "fifty"
+ },
+ {
+  "id": "cents_5",
+  "text": "five cents",
+  "parts": [
+   "num_5",
+   "c_cents"
+  ]
+ },
+ {
+  "id": "cents_10",
+  "text": "ten cents",
+  "parts": [
+   "num_10",
+   "c_cents"
+  ]
+ },
+ {
+  "id": "cents_15",
+  "text": "fifteen cents",
+  "parts": [
+   "num_15",
+   "c_cents"
+  ]
+ },
+ {
+  "id": "cents_20",
+  "text": "twenty cents",
+  "parts": [
+   "num_20",
+   "c_cents"
+  ]
+ },
+ {
+  "id": "cents_25",
+  "text": "twenty five cents",
+  "parts": [
+   "num_20",
+   "num_5",
+   "c_cents"
+  ]
+ },
+ {
+  "id": "cents_30",
+  "text": "thirty cents",
+  "parts": [
+   "num_30",
+   "c_cents"
+  ]
+ },
+ {
+  "id": "cents_35",
+  "text": "thirty five cents",
+  "parts": [
+   "num_30",
+   "num_5",
+   "c_cents"
+  ]
+ },
+ {
+  "id": "cents_40",
+  "text": "forty cents",
+  "parts": [
+   "num_40",
+   "c_cents"
+  ]
+ },
+ {
+  "id": "cents_45",
+  "text": "forty five cents",
+  "parts": [
+   "num_40",
+   "num_5",
+   "c_cents"
+  ]
+ },
+ {
+  "id": "cents_50",
+  "text": "fifty cents",
+  "parts": [
+   "num_50",
+   "c_cents"
+  ]
+ },
+ {
+  "id": "centcoin_5",
+  "text": "five cent coin",
+  "parts": [
+   "num_5",
+   "c_cent_coin"
+  ]
+ },
+ {
+  "id": "centcoin_10",
+  "text": "ten cent coin",
+  "parts": [
+   "num_10",
+   "c_cent_coin"
+  ]
+ },
+ {
+  "id": "centcoin_25",
+  "text": "twenty five cent coin",
+  "parts": [
+   "num_20",
+   "num_5",
+   "c_cent_coin"
+  ]
  },
  {
   "id": "we_need_1",
@@ -2172,6 +2500,98 @@
  {
   "id": "say_asked",
   "text": "asked"
+ },
+ {
+  "id": "say_oil",
+  "text": "oil"
+ },
+ {
+  "id": "say_salt",
+  "text": "salt"
+ },
+ {
+  "id": "say_flour",
+  "text": "flour"
+ },
+ {
+  "id": "say_water",
+  "text": "water"
+ },
+ {
+  "id": "say_lemon",
+  "text": "lemon"
+ },
+ {
+  "id": "say_sugar",
+  "text": "sugar"
+ },
+ {
+  "id": "say_bread",
+  "text": "bread"
+ },
+ {
+  "id": "say_egg",
+  "text": "egg"
+ },
+ {
+  "id": "say_grape",
+  "text": "grape"
+ },
+ {
+  "id": "say_cream",
+  "text": "cream"
+ },
+ {
+  "id": "say_yeast",
+  "text": "yeast"
+ },
+ {
+  "id": "recipe_popcorn",
+  "text": "Popcorn, please!"
+ },
+ {
+  "id": "recipe_flatbread",
+  "text": "Flatbread, please!"
+ },
+ {
+  "id": "recipe_lemonade",
+  "text": "Lemonade, please!"
+ },
+ {
+  "id": "recipe_jam_toast",
+  "text": "Jam toast, please!"
+ },
+ {
+  "id": "recipe_pancakes",
+  "text": "Pancakes, please!"
+ },
+ {
+  "id": "recipe_fruit_salad",
+  "text": "Fruit salad, please!"
+ },
+ {
+  "id": "recipe_butter",
+  "text": "Butter, please!"
+ },
+ {
+  "id": "recipe_simple_bread",
+  "text": "Simple bread, please!"
+ },
+ {
+  "id": "recipe_muffins",
+  "text": "Muffins, please!"
+ },
+ {
+  "id": "recipe_pizza",
+  "text": "Pizza, please!"
+ },
+ {
+  "id": "recipe_soup",
+  "text": "Soup, please!"
+ },
+ {
+  "id": "recipe_cookies",
+  "text": "Cookies, please!"
  },
  {
   "id": "word_jam",
