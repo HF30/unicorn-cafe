@@ -1,0 +1,121 @@
+{
+  "owner": "sets",
+  "contract": "_briefs/art-contract.md",
+  "script": "art3d/blender/sets/build_sets.py",
+  "note": "backgrounds carry no characters; sprites go on top. bg_kitchen has the pan on the burner per contract; bg_kitchen_nopan (if listed) leaves the burner empty for a pan sprite.",
+  "files": [
+    {
+      "file": "bg_cafe.png",
+      "width": 2360,
+      "height": 1640,
+      "bytes": 1276796,
+      "opaque": true,
+      "palette_colors": 256,
+      "mean_abs_err_rgb": [
+        5.45,
+        4.55,
+        5.68
+      ],
+      "sha1": "feb09f64db875b56ffea6f86e3e15c949d9d94a7"
+    },
+    {
+      "file": "bg_ticket.png",
+      "width": 2360,
+      "height": 1640,
+      "bytes": 1187319,
+      "opaque": true,
+      "palette_colors": 256,
+      "mean_abs_err_rgb": [
+        2.86,
+        2.87,
+        3.56
+      ],
+      "sha1": "1bb149912b552bda3e5d6955e056c5dad9b37e9a"
+    },
+    {
+      "file": "bg_market.png",
+      "width": 2360,
+      "height": 1640,
+      "bytes": 1433885,
+      "opaque": true,
+      "palette_colors": 256,
+      "mean_abs_err_rgb": [
+        5.8,
+        5.29,
+        6.16
+      ],
+      "sha1": "897b74dcd806599d651a49b7c04005cf5d852c63"
+    },
+    {
+      "file": "bg_till.png",
+      "width": 2360,
+      "height": 1640,
+      "bytes": 1192280,
+      "opaque": true,
+      "palette_colors": 256,
+      "mean_abs_err_rgb": [
+        4.23,
+        4.21,
+        4.92
+      ],
+      "sha1": "84250a2f334bfd9a334715b66d3f2b2c084551d9"
+    },
+    {
+      "file": "bg_kitchen.png",
+      "width": 2360,
+      "height": 1640,
+      "bytes": 1324553,
+      "opaque": true,
+      "palette_colors": 256,
+      "mean_abs_err_rgb": [
+        4.44,
+        3.98,
+        5.02
+      ],
+      "sha1": "21684f574abba1a0b3f4088dcec596a72012acce"
+    },
+    {
+      "file": "bg_serve.png",
+      "width": 2360,
+      "height": 1640,
+      "bytes": 1339215,
+      "opaque": true,
+      "palette_colors": 256,
+      "mean_abs_err_rgb": [
+        3.88,
+        3.76,
+        4.68
+      ],
+      "sha1": "e105f4213307e65ebfb6805901e219b3bbc1ff8e"
+    },
+    {
+      "file": "bg_closing.png",
+      "width": 2360,
+      "height": 1640,
+      "bytes": 1276120,
+      "opaque": true,
+      "palette_colors": 256,
+      "mean_abs_err_rgb": [
+        6.62,
+        5.7,
+        7.12
+      ],
+      "sha1": "3938c38e025290fb9547e60f73ecc68df0a79da5"
+    },
+    {
+      "file": "bg_kitchen_nopan.png",
+      "width": 2360,
+      "height": 1640,
+      "bytes": 1325651,
+      "opaque": true,
+      "palette_colors": 256,
+      "mean_abs_err_rgb": [
+        4.83,
+        3.94,
+        5.06
+      ],
+      "sha1": "d249185663077036ec4837bef1286e18a9f77b4a"
+    }
+  ],
+  "total_bytes": 10355819
+}

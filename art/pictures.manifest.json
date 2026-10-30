@@ -1,0 +1,501 @@
+{
+ "owner": "pictures",
+ "dispatch": "D-2026-10-30-dg-curriculum-v1-art",
+ "generator": "art3d/blender/pictures/build_pics.py + post_pics.py",
+ "files": [
+  {
+   "file": "pic_hat.png",
+   "width": 420,
+   "height": 298,
+   "bytes": 78976
+  },
+  {
+   "file": "pic_sun.png",
+   "width": 420,
+   "height": 416,
+   "bytes": 81339
+  },
+  {
+   "file": "pic_dot.png",
+   "width": 415,
+   "height": 420,
+   "bytes": 80577
+  },
+  {
+   "file": "pic_lake.png",
+   "width": 389,
+   "height": 326,
+   "bytes": 80562
+  },
+  {
+   "file": "pic_fig.png",
+   "width": 512,
+   "height": 495,
+   "bytes": 80315
+  },
+  {
+   "file": "pic_tap.png",
+   "width": 388,
+   "height": 389,
+   "bytes": 80344
+  },
+  {
+   "file": "pic_map.png",
+   "width": 512,
+   "height": 351,
+   "bytes": 80896
+  },
+  {
+   "file": "pic_mat.png",
+   "width": 420,
+   "height": 276,
+   "bytes": 78039
+  },
+  {
+   "file": "pic_cap.png",
+   "width": 389,
+   "height": 367,
+   "bytes": 78102
+  },
+  {
+   "file": "pic_pig.png",
+   "width": 420,
+   "height": 379,
+   "bytes": 81632
+  },
+  {
+   "file": "pic_cod.png",
+   "width": 512,
+   "height": 267,
+   "bytes": 79086
+  },
+  {
+   "file": "pic_rug.png",
+   "width": 451,
+   "height": 315,
+   "bytes": 79332
+  },
+  {
+   "file": "pic_net.png",
+   "width": 385,
+   "height": 512,
+   "bytes": 78978
+  },
+  {
+   "file": "pic_rat.png",
+   "width": 451,
+   "height": 395,
+   "bytes": 78490
+  },
+  {
+   "file": "pic_sock.png",
+   "width": 512,
+   "height": 437,
+   "bytes": 72698
+  },
+  {
+   "file": "pic_bag.png",
+   "width": 407,
+   "height": 512,
+   "bytes": 78071
+  },
+  {
+   "file": "pic_bed.png",
+   "width": 512,
+   "height": 406,
+   "bytes": 74944
+  },
+  {
+   "file": "pic_lid.png",
+   "width": 451,
+   "height": 319,
+   "bytes": 79771
+  },
+  {
+   "file": "pic_bell.png",
+   "width": 512,
+   "height": 453,
+   "bytes": 77700
+  },
+  {
+   "file": "pic_hill.png",
+   "width": 389,
+   "height": 372,
+   "bytes": 79064
+  },
+  {
+   "file": "pic_jug.png",
+   "width": 420,
+   "height": 358,
+   "bytes": 77012
+  },
+  {
+   "file": "pic_van.png",
+   "width": 512,
+   "height": 377,
+   "bytes": 79163
+  },
+  {
+   "file": "pic_box.png",
+   "width": 512,
+   "height": 420,
+   "bytes": 81665
+  },
+  {
+   "file": "pic_yam.png",
+   "width": 512,
+   "height": 363,
+   "bytes": 74395
+  },
+  {
+   "file": "pic_zip.png",
+   "width": 213,
+   "height": 512,
+   "bytes": 73759
+  },
+  {
+   "file": "pic_chip.png",
+   "width": 490,
+   "height": 512,
+   "bytes": 78162
+  },
+  {
+   "file": "pic_fish.png",
+   "width": 512,
+   "height": 356,
+   "bytes": 75751
+  },
+  {
+   "file": "pic_dish.png",
+   "width": 512,
+   "height": 301,
+   "bytes": 80481
+  },
+  {
+   "file": "pic_shop.png",
+   "width": 481,
+   "height": 425,
+   "bytes": 81322
+  },
+  {
+   "file": "pic_ship.png",
+   "width": 512,
+   "height": 391,
+   "bytes": 72948
+  },
+  {
+   "file": "pic_moth.png",
+   "width": 481,
+   "height": 361,
+   "bytes": 80291
+  },
+  {
+   "file": "pic_ring.png",
+   "width": 512,
+   "height": 374,
+   "bytes": 79972
+  },
+  {
+   "file": "pic_king.png",
+   "width": 360,
+   "height": 512,
+   "bytes": 77243
+  },
+  {
+   "file": "pic_rain.png",
+   "width": 429,
+   "height": 451,
+   "bytes": 81110
+  },
+  {
+   "file": "pic_tail.png",
+   "width": 512,
+   "height": 425,
+   "bytes": 81237
+  },
+  {
+   "file": "pic_seed.png",
+   "width": 512,
+   "height": 491,
+   "bytes": 73823
+  },
+  {
+   "file": "pic_feet.png",
+   "width": 451,
+   "height": 357,
+   "bytes": 79824
+  },
+  {
+   "file": "pic_oats.png",
+   "width": 420,
+   "height": 312,
+   "bytes": 79810
+  },
+  {
+   "file": "pic_moon.png",
+   "width": 512,
+   "height": 472,
+   "bytes": 81664
+  },
+  {
+   "file": "pic_cook.png",
+   "width": 294,
+   "height": 512,
+   "bytes": 65123
+  },
+  {
+   "file": "pic_book.png",
+   "width": 389,
+   "height": 338,
+   "bytes": 79166
+  },
+  {
+   "file": "pic_jar.png",
+   "width": 271,
+   "height": 512,
+   "bytes": 72827
+  },
+  {
+   "file": "pic_tart.png",
+   "width": 389,
+   "height": 289,
+   "bytes": 79150
+  },
+  {
+   "file": "pic_corn.png",
+   "width": 389,
+   "height": 300,
+   "bytes": 78074
+  },
+  {
+   "file": "pic_fork.png",
+   "width": 294,
+   "height": 512,
+   "bytes": 71826
+  },
+  {
+   "file": "pic_cow.png",
+   "width": 512,
+   "height": 326,
+   "bytes": 79880
+  },
+  {
+   "file": "pic_ear.png",
+   "width": 494,
+   "height": 512,
+   "bytes": 76130
+  },
+  {
+   "file": "pic_hair.png",
+   "width": 512,
+   "height": 445,
+   "bytes": 77255
+  },
+  {
+   "file": "pic_chair.png",
+   "width": 362,
+   "height": 512,
+   "bytes": 79122
+  },
+  {
+   "file": "pic_dinner.png",
+   "width": 512,
+   "height": 362,
+   "bytes": 78784
+  },
+  {
+   "file": "pic_milk.png",
+   "width": 381,
+   "height": 420,
+   "bytes": 79149
+  },
+  {
+   "file": "pic_mint.png",
+   "width": 512,
+   "height": 301,
+   "bytes": 77823
+  },
+  {
+   "file": "pic_plum.png",
+   "width": 512,
+   "height": 321,
+   "bytes": 77521
+  },
+  {
+   "file": "pic_crisp.png",
+   "width": 512,
+   "height": 412,
+   "bytes": 81495
+  },
+  {
+   "file": "pic_drink.png",
+   "width": 319,
+   "height": 420,
+   "bytes": 81103
+  },
+  {
+   "file": "pic_toast.png",
+   "width": 420,
+   "height": 417,
+   "bytes": 79612
+  },
+  {
+   "file": "pic_lunch.png",
+   "width": 411,
+   "height": 420,
+   "bytes": 77373
+  },
+  {
+   "file": "pic_sweets.png",
+   "width": 512,
+   "height": 314,
+   "bytes": 80034
+  },
+  {
+   "file": "pic_tray.png",
+   "width": 512,
+   "height": 339,
+   "bytes": 79892
+  },
+  {
+   "file": "pic_soup.png",
+   "width": 420,
+   "height": 362,
+   "bytes": 78213
+  },
+  {
+   "file": "pic_pie.png",
+   "width": 328,
+   "height": 260,
+   "bytes": 78668
+  },
+  {
+   "file": "pic_tea.png",
+   "width": 389,
+   "height": 388,
+   "bytes": 78581
+  },
+  {
+   "file": "pic_toy.png",
+   "width": 358,
+   "height": 512,
+   "bytes": 78099
+  },
+  {
+   "file": "pic_bird.png",
+   "width": 451,
+   "height": 441,
+   "bytes": 77054
+  },
+  {
+   "file": "pic_straw.png",
+   "width": 512,
+   "height": 410,
+   "bytes": 66314
+  },
+  {
+   "file": "pic_whisk.png",
+   "width": 463,
+   "height": 512,
+   "bytes": 81092
+  },
+  {
+   "file": "pic_stew.png",
+   "width": 420,
+   "height": 348,
+   "bytes": 81032
+  },
+  {
+   "file": "pic_cake.png",
+   "width": 358,
+   "height": 344,
+   "bytes": 77422
+  },
+  {
+   "file": "pic_ice.png",
+   "width": 297,
+   "height": 279,
+   "bytes": 80289
+  },
+  {
+   "file": "pic_cone.png",
+   "width": 257,
+   "height": 512,
+   "bytes": 76501
+  },
+  {
+   "file": "pic_cube.png",
+   "width": 330,
+   "height": 420,
+   "bytes": 77171
+  },
+  {
+   "file": "coin_5c.png",
+   "width": 354,
+   "height": 355,
+   "bytes": 81269
+  },
+  {
+   "file": "coin_10c.png",
+   "width": 301,
+   "height": 301,
+   "bytes": 78222
+  },
+  {
+   "file": "coin_25c.png",
+   "width": 399,
+   "height": 399,
+   "bytes": 76692
+  },
+  {
+   "file": "tenframe_crate.png",
+   "width": 512,
+   "height": 280,
+   "bytes": 81405
+  },
+  {
+   "file": "pic_napkin.png",
+   "width": 420,
+   "height": 295,
+   "bytes": 81436
+  },
+  {
+   "file": "pic_sandwich.png",
+   "width": 512,
+   "height": 431,
+   "bytes": 78616
+  },
+  {
+   "file": "pat_cupcake.png",
+   "width": 358,
+   "height": 420,
+   "bytes": 79628
+  },
+  {
+   "file": "pat_cookie.png",
+   "width": 389,
+   "height": 284,
+   "bytes": 78428
+  },
+  {
+   "file": "pat_strawberry.png",
+   "width": 365,
+   "height": 451,
+   "bytes": 79673
+  },
+  {
+   "file": "pat_grape.png",
+   "width": 397,
+   "height": 512,
+   "bytes": 76455
+  },
+  {
+   "file": "pat_banana.png",
+   "width": 358,
+   "height": 356,
+   "bytes": 81625
+  }
+ ],
+ "total_bytes": 6423772,
+ "missing": []
+}

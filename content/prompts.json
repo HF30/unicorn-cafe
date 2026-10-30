@@ -1,0 +1,50 @@
+{
+  "welcome": {
+    "say": "Good morning, chef! Tap our customer to hear their order. Tap the little speaker whenever you want to hear me again."
+  },
+  "trace_intro": {
+    "say": "Follow the sparkly path with your finger. Start at the green dot. Then tap the tick. Tap the curled arrow to start again."
+  },
+  "trace_hint": {
+    "say": "Let\u2019s follow the whole path together. Try the glowing guide."
+  },
+  "count_intro": {
+    "say": "Tap the food to put it in the basket. Tap the basket when you have enough."
+  },
+  "pay_intro": {
+    "say": "Each coin is worth one. Tap coins to pay, then tap the till."
+  },
+  "cook_intro": {
+    "say": "Drag each ingredient into the pan. Then tap the spoon to stir."
+  },
+  "serve_thanks": {
+    "say": "Thank you, chef! A sparkle for your caf\u00e9!"
+  },
+  "session_winddown": {
+    "say": "The caf\u00e9 is closing soon. Let\u2019s finish our last customer."
+  },
+  "session_goodbye": {
+    "say": "Our caf\u00e9 is closed. Thank you, chef! See you next time."
+  },
+  "list": {
+    "say": "Now trace your shopping list."
+  },
+  "hint_count": {
+    "say": "Count the food with me. You can tap the basket food to put one back."
+  },
+  "hint_pay": {
+    "say": "One coin for each item. You can tap a paid coin to take one back."
+  },
+  "demo": {
+    "say": "Watch me, then you can finish."
+  },
+  "stir": {
+    "say": "Tap the spoon three times, then bring the plate to our customer."
+  },
+  "reward": {
+    "say": "Tap the sparkle to visit the caf\u00e9."
+  },
+  "wait": {
+    "say": "Our caf\u00e9 looks lovely! Tap a decoration to make it sparkle while we wait for closing time."
+  }
+}

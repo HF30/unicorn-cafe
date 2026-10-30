@@ -1,0 +1,1603 @@
+{
+ "version": 1,
+ "source": "_briefs/curriculum.md (D-2026-10-30-dg-curriculum)",
+ "mastery": {
+  "item": {
+   "firstTryPasses": 3,
+   "distinctDays": 2
+  },
+  "levelUp": {
+   "shareOfLevelItemsMastered": 0.8
+  },
+  "levelDown": {
+   "demosInARow": 3
+  },
+  "reviewShare": 0.33
+ },
+ "guides": [
+  {
+   "g": 1,
+   "name": "animated demo + dotted path + faint letter",
+   "dotted": true,
+   "faintLetter": true,
+   "endpointsOnly": false,
+   "numberedArrows": true,
+   "scorer": "trace"
+  },
+  {
+   "g": 2,
+   "name": "dotted path only",
+   "dotted": true,
+   "faintLetter": false,
+   "endpointsOnly": false,
+   "numberedArrows": true,
+   "scorer": "trace"
+  },
+  {
+   "g": 3,
+   "name": "start dot + end dot, corridor kept",
+   "dotted": false,
+   "faintLetter": false,
+   "endpointsOnly": true,
+   "numberedArrows": false,
+   "scorer": "trace"
+  },
+  {
+   "g": 4,
+   "name": "copy: model shown beside a blank pad",
+   "dotted": false,
+   "faintLetter": false,
+   "endpointsOnly": false,
+   "numberedArrows": false,
+   "scorer": "free",
+   "model": "beside"
+  },
+  {
+   "g": 5,
+   "name": "from memory: study model with numbered arrows 3 s, model hidden, write",
+   "dotted": false,
+   "faintLetter": false,
+   "endpointsOnly": false,
+   "numberedArrows": false,
+   "scorer": "free",
+   "model": "memory",
+   "studyMs": 3000,
+   "studyArrows": true
+  }
+ ],
+ "read": [
+  {
+   "level": 1,
+   "skill": "oral rhyme + sound discrimination",
+   "mode": "audio",
+   "pairs": [
+    [
+     "cat",
+     "hat"
+    ],
+    [
+     "bun",
+     "sun"
+    ],
+    [
+     "jam",
+     "ham"
+    ],
+    [
+     "pot",
+     "dot"
+    ],
+    [
+     "cake",
+     "lake"
+    ]
+   ],
+   "pictures": [
+    "hat",
+    "sun",
+    "ham",
+    "dot",
+    "lake"
+   ]
+  },
+  {
+   "level": 2,
+   "skill": "oral blending, pure sounds, no print",
+   "mode": "audio",
+   "words": [
+    "pan",
+    "pot",
+    "cup",
+    "bun",
+    "jam",
+    "fig",
+    "nut",
+    "dip"
+   ],
+   "pictures": [
+    "pan",
+    "pot",
+    "cup",
+    "bun",
+    "jam",
+    "fig",
+    "nut",
+    "dip"
+   ]
+  },
+  {
+   "level": 3,
+   "gpcs": [
+    "s",
+    "a",
+    "t",
+    "p"
+   ],
+   "words": [
+    "at",
+    "sat",
+    "pat",
+    "tap",
+    "sap"
+   ],
+   "tricky": [],
+   "pictures": [
+    "tap"
+   ]
+  },
+  {
+   "level": 4,
+   "gpcs": [
+    "i",
+    "n",
+    "m",
+    "d"
+   ],
+   "words": [
+    "in",
+    "it",
+    "is",
+    "an",
+    "am",
+    "pin",
+    "tin",
+    "pan",
+    "dip",
+    "sip",
+    "map",
+    "mat",
+    "man",
+    "dad"
+   ],
+   "tricky": [],
+   "pictures": [
+    "tin",
+    "pan",
+    "dip",
+    "map",
+    "mat"
+   ]
+  },
+  {
+   "level": 5,
+   "gpcs": [
+    "g",
+    "o",
+    "c",
+    "k"
+   ],
+   "words": [
+    "pot",
+    "top",
+    "cod",
+    "cot",
+    "can",
+    "cap",
+    "pig",
+    "dog",
+    "kit",
+    "tag",
+    "and"
+   ],
+   "tricky": [],
+   "pictures": [
+    "pot",
+    "can",
+    "cap",
+    "pig",
+    "dog",
+    "cod"
+   ]
+  },
+  {
+   "level": 6,
+   "gpcs": [
+    "ck",
+    "e",
+    "u",
+    "r"
+   ],
+   "words": [
+    "cup",
+    "nut",
+    "mug",
+    "sun",
+    "rug",
+    "ten",
+    "net",
+    "pet",
+    "red",
+    "rat",
+    "duck",
+    "sock",
+    "neck"
+   ],
+   "tricky": [
+    "the",
+    "to"
+   ],
+   "pictures": [
+    "cup",
+    "nut",
+    "mug",
+    "sun",
+    "rug",
+    "net",
+    "rat",
+    "duck",
+    "sock"
+   ]
+  },
+  {
+   "level": 7,
+   "gpcs": [
+    "h",
+    "b",
+    "f",
+    "ff",
+    "l",
+    "ll",
+    "ss"
+   ],
+   "words": [
+    "bun",
+    "ham",
+    "hat",
+    "fig",
+    "bag",
+    "bed",
+    "hot",
+    "lid",
+    "bell",
+    "fill",
+    "puff",
+    "hill"
+   ],
+   "tricky": [
+    "no",
+    "go",
+    "I"
+   ],
+   "pictures": [
+    "bun",
+    "ham",
+    "hat",
+    "fig",
+    "bag",
+    "bed",
+    "lid",
+    "bell",
+    "hill"
+   ]
+  },
+  {
+   "level": 8,
+   "gpcs": [
+    "j",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "zz",
+    "qu"
+   ],
+   "words": [
+    "jam",
+    "jug",
+    "van",
+    "wet",
+    "box",
+    "six",
+    "yes",
+    "yum",
+    "yam",
+    "zip",
+    "buzz",
+    "quiz"
+   ],
+   "tricky": [
+    "he",
+    "she"
+   ],
+   "pictures": [
+    "jam",
+    "jug",
+    "van",
+    "box",
+    "yam",
+    "zip"
+   ]
+  },
+  {
+   "level": 9,
+   "gpcs": [
+    "ch",
+    "sh",
+    "th",
+    "ng"
+   ],
+   "words": [
+    "chip",
+    "chop",
+    "rich",
+    "fish",
+    "dish",
+    "shop",
+    "ship",
+    "thin",
+    "moth",
+    "ring",
+    "king",
+    "long"
+   ],
+   "tricky": [
+    "we",
+    "me",
+    "be"
+   ],
+   "pictures": [
+    "chip",
+    "fish",
+    "dish",
+    "shop",
+    "ship",
+    "moth",
+    "ring",
+    "king"
+   ]
+  },
+  {
+   "level": 10,
+   "gpcs": [
+    "ai",
+    "ee",
+    "igh",
+    "oa",
+    "oo"
+   ],
+   "words": [
+    "rain",
+    "tail",
+    "beef",
+    "seed",
+    "feet",
+    "high",
+    "night",
+    "goat",
+    "oats",
+    "food",
+    "moon",
+    "cook",
+    "book"
+   ],
+   "tricky": [
+    "was",
+    "my",
+    "you"
+   ],
+   "pictures": [
+    "rain",
+    "tail",
+    "seed",
+    "feet",
+    "goat",
+    "oats",
+    "moon",
+    "cook",
+    "book"
+   ]
+  },
+  {
+   "level": 11,
+   "gpcs": [
+    "ar",
+    "or",
+    "ur",
+    "ow",
+    "oi",
+    "ear",
+    "air",
+    "ure",
+    "er"
+   ],
+   "words": [
+    "jar",
+    "tart",
+    "corn",
+    "fork",
+    "fur",
+    "cow",
+    "coin",
+    "foil",
+    "ear",
+    "hair",
+    "chair",
+    "dinner"
+   ],
+   "tricky": [
+    "her",
+    "they",
+    "all",
+    "are"
+   ],
+   "pictures": [
+    "jar",
+    "tart",
+    "corn",
+    "fork",
+    "cow",
+    "coin",
+    "ear",
+    "hair",
+    "chair",
+    "dinner"
+   ]
+  },
+  {
+   "level": 12,
+   "skill": "adjacent consonants (CVCC / CCVC)",
+   "words": [
+    "milk",
+    "mint",
+    "plum",
+    "crisp",
+    "snack",
+    "drink",
+    "toast",
+    "lunch",
+    "fresh",
+    "frog",
+    "sweets"
+   ],
+   "tricky": [
+    "said",
+    "have",
+    "like",
+    "so",
+    "do",
+    "some",
+    "come",
+    "were",
+    "there",
+    "little",
+    "one",
+    "when",
+    "out",
+    "what"
+   ],
+   "pictures": [
+    "milk",
+    "mint",
+    "plum",
+    "crisp",
+    "drink",
+    "toast",
+    "lunch",
+    "frog",
+    "sweets"
+   ]
+  },
+  {
+   "level": 13,
+   "gpcs": [
+    "ay",
+    "ou",
+    "ie",
+    "ea",
+    "oy",
+    "ir",
+    "ue",
+    "aw",
+    "wh",
+    "ew",
+    "a-e",
+    "i-e",
+    "o-e",
+    "u-e"
+   ],
+   "words": [
+    "tray",
+    "soup",
+    "pie",
+    "tea",
+    "toy",
+    "bird",
+    "blue",
+    "straw",
+    "whisk",
+    "stew",
+    "cake",
+    "plate",
+    "ice",
+    "cone",
+    "cube"
+   ],
+   "tricky": [
+    "oh",
+    "their",
+    "people",
+    "could",
+    "called",
+    "asked"
+   ],
+   "pictures": [
+    "tray",
+    "soup",
+    "pie",
+    "tea",
+    "toy",
+    "bird",
+    "straw",
+    "whisk",
+    "stew",
+    "cake",
+    "plate",
+    "ice",
+    "cone",
+    "cube"
+   ]
+  }
+ ],
+ "trace": [
+  {
+   "level": 1,
+   "skill": "pre-writing strokes",
+   "glyphs": [
+    "stroke_down",
+    "stroke_across",
+    "circle_ccw"
+   ],
+   "advanceAt": 3
+  },
+  {
+   "level": 2,
+   "skill": "VMI copy forms",
+   "glyphs": [
+    "cross",
+    "diag_right",
+    "diag_left",
+    "square",
+    "x_cross",
+    "triangle"
+   ],
+   "advanceAt": 3
+  },
+  {
+   "level": 3,
+   "skill": "straight-line digits",
+   "glyphs": [
+    "1",
+    "4",
+    "7"
+   ],
+   "advanceAt": 4
+  },
+  {
+   "level": 4,
+   "skill": "c-family lowercase, phonics order",
+   "glyphs": [
+    "a",
+    "d",
+    "o",
+    "c",
+    "g",
+    "s"
+   ],
+   "advanceAt": 4
+  },
+  {
+   "level": 5,
+   "skill": "long-ladder lowercase",
+   "glyphs": [
+    "i",
+    "t",
+    "l",
+    "u",
+    "j",
+    "y"
+   ],
+   "advanceAt": 4
+  },
+  {
+   "level": 6,
+   "skill": "dive-down lowercase",
+   "glyphs": [
+    "p",
+    "n",
+    "m",
+    "r",
+    "h",
+    "b",
+    "k"
+   ],
+   "advanceAt": 4
+  },
+  {
+   "level": 7,
+   "skill": "remaining lowercase",
+   "glyphs": [
+    "e",
+    "f",
+    "v",
+    "w",
+    "x",
+    "z",
+    "q"
+   ],
+   "advanceAt": 4
+  },
+  {
+   "level": 8,
+   "skill": "curved digits",
+   "glyphs": [
+    "0",
+    "6",
+    "9",
+    "8",
+    "2",
+    "3",
+    "5"
+   ],
+   "advanceAt": 4
+  },
+  {
+   "level": 9,
+   "skill": "capitals: straight lines",
+   "glyphs": [
+    "L",
+    "F",
+    "E",
+    "H",
+    "T",
+    "I"
+   ],
+   "advanceAt": 4
+  },
+  {
+   "level": 10,
+   "skill": "capitals: curves",
+   "glyphs": [
+    "U",
+    "C",
+    "O",
+    "Q",
+    "G",
+    "S",
+    "J",
+    "D",
+    "P",
+    "B",
+    "R"
+   ],
+   "advanceAt": 4
+  },
+  {
+   "level": 11,
+   "skill": "capitals: diagonals",
+   "glyphs": [
+    "K",
+    "A",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "N",
+    "M"
+   ],
+   "advanceAt": 4
+  },
+  {
+   "level": 12,
+   "skill": "decodable word from memory at guide 5",
+   "wordsFrom": "read.currentLevel.words",
+   "advanceAt": 5
+  },
+  {
+   "level": 13,
+   "skill": "caption: capital + words + full stop",
+   "captions": [
+    "I can sip.",
+    "A hot bun.",
+    "Jam in a jar.",
+    "No milk for me."
+   ],
+   "advanceAt": 5
+  }
+ ],
+ "maths": [
+  {
+   "level": 1,
+   "skill": "perceptual subitize 1-3; count along to 5",
+   "range": [
+    1,
+    3
+   ],
+   "mechanic": "flash",
+   "flashMs": 1500
+  },
+  {
+   "level": 2,
+   "skill": "count out up to 5, then say how many (cardinal)",
+   "range": [
+    1,
+    5
+   ],
+   "mechanic": "market"
+  },
+  {
+   "level": 3,
+   "skill": "subitize 4-5 (dice, five frame); numerals 1-5",
+   "range": [
+    1,
+    5
+   ],
+   "mechanic": "flash",
+   "flashMs": 1500
+  },
+  {
+   "level": 4,
+   "skill": "count out up to 10; numerals 6-10; ten frame",
+   "range": [
+    1,
+    10
+   ],
+   "mechanic": "market"
+  },
+  {
+   "level": 5,
+   "skill": "compare: more / fewer / same",
+   "range": [
+    1,
+    10
+   ],
+   "mechanic": "compare"
+  },
+  {
+   "level": 6,
+   "skill": "linear number path 1-10; one more / one less",
+   "range": [
+    1,
+    10
+   ],
+   "mechanic": "path"
+  },
+  {
+   "level": 7,
+   "skill": "part-whole: bonds to 5 with a hidden part",
+   "wholes": [
+    3,
+    4,
+    5
+   ],
+   "mechanic": "hide",
+   "shareToPass": 1.0
+  },
+  {
+   "level": 8,
+   "skill": "add and take away within 5 (story)",
+   "maxSum": 5,
+   "mechanic": "kitchen"
+  },
+  {
+   "level": 9,
+   "skill": "bonds to 10 and doubles to 10",
+   "wholes": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "mechanic": "tenframe",
+   "shareToPass": 1.0
+  },
+  {
+   "level": 10,
+   "skill": "add / subtract within 10, missing number",
+   "maxSum": 10,
+   "mechanic": "kitchen"
+  },
+  {
+   "level": 11,
+   "skill": "teens = ten and some more; count to 20",
+   "range": [
+    11,
+    20
+   ],
+   "mechanic": "tenframe"
+  },
+  {
+   "level": 12,
+   "skill": "coins: name values, count in 2s, 5s, 10s",
+   "coins": [
+    5,
+    10,
+    25
+   ],
+   "maxPrice": 50,
+   "mechanic": "till",
+   "task": "coin",
+   "skipBy": [
+    5,
+    10
+   ]
+  },
+  {
+   "level": 13,
+   "skill": "combine coins to make a price, two different ways",
+   "coins": [
+    5,
+    10,
+    25
+   ],
+   "maxPrice": 50,
+   "mechanic": "till",
+   "task": "price"
+  },
+  {
+   "level": 14,
+   "skill": "give change",
+   "coins": [
+    5,
+    10,
+    25
+   ],
+   "maxPrice": 20,
+   "mechanic": "till_change",
+   "pay": 25
+  }
+ ],
+ "shapes": [
+  {
+   "level": 1,
+   "skill": "match + name circle, square, triangle, rectangle",
+   "shapes": [
+    "circle",
+    "square",
+    "triangle",
+    "rectangle"
+   ]
+  },
+  {
+   "level": 2,
+   "skill": "copy an AB pattern",
+   "units": [
+    "AB"
+   ]
+  },
+  {
+   "level": 3,
+   "skill": "extend AB, AAB, ABB",
+   "units": [
+    "AB",
+    "AAB",
+    "ABB"
+   ]
+  },
+  {
+   "level": 4,
+   "skill": "ABC; find the repeating unit; translate colour to shape",
+   "units": [
+    "ABC",
+    "AABB"
+   ]
+  },
+  {
+   "level": 5,
+   "skill": "compose shapes (2 triangles = square)",
+   "compose": [
+    "square"
+   ]
+  }
+ ],
+ "music": [
+  {
+   "level": 1,
+   "skill": "steady beat: tap the pot lid along with a song; tempo changes",
+   "beats": 8,
+   "song": "hot_cross_buns",
+   "toleranceMs": 200,
+   "mechanic": "beat",
+   "bpm": [
+    96,
+    72,
+    120
+   ]
+  },
+  {
+   "level": 2,
+   "skill": "echo rhythm on one key (ta / ti-ti / rest)",
+   "patterns": [
+    "ta ta ta -",
+    "ta ti-ti ta -",
+    "ti-ti ti-ti ta -"
+   ],
+   "mechanic": "rhythm",
+   "bpm": 90
+  },
+  {
+   "level": 3,
+   "skill": "high or low",
+   "notes": [
+    "C4",
+    "C5"
+   ],
+   "mechanic": "highlow"
+  },
+  {
+   "level": 4,
+   "skill": "so-mi echo",
+   "notes": [
+    "G4",
+    "E4"
+   ],
+   "phrases": [
+    [
+     "G4",
+     "E4"
+    ],
+    [
+     "G4",
+     "G4",
+     "E4"
+    ],
+    [
+     "E4",
+     "G4"
+    ],
+    [
+     "G4",
+     "E4",
+     "G4",
+     "E4"
+    ]
+   ],
+   "mechanic": "copy"
+  },
+  {
+   "level": 5,
+   "skill": "so-mi-la echo",
+   "notes": [
+    "G4",
+    "E4",
+    "A4"
+   ],
+   "phrases": [
+    [
+     "G4",
+     "G4",
+     "E4",
+     "A4",
+     "G4",
+     "E4"
+    ]
+   ],
+   "mechanic": "copy"
+  },
+  {
+   "level": 6,
+   "skill": "mi-re-do",
+   "notes": [
+    "E4",
+    "D4",
+    "C4"
+   ],
+   "songs": [
+    "hot_cross_buns"
+   ],
+   "mechanic": "copy"
+  },
+  {
+   "level": 7,
+   "skill": "pentatonic do-re-mi-so-la echoes",
+   "notes": [
+    "C4",
+    "D4",
+    "E4",
+    "G4",
+    "A4"
+   ],
+   "mechanic": "copy",
+   "phraseLengths": [
+    3,
+    4
+   ]
+  },
+  {
+   "level": 8,
+   "skill": "five-note C-G songs, phrase by phrase",
+   "notes": [
+    "C4",
+    "D4",
+    "E4",
+    "F4",
+    "G4"
+   ],
+   "songs": [
+    "mary_lamb",
+    "ode_to_joy"
+   ],
+   "mechanic": "copy",
+   "recall": true
+  },
+  {
+   "level": 9,
+   "skill": "C-A song, phrase by phrase",
+   "songs": [
+    "twinkle"
+   ],
+   "mechanic": "copy",
+   "recall": true
+  },
+  {
+   "level": 10,
+   "skill": "C major scale up, then down",
+   "notes": [
+    "C4",
+    "D4",
+    "E4",
+    "F4",
+    "G4",
+    "A4",
+    "B4",
+    "C5"
+   ],
+   "mechanic": "copy",
+   "recall": true
+  },
+  {
+   "level": 11,
+   "skill": "full-octave songs",
+   "songs": [
+    "row_your_boat",
+    "london_bridge"
+   ],
+   "mechanic": "copy",
+   "recall": true
+  },
+  {
+   "level": 12,
+   "skill": "play in time: whole song on the beat",
+   "toleranceMs": 250,
+   "mechanic": "copy",
+   "recall": true,
+   "bpm": 80,
+   "songs": [
+    "hot_cross_buns",
+    "mary_lamb",
+    "twinkle",
+    "ode_to_joy",
+    "row_your_boat",
+    "london_bridge"
+   ]
+  },
+  {
+   "level": 13,
+   "skill": "read: dot notation, then letter names with colour and animal faded",
+   "fadeCues": true,
+   "mechanic": "card",
+   "recall": true,
+   "phrases": [
+    [
+     "C4",
+     "D4",
+     "E4"
+    ],
+    [
+     "E4",
+     "D4",
+     "C4"
+    ],
+    [
+     "G4",
+     "E4",
+     "C4"
+    ],
+    [
+     "C4",
+     "E4",
+     "G4"
+    ]
+   ]
+  },
+  {
+   "level": 14,
+   "skill": "improvise on the black keys (pentatonic, no wrong notes)",
+   "notes": [
+    "C#4",
+    "D#4",
+    "F#4",
+    "G#4",
+    "A#4"
+   ],
+   "mechanic": "free"
+  }
+ ],
+ "keys": [
+  {
+   "note": "C3",
+   "midi": 48,
+   "white": true,
+   "label": "C3",
+   "letter": "C",
+   "colour": "red",
+   "animal": "cat",
+   "art": "key_animal_c",
+   "sample": "audio/piano/C3.mp3"
+  },
+  {
+   "note": "Cs3",
+   "midi": 49,
+   "white": false,
+   "label": "C♯3",
+   "animal": null,
+   "sample": "audio/piano/Cs3.mp3"
+  },
+  {
+   "note": "D3",
+   "midi": 50,
+   "white": true,
+   "label": "D3",
+   "letter": "D",
+   "colour": "orange",
+   "animal": "duck",
+   "art": "key_animal_d",
+   "sample": "audio/piano/D3.mp3"
+  },
+  {
+   "note": "Ds3",
+   "midi": 51,
+   "white": false,
+   "label": "D♯3",
+   "animal": null,
+   "sample": "audio/piano/Ds3.mp3"
+  },
+  {
+   "note": "E3",
+   "midi": 52,
+   "white": true,
+   "label": "E3",
+   "letter": "E",
+   "colour": "yellow",
+   "animal": "elephant",
+   "art": "key_animal_e",
+   "sample": "audio/piano/E3.mp3"
+  },
+  {
+   "note": "F3",
+   "midi": 53,
+   "white": true,
+   "label": "F3",
+   "letter": "F",
+   "colour": "green",
+   "animal": "frog",
+   "art": "key_animal_f",
+   "sample": "audio/piano/F3.mp3"
+  },
+  {
+   "note": "Fs3",
+   "midi": 54,
+   "white": false,
+   "label": "F♯3",
+   "animal": null,
+   "sample": "audio/piano/Fs3.mp3"
+  },
+  {
+   "note": "G3",
+   "midi": 55,
+   "white": true,
+   "label": "G3",
+   "letter": "G",
+   "colour": "teal",
+   "animal": "goat",
+   "art": "key_animal_g",
+   "sample": "audio/piano/G3.mp3"
+  },
+  {
+   "note": "Gs3",
+   "midi": 56,
+   "white": false,
+   "label": "G♯3",
+   "animal": null,
+   "sample": "audio/piano/Gs3.mp3"
+  },
+  {
+   "note": "A3",
+   "midi": 57,
+   "white": true,
+   "label": "A3",
+   "letter": "A",
+   "colour": "blue",
+   "animal": "alligator",
+   "art": "key_animal_a",
+   "sample": "audio/piano/A3.mp3"
+  },
+  {
+   "note": "As3",
+   "midi": 58,
+   "white": false,
+   "label": "A♯3",
+   "animal": null,
+   "sample": "audio/piano/As3.mp3"
+  },
+  {
+   "note": "B3",
+   "midi": 59,
+   "white": true,
+   "label": "B3",
+   "letter": "B",
+   "colour": "purple",
+   "animal": "bear",
+   "art": "key_animal_b",
+   "sample": "audio/piano/B3.mp3"
+  },
+  {
+   "note": "C4",
+   "midi": 60,
+   "white": true,
+   "label": "C4",
+   "letter": "C",
+   "colour": "red",
+   "animal": "cat",
+   "art": "key_animal_c",
+   "sample": "audio/piano/C4.mp3"
+  },
+  {
+   "note": "Cs4",
+   "midi": 61,
+   "white": false,
+   "label": "C♯4",
+   "animal": null,
+   "sample": "audio/piano/Cs4.mp3"
+  },
+  {
+   "note": "D4",
+   "midi": 62,
+   "white": true,
+   "label": "D4",
+   "letter": "D",
+   "colour": "orange",
+   "animal": "duck",
+   "art": "key_animal_d",
+   "sample": "audio/piano/D4.mp3"
+  },
+  {
+   "note": "Ds4",
+   "midi": 63,
+   "white": false,
+   "label": "D♯4",
+   "animal": null,
+   "sample": "audio/piano/Ds4.mp3"
+  },
+  {
+   "note": "E4",
+   "midi": 64,
+   "white": true,
+   "label": "E4",
+   "letter": "E",
+   "colour": "yellow",
+   "animal": "elephant",
+   "art": "key_animal_e",
+   "sample": "audio/piano/E4.mp3"
+  },
+  {
+   "note": "F4",
+   "midi": 65,
+   "white": true,
+   "label": "F4",
+   "letter": "F",
+   "colour": "green",
+   "animal": "frog",
+   "art": "key_animal_f",
+   "sample": "audio/piano/F4.mp3"
+  },
+  {
+   "note": "Fs4",
+   "midi": 66,
+   "white": false,
+   "label": "F♯4",
+   "animal": null,
+   "sample": "audio/piano/Fs4.mp3"
+  },
+  {
+   "note": "G4",
+   "midi": 67,
+   "white": true,
+   "label": "G4",
+   "letter": "G",
+   "colour": "teal",
+   "animal": "goat",
+   "art": "key_animal_g",
+   "sample": "audio/piano/G4.mp3"
+  },
+  {
+   "note": "Gs4",
+   "midi": 68,
+   "white": false,
+   "label": "G♯4",
+   "animal": null,
+   "sample": "audio/piano/Gs4.mp3"
+  },
+  {
+   "note": "A4",
+   "midi": 69,
+   "white": true,
+   "label": "A4",
+   "letter": "A",
+   "colour": "blue",
+   "animal": "alligator",
+   "art": "key_animal_a",
+   "sample": "audio/piano/A4.mp3"
+  },
+  {
+   "note": "As4",
+   "midi": 70,
+   "white": false,
+   "label": "A♯4",
+   "animal": null,
+   "sample": "audio/piano/As4.mp3"
+  },
+  {
+   "note": "B4",
+   "midi": 71,
+   "white": true,
+   "label": "B4",
+   "letter": "B",
+   "colour": "purple",
+   "animal": "bear",
+   "art": "key_animal_b",
+   "sample": "audio/piano/B4.mp3"
+  },
+  {
+   "note": "C5",
+   "midi": 72,
+   "white": true,
+   "label": "C5",
+   "letter": "C",
+   "colour": "red",
+   "animal": "chick",
+   "art": "key_animal_c2",
+   "sample": "audio/piano/C5.mp3"
+  }
+ ],
+ "songs": {
+  "hot_cross_buns": [
+   "E4",
+   "D4",
+   "C4",
+   "-",
+   "E4",
+   "D4",
+   "C4",
+   "-",
+   "C4",
+   "C4",
+   "C4",
+   "C4",
+   "D4",
+   "D4",
+   "D4",
+   "D4",
+   "E4",
+   "D4",
+   "C4"
+  ],
+  "mary_lamb": [
+   "E4",
+   "D4",
+   "C4",
+   "D4",
+   "E4",
+   "E4",
+   "E4",
+   "-",
+   "D4",
+   "D4",
+   "D4",
+   "-",
+   "E4",
+   "G4",
+   "G4",
+   "-",
+   "E4",
+   "D4",
+   "C4",
+   "D4",
+   "E4",
+   "E4",
+   "E4",
+   "E4",
+   "D4",
+   "D4",
+   "E4",
+   "D4",
+   "C4"
+  ],
+  "ode_to_joy": [
+   "E4",
+   "E4",
+   "F4",
+   "G4",
+   "G4",
+   "F4",
+   "E4",
+   "D4",
+   "C4",
+   "C4",
+   "D4",
+   "E4",
+   "E4",
+   "D4",
+   "D4",
+   "-",
+   "E4",
+   "E4",
+   "F4",
+   "G4",
+   "G4",
+   "F4",
+   "E4",
+   "D4",
+   "C4",
+   "C4",
+   "D4",
+   "E4",
+   "D4",
+   "C4",
+   "C4"
+  ],
+  "twinkle": [
+   "C4",
+   "C4",
+   "G4",
+   "G4",
+   "A4",
+   "A4",
+   "G4",
+   "-",
+   "F4",
+   "F4",
+   "E4",
+   "E4",
+   "D4",
+   "D4",
+   "C4",
+   "-",
+   "G4",
+   "G4",
+   "F4",
+   "F4",
+   "E4",
+   "E4",
+   "D4",
+   "-",
+   "G4",
+   "G4",
+   "F4",
+   "F4",
+   "E4",
+   "E4",
+   "D4",
+   "-",
+   "C4",
+   "C4",
+   "G4",
+   "G4",
+   "A4",
+   "A4",
+   "G4",
+   "-",
+   "F4",
+   "F4",
+   "E4",
+   "E4",
+   "D4",
+   "D4",
+   "C4"
+  ],
+  "row_your_boat": [
+   "C4",
+   "C4",
+   "C4",
+   "D4",
+   "E4",
+   "-",
+   "E4",
+   "D4",
+   "E4",
+   "F4",
+   "G4",
+   "-",
+   "C5",
+   "C5",
+   "C5",
+   "G4",
+   "G4",
+   "G4",
+   "E4",
+   "E4",
+   "E4",
+   "C4",
+   "C4",
+   "C4",
+   "-",
+   "G4",
+   "F4",
+   "E4",
+   "D4",
+   "C4"
+  ],
+  "london_bridge": [
+   "G4",
+   "A4",
+   "G4",
+   "F4",
+   "E4",
+   "F4",
+   "G4",
+   "-",
+   "D4",
+   "E4",
+   "F4",
+   "-",
+   "E4",
+   "F4",
+   "G4",
+   "-",
+   "G4",
+   "A4",
+   "G4",
+   "F4",
+   "E4",
+   "F4",
+   "G4",
+   "-",
+   "D4",
+   "G4",
+   "E4",
+   "C4"
+  ],
+  "frere_jacques_note": "lines 1-3 fit C4-C5; line 4 'ding dang dong' needs G3, below the keyboard: play lines 1-3 only, or drop the song"
+ },
+ "pictureArt": {
+  "jam": "item_jam",
+  "bun": "item_bun",
+  "ham": "item_ham",
+  "cup": "item_cup",
+  "pot": "item_pot",
+  "pan": "item_pan",
+  "can": "item_can",
+  "tin": "item_tin",
+  "mug": "item_mug",
+  "nut": "item_nut",
+  "dip": "item_dip",
+  "duck": "key_animal_d",
+  "goat": "key_animal_g",
+  "frog": "key_animal_f",
+  "dog": "dog_wag_00",
+  "coin": "coin",
+  "plate": "plate"
+ }
+}

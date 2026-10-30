@@ -1,0 +1,514 @@
+{
+ "owner": "characters",
+ "characters": {
+  "dog": {
+   "name": "Buddy",
+   "facing": "screen-left 3/4 (sleep/wake/wag about 40 deg, walk 72 deg like the unicorn), walks in from the right",
+   "shadow": "soft contact shadow baked into alpha",
+   "look": "v2 2026-10-29: big older American bulldog x pit bull x a touch of chow: white, dark patch over his left eye + left ear, PURPLE tongue, pink collar + gold heart tag",
+   "scale_anchor": "same camera and PPU 520 as characters.manifest.json; ground_px = world origin under the dog; withers ~0.64 units (about the unicorn's body height)",
+   "sets": {
+    "sleep": {
+     "frames": [
+      "dog_sleep_00.png",
+      "dog_sleep_01.png",
+      "dog_sleep_02.png",
+      "dog_sleep_03.png",
+      "dog_sleep_04.png",
+      "dog_sleep_05.png",
+      "dog_sleep_06.png",
+      "dog_sleep_07.png",
+      "dog_sleep_08.png",
+      "dog_sleep_09.png",
+      "dog_sleep_10.png",
+      "dog_sleep_11.png"
+     ],
+     "count": 12,
+     "width": 889,
+     "height": 441,
+     "ground_px": [
+      390.0,
+      362.2
+     ],
+     "px_per_unit": 520.0,
+     "fps": 6,
+     "loop": true,
+     "bytes": 776045,
+     "note": "lying, head on front paws, eyes closed, breathing; purple tongue tip peeks out"
+    },
+    "wake": {
+     "frames": [
+      "dog_wake_00.png",
+      "dog_wake_01.png",
+      "dog_wake_02.png",
+      "dog_wake_03.png",
+      "dog_wake_04.png",
+      "dog_wake_05.png",
+      "dog_wake_06.png",
+      "dog_wake_07.png"
+     ],
+     "count": 8,
+     "width": 966,
+     "height": 599,
+     "ground_px": [
+      411.0,
+      517.2
+     ],
+     "px_per_unit": 520.0,
+     "fps": 10,
+     "loop": false,
+     "bytes": 599550,
+     "note": "one-shot: head lifts, eyes open, smiles (purple tongue out), stands up; ends in the wag pose"
+    },
+    "wag": {
+     "frames": [
+      "dog_wag_00.png",
+      "dog_wag_01.png",
+      "dog_wag_02.png",
+      "dog_wag_03.png",
+      "dog_wag_04.png",
+      "dog_wag_05.png",
+      "dog_wag_06.png",
+      "dog_wag_07.png",
+      "dog_wag_08.png",
+      "dog_wag_09.png",
+      "dog_wag_10.png",
+      "dog_wag_11.png"
+     ],
+     "count": 12,
+     "width": 968,
+     "height": 602,
+     "ground_px": [
+      413.0,
+      521.2
+     ],
+     "px_per_unit": 520.0,
+     "fps": 12,
+     "loop": true,
+     "bytes": 1002832,
+     "note": "standing happy: open-mouth smile, purple tongue out, tail wag x2, body wiggle"
+    },
+    "walk": {
+     "frames": [
+      "dog_walk_00.png",
+      "dog_walk_01.png",
+      "dog_walk_02.png",
+      "dog_walk_03.png",
+      "dog_walk_04.png",
+      "dog_walk_05.png",
+      "dog_walk_06.png",
+      "dog_walk_07.png",
+      "dog_walk_08.png",
+      "dog_walk_09.png",
+      "dog_walk_10.png",
+      "dog_walk_11.png",
+      "dog_walk_12.png",
+      "dog_walk_13.png",
+      "dog_walk_14.png",
+      "dog_walk_15.png"
+     ],
+     "count": 16,
+     "width": 1011,
+     "height": 618,
+     "ground_px": [
+      455.0,
+      535.2
+     ],
+     "px_per_unit": 520.0,
+     "fps": 12,
+     "loop": true,
+     "bytes": 1600571,
+     "note": "walk cycle in place, facing screen-left 3/4, happy, tongue out"
+    }
+   }
+  }
+ },
+ "files": [
+  {
+   "file": "dog_sleep_00.png",
+   "bytes": 65256,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_01.png",
+   "bytes": 64967,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_02.png",
+   "bytes": 66494,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_03.png",
+   "bytes": 66390,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_04.png",
+   "bytes": 65957,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_05.png",
+   "bytes": 66350,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_06.png",
+   "bytes": 65025,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_07.png",
+   "bytes": 62841,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_08.png",
+   "bytes": 62981,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_09.png",
+   "bytes": 63111,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_10.png",
+   "bytes": 63874,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_sleep_11.png",
+   "bytes": 62799,
+   "size": [
+    889,
+    441
+   ]
+  },
+  {
+   "file": "dog_wake_00.png",
+   "bytes": 66690,
+   "size": [
+    966,
+    599
+   ]
+  },
+  {
+   "file": "dog_wake_01.png",
+   "bytes": 65936,
+   "size": [
+    966,
+    599
+   ]
+  },
+  {
+   "file": "dog_wake_02.png",
+   "bytes": 71350,
+   "size": [
+    966,
+    599
+   ]
+  },
+  {
+   "file": "dog_wake_03.png",
+   "bytes": 74228,
+   "size": [
+    966,
+    599
+   ]
+  },
+  {
+   "file": "dog_wake_04.png",
+   "bytes": 72704,
+   "size": [
+    966,
+    599
+   ]
+  },
+  {
+   "file": "dog_wake_05.png",
+   "bytes": 78350,
+   "size": [
+    966,
+    599
+   ]
+  },
+  {
+   "file": "dog_wake_06.png",
+   "bytes": 84704,
+   "size": [
+    966,
+    599
+   ]
+  },
+  {
+   "file": "dog_wake_07.png",
+   "bytes": 85588,
+   "size": [
+    966,
+    599
+   ]
+  },
+  {
+   "file": "dog_wag_00.png",
+   "bytes": 83626,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_01.png",
+   "bytes": 84819,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_02.png",
+   "bytes": 84843,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_03.png",
+   "bytes": 83449,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_04.png",
+   "bytes": 81688,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_05.png",
+   "bytes": 82111,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_06.png",
+   "bytes": 84136,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_07.png",
+   "bytes": 85755,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_08.png",
+   "bytes": 84865,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_09.png",
+   "bytes": 84154,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_10.png",
+   "bytes": 81806,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_wag_11.png",
+   "bytes": 81580,
+   "size": [
+    968,
+    602
+   ]
+  },
+  {
+   "file": "dog_walk_00.png",
+   "bytes": 103119,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_01.png",
+   "bytes": 100835,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_02.png",
+   "bytes": 100749,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_03.png",
+   "bytes": 100461,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_04.png",
+   "bytes": 97591,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_05.png",
+   "bytes": 99081,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_06.png",
+   "bytes": 96468,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_07.png",
+   "bytes": 97962,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_08.png",
+   "bytes": 98129,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_09.png",
+   "bytes": 100670,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_10.png",
+   "bytes": 101192,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_11.png",
+   "bytes": 100581,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_12.png",
+   "bytes": 101914,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_13.png",
+   "bytes": 100697,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_14.png",
+   "bytes": 100481,
+   "size": [
+    1011,
+    618
+   ]
+  },
+  {
+   "file": "dog_walk_15.png",
+   "bytes": 100641,
+   "size": [
+    1011,
+    618
+   ]
+  }
+ ],
+ "total_bytes": 3978998,
+ "notes": "Transparent sprites, one shared crop box per set (no jitter). ground_px = the point under the dog on the floor, in that set's pixels: align it to the floor spot. px_per_unit matches characters.manifest.json (520), so draw the dog at the same scale factor as the girl and the customers."
+}

@@ -1,0 +1,2024 @@
+{
+ "owner": "characters",
+ "characters": {
+  "unicorn": {
+   "facing": "screen-left (3/4), walks in from the right",
+   "shadow": "soft contact shadow baked into alpha",
+   "design": "v3 option 3 \"storybook\" quadruped, purple-rich rainbow mane + tail (Chris 2026-10-29)",
+   "walk_in_place": true,
+   "sets": {
+    "walk": {
+     "frames": [
+      "unicorn_walk_00.png",
+      "unicorn_walk_01.png",
+      "unicorn_walk_02.png",
+      "unicorn_walk_03.png",
+      "unicorn_walk_04.png",
+      "unicorn_walk_05.png",
+      "unicorn_walk_06.png",
+      "unicorn_walk_07.png",
+      "unicorn_walk_08.png",
+      "unicorn_walk_09.png",
+      "unicorn_walk_10.png",
+      "unicorn_walk_11.png",
+      "unicorn_walk_12.png",
+      "unicorn_walk_13.png",
+      "unicorn_walk_14.png",
+      "unicorn_walk_15.png"
+     ],
+     "count": 16,
+     "width": 827,
+     "height": 875,
+     "ground_px": [
+      354.0,
+      803.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 12,
+     "loop": true,
+     "bytes": 1661496
+    },
+    "idle": {
+     "frames": [
+      "unicorn_idle_00.png",
+      "unicorn_idle_01.png",
+      "unicorn_idle_02.png",
+      "unicorn_idle_03.png",
+      "unicorn_idle_04.png",
+      "unicorn_idle_05.png",
+      "unicorn_idle_06.png",
+      "unicorn_idle_07.png",
+      "unicorn_idle_08.png",
+      "unicorn_idle_09.png",
+      "unicorn_idle_10.png",
+      "unicorn_idle_11.png"
+     ],
+     "count": 12,
+     "width": 827,
+     "height": 872,
+     "ground_px": [
+      354.0,
+      800.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 8,
+     "loop": true,
+     "bytes": 1273965
+    },
+    "happy": {
+     "frames": [
+      "unicorn_happy_00.png",
+      "unicorn_happy_01.png",
+      "unicorn_happy_02.png",
+      "unicorn_happy_03.png",
+      "unicorn_happy_04.png",
+      "unicorn_happy_05.png",
+      "unicorn_happy_06.png",
+      "unicorn_happy_07.png",
+      "unicorn_happy_08.png",
+      "unicorn_happy_09.png",
+      "unicorn_happy_10.png",
+      "unicorn_happy_11.png"
+     ],
+     "count": 12,
+     "width": 839,
+     "height": 1007,
+     "ground_px": [
+      361.0,
+      930.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 12,
+     "loop": true,
+     "bytes": 1274879
+    },
+    "order": {
+     "frames": [
+      "unicorn_order_00.png",
+      "unicorn_order_01.png",
+      "unicorn_order_02.png",
+      "unicorn_order_03.png",
+      "unicorn_order_04.png",
+      "unicorn_order_05.png"
+     ],
+     "count": 6,
+     "width": 828,
+     "height": 876,
+     "ground_px": [
+      355.0,
+      804.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 8,
+     "loop": true,
+     "bytes": 633907
+    }
+   }
+  },
+  "kitty": {
+   "facing": "screen-left (3/4), walks in from the right",
+   "shadow": "soft contact shadow baked into alpha",
+   "sets": {
+    "walk": {
+     "frames": [
+      "kitty_walk_00.png",
+      "kitty_walk_01.png",
+      "kitty_walk_02.png",
+      "kitty_walk_03.png",
+      "kitty_walk_04.png",
+      "kitty_walk_05.png",
+      "kitty_walk_06.png",
+      "kitty_walk_07.png",
+      "kitty_walk_08.png",
+      "kitty_walk_09.png",
+      "kitty_walk_10.png",
+      "kitty_walk_11.png",
+      "kitty_walk_12.png",
+      "kitty_walk_13.png",
+      "kitty_walk_14.png",
+      "kitty_walk_15.png"
+     ],
+     "count": 16,
+     "width": 774,
+     "height": 768,
+     "ground_px": [
+      356.0,
+      704.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 12,
+     "loop": true,
+     "bytes": 1359335
+    },
+    "idle": {
+     "frames": [
+      "kitty_idle_00.png",
+      "kitty_idle_01.png",
+      "kitty_idle_02.png",
+      "kitty_idle_03.png",
+      "kitty_idle_04.png",
+      "kitty_idle_05.png",
+      "kitty_idle_06.png",
+      "kitty_idle_07.png",
+      "kitty_idle_08.png",
+      "kitty_idle_09.png",
+      "kitty_idle_10.png",
+      "kitty_idle_11.png"
+     ],
+     "count": 12,
+     "width": 774,
+     "height": 770,
+     "ground_px": [
+      356.0,
+      706.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 8,
+     "loop": true,
+     "bytes": 1044110
+    },
+    "happy": {
+     "frames": [
+      "kitty_happy_00.png",
+      "kitty_happy_01.png",
+      "kitty_happy_02.png",
+      "kitty_happy_03.png",
+      "kitty_happy_04.png",
+      "kitty_happy_05.png",
+      "kitty_happy_06.png",
+      "kitty_happy_07.png",
+      "kitty_happy_08.png",
+      "kitty_happy_09.png",
+      "kitty_happy_10.png",
+      "kitty_happy_11.png"
+     ],
+     "count": 12,
+     "width": 766,
+     "height": 874,
+     "ground_px": [
+      345.0,
+      807.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 12,
+     "loop": true,
+     "bytes": 1064979
+    },
+    "order": {
+     "frames": [
+      "kitty_order_00.png",
+      "kitty_order_01.png",
+      "kitty_order_02.png",
+      "kitty_order_03.png",
+      "kitty_order_04.png",
+      "kitty_order_05.png"
+     ],
+     "count": 6,
+     "width": 768,
+     "height": 766,
+     "ground_px": [
+      351.0,
+      703.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 8,
+     "loop": true,
+     "bytes": 525817
+    }
+   },
+   "look": "v2 2026-10-29: v2 face rig, orange tabby, teal bow, berry collar + gold bell",
+   "scale_anchor": "unchanged from v1: same camera, PPU 520, ground_px = world origin between the feet"
+  },
+  "girl": {
+   "facing": "camera, turned toward screen-right",
+   "shadow": "soft contact shadow baked into alpha",
+   "sets": {
+    "idle": {
+     "frames": [
+      "girl_idle_00.png",
+      "girl_idle_01.png",
+      "girl_idle_02.png",
+      "girl_idle_03.png",
+      "girl_idle_04.png",
+      "girl_idle_05.png",
+      "girl_idle_06.png",
+      "girl_idle_07.png",
+      "girl_idle_08.png",
+      "girl_idle_09.png",
+      "girl_idle_10.png",
+      "girl_idle_11.png"
+     ],
+     "count": 12,
+     "width": 819,
+     "height": 918,
+     "ground_px": [
+      397.0,
+      849.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 8,
+     "loop": true,
+     "bytes": 1209982
+    },
+    "wave": {
+     "frames": [
+      "girl_wave_00.png",
+      "girl_wave_01.png",
+      "girl_wave_02.png",
+      "girl_wave_03.png",
+      "girl_wave_04.png",
+      "girl_wave_05.png",
+      "girl_wave_06.png",
+      "girl_wave_07.png",
+      "girl_wave_08.png",
+      "girl_wave_09.png",
+      "girl_wave_10.png",
+      "girl_wave_11.png"
+     ],
+     "count": 12,
+     "width": 820,
+     "height": 915,
+     "ground_px": [
+      397.0,
+      846.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 10,
+     "loop": true,
+     "bytes": 1239206
+    },
+    "cheer": {
+     "frames": [
+      "girl_cheer_00.png",
+      "girl_cheer_01.png",
+      "girl_cheer_02.png",
+      "girl_cheer_03.png",
+      "girl_cheer_04.png",
+      "girl_cheer_05.png",
+      "girl_cheer_06.png",
+      "girl_cheer_07.png",
+      "girl_cheer_08.png",
+      "girl_cheer_09.png",
+      "girl_cheer_10.png",
+      "girl_cheer_11.png"
+     ],
+     "count": 12,
+     "width": 832,
+     "height": 983,
+     "ground_px": [
+      407.0,
+      912.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 12,
+     "loop": true,
+     "bytes": 1229965
+    },
+    "stir": {
+     "frames": [
+      "girl_stir_00.png",
+      "girl_stir_01.png",
+      "girl_stir_02.png",
+      "girl_stir_03.png",
+      "girl_stir_04.png",
+      "girl_stir_05.png",
+      "girl_stir_06.png",
+      "girl_stir_07.png",
+      "girl_stir_08.png",
+      "girl_stir_09.png",
+      "girl_stir_10.png",
+      "girl_stir_11.png"
+     ],
+     "count": 12,
+     "width": 737,
+     "height": 895,
+     "ground_px": [
+      327.0,
+      827.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 10,
+     "loop": true,
+     "bytes": 1177331
+    },
+    "think": {
+     "frames": [
+      "girl_think_00.png",
+      "girl_think_01.png",
+      "girl_think_02.png",
+      "girl_think_03.png",
+      "girl_think_04.png",
+      "girl_think_05.png"
+     ],
+     "count": 6,
+     "width": 822,
+     "height": 903,
+     "ground_px": [
+      400.0,
+      835.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 6,
+     "loop": true,
+     "bytes": 605852
+    }
+   },
+   "look": "v2 2026-10-29: panel-A model, powder-pink apron+skirt (#f3b5cb), rose stripe shirt, white hem + rose piping (palette P)",
+   "scale_anchor": "unchanged from v1: same camera, PPU 520, ground_px = world origin between the feet"
+  },
+  "princess": {
+   "facing": "screen-left (3/4), walks in from the right",
+   "shadow": "soft contact shadow baked into alpha",
+   "sets": {
+    "walk": {
+     "frames": [
+      "princess_walk_00.png",
+      "princess_walk_01.png",
+      "princess_walk_02.png",
+      "princess_walk_03.png",
+      "princess_walk_04.png",
+      "princess_walk_05.png",
+      "princess_walk_06.png",
+      "princess_walk_07.png",
+      "princess_walk_08.png",
+      "princess_walk_09.png",
+      "princess_walk_10.png",
+      "princess_walk_11.png",
+      "princess_walk_12.png",
+      "princess_walk_13.png",
+      "princess_walk_14.png",
+      "princess_walk_15.png"
+     ],
+     "count": 16,
+     "width": 834,
+     "height": 815,
+     "ground_px": [
+      414.0,
+      749.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 12,
+     "loop": true,
+     "bytes": 1741681
+    },
+    "idle": {
+     "frames": [
+      "princess_idle_00.png",
+      "princess_idle_01.png",
+      "princess_idle_02.png",
+      "princess_idle_03.png",
+      "princess_idle_04.png",
+      "princess_idle_05.png",
+      "princess_idle_06.png",
+      "princess_idle_07.png",
+      "princess_idle_08.png",
+      "princess_idle_09.png",
+      "princess_idle_10.png",
+      "princess_idle_11.png"
+     ],
+     "count": 12,
+     "width": 836,
+     "height": 819,
+     "ground_px": [
+      416.0,
+      753.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 8,
+     "loop": true,
+     "bytes": 1280130
+    },
+    "happy": {
+     "frames": [
+      "princess_happy_00.png",
+      "princess_happy_01.png",
+      "princess_happy_02.png",
+      "princess_happy_03.png",
+      "princess_happy_04.png",
+      "princess_happy_05.png",
+      "princess_happy_06.png",
+      "princess_happy_07.png",
+      "princess_happy_08.png",
+      "princess_happy_09.png",
+      "princess_happy_10.png",
+      "princess_happy_11.png"
+     ],
+     "count": 12,
+     "width": 822,
+     "height": 925,
+     "ground_px": [
+      399.0,
+      856.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 12,
+     "loop": true,
+     "bytes": 1331798
+    },
+    "order": {
+     "frames": [
+      "princess_order_00.png",
+      "princess_order_01.png",
+      "princess_order_02.png",
+      "princess_order_03.png",
+      "princess_order_04.png",
+      "princess_order_05.png"
+     ],
+     "count": 6,
+     "width": 837,
+     "height": 815,
+     "ground_px": [
+      417.0,
+      749.9
+     ],
+     "px_per_unit": 520.0,
+     "fps": 8,
+     "loop": true,
+     "bytes": 640019
+    }
+   },
+   "look": "v2 2026-10-29: v2 face rig, long sculpted gold hair, lavender/purple gown with gold trim, gold tiara",
+   "scale_anchor": "unchanged from v1: same camera, PPU 520, ground_px = world origin between the feet"
+  }
+ },
+ "files": [
+  {
+   "file": "unicorn_walk_00.png",
+   "bytes": 106082,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_01.png",
+   "bytes": 102841,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_02.png",
+   "bytes": 106049,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_03.png",
+   "bytes": 106075,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_04.png",
+   "bytes": 103466,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_05.png",
+   "bytes": 103260,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_06.png",
+   "bytes": 103179,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_07.png",
+   "bytes": 102173,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_08.png",
+   "bytes": 105377,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_09.png",
+   "bytes": 102843,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_10.png",
+   "bytes": 105580,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_11.png",
+   "bytes": 104788,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_12.png",
+   "bytes": 102349,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_13.png",
+   "bytes": 102739,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_14.png",
+   "bytes": 103342,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_walk_15.png",
+   "bytes": 101353,
+   "size": [
+    827,
+    875
+   ]
+  },
+  {
+   "file": "unicorn_idle_00.png",
+   "bytes": 105463,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_01.png",
+   "bytes": 107312,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_02.png",
+   "bytes": 107529,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_03.png",
+   "bytes": 108543,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_04.png",
+   "bytes": 107865,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_05.png",
+   "bytes": 108623,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_06.png",
+   "bytes": 106425,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_07.png",
+   "bytes": 105903,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_08.png",
+   "bytes": 103715,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_09.png",
+   "bytes": 103292,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_10.png",
+   "bytes": 104537,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_idle_11.png",
+   "bytes": 104758,
+   "size": [
+    827,
+    872
+   ]
+  },
+  {
+   "file": "unicorn_happy_00.png",
+   "bytes": 103567,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_01.png",
+   "bytes": 106311,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_02.png",
+   "bytes": 105471,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_03.png",
+   "bytes": 106837,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_04.png",
+   "bytes": 107328,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_05.png",
+   "bytes": 104545,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_06.png",
+   "bytes": 103893,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_07.png",
+   "bytes": 108067,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_08.png",
+   "bytes": 107504,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_09.png",
+   "bytes": 107585,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_10.png",
+   "bytes": 107570,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_happy_11.png",
+   "bytes": 106201,
+   "size": [
+    839,
+    1007
+   ]
+  },
+  {
+   "file": "unicorn_order_00.png",
+   "bytes": 106564,
+   "size": [
+    828,
+    876
+   ]
+  },
+  {
+   "file": "unicorn_order_01.png",
+   "bytes": 106484,
+   "size": [
+    828,
+    876
+   ]
+  },
+  {
+   "file": "unicorn_order_02.png",
+   "bytes": 106670,
+   "size": [
+    828,
+    876
+   ]
+  },
+  {
+   "file": "unicorn_order_03.png",
+   "bytes": 105928,
+   "size": [
+    828,
+    876
+   ]
+  },
+  {
+   "file": "unicorn_order_04.png",
+   "bytes": 104192,
+   "size": [
+    828,
+    876
+   ]
+  },
+  {
+   "file": "unicorn_order_05.png",
+   "bytes": 104069,
+   "size": [
+    828,
+    876
+   ]
+  },
+  {
+   "file": "kitty_walk_00.png",
+   "bytes": 86444,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_01.png",
+   "bytes": 86311,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_02.png",
+   "bytes": 84943,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_03.png",
+   "bytes": 83314,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_04.png",
+   "bytes": 83181,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_05.png",
+   "bytes": 83645,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_06.png",
+   "bytes": 85334,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_07.png",
+   "bytes": 85569,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_08.png",
+   "bytes": 87042,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_09.png",
+   "bytes": 87054,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_10.png",
+   "bytes": 85287,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_11.png",
+   "bytes": 83362,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_12.png",
+   "bytes": 84131,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_13.png",
+   "bytes": 83037,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_14.png",
+   "bytes": 84526,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_walk_15.png",
+   "bytes": 86155,
+   "size": [
+    774,
+    768
+   ]
+  },
+  {
+   "file": "kitty_idle_00.png",
+   "bytes": 85869,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_01.png",
+   "bytes": 86977,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_02.png",
+   "bytes": 87270,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_03.png",
+   "bytes": 86957,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_04.png",
+   "bytes": 87784,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_05.png",
+   "bytes": 87483,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_06.png",
+   "bytes": 86773,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_07.png",
+   "bytes": 86808,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_08.png",
+   "bytes": 88275,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_09.png",
+   "bytes": 87226,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_10.png",
+   "bytes": 86124,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_idle_11.png",
+   "bytes": 86564,
+   "size": [
+    774,
+    770
+   ]
+  },
+  {
+   "file": "kitty_happy_00.png",
+   "bytes": 87489,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_01.png",
+   "bytes": 90464,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_02.png",
+   "bytes": 91571,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_03.png",
+   "bytes": 92978,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_04.png",
+   "bytes": 92718,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_05.png",
+   "bytes": 91186,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_06.png",
+   "bytes": 88427,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_07.png",
+   "bytes": 86297,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_08.png",
+   "bytes": 85238,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_09.png",
+   "bytes": 85802,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_10.png",
+   "bytes": 85600,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_happy_11.png",
+   "bytes": 87209,
+   "size": [
+    766,
+    874
+   ]
+  },
+  {
+   "file": "kitty_order_00.png",
+   "bytes": 87209,
+   "size": [
+    768,
+    766
+   ]
+  },
+  {
+   "file": "kitty_order_01.png",
+   "bytes": 86958,
+   "size": [
+    768,
+    766
+   ]
+  },
+  {
+   "file": "kitty_order_02.png",
+   "bytes": 88224,
+   "size": [
+    768,
+    766
+   ]
+  },
+  {
+   "file": "kitty_order_03.png",
+   "bytes": 87710,
+   "size": [
+    768,
+    766
+   ]
+  },
+  {
+   "file": "kitty_order_04.png",
+   "bytes": 87752,
+   "size": [
+    768,
+    766
+   ]
+  },
+  {
+   "file": "kitty_order_05.png",
+   "bytes": 87964,
+   "size": [
+    768,
+    766
+   ]
+  },
+  {
+   "file": "girl_idle_00.png",
+   "bytes": 101063,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_01.png",
+   "bytes": 101383,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_02.png",
+   "bytes": 100735,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_03.png",
+   "bytes": 103234,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_04.png",
+   "bytes": 101533,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_05.png",
+   "bytes": 100844,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_06.png",
+   "bytes": 100913,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_07.png",
+   "bytes": 100541,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_08.png",
+   "bytes": 100134,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_09.png",
+   "bytes": 100696,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_10.png",
+   "bytes": 99432,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_idle_11.png",
+   "bytes": 99474,
+   "size": [
+    819,
+    918
+   ]
+  },
+  {
+   "file": "girl_wave_00.png",
+   "bytes": 102299,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_01.png",
+   "bytes": 105003,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_02.png",
+   "bytes": 104228,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_03.png",
+   "bytes": 104214,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_04.png",
+   "bytes": 104152,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_05.png",
+   "bytes": 102890,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_06.png",
+   "bytes": 103834,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_07.png",
+   "bytes": 101391,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_08.png",
+   "bytes": 103245,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_09.png",
+   "bytes": 103485,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_10.png",
+   "bytes": 102396,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_wave_11.png",
+   "bytes": 102069,
+   "size": [
+    820,
+    915
+   ]
+  },
+  {
+   "file": "girl_cheer_00.png",
+   "bytes": 101051,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_01.png",
+   "bytes": 104516,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_02.png",
+   "bytes": 105664,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_03.png",
+   "bytes": 105702,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_04.png",
+   "bytes": 105193,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_05.png",
+   "bytes": 103696,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_06.png",
+   "bytes": 101566,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_07.png",
+   "bytes": 100782,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_08.png",
+   "bytes": 100346,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_09.png",
+   "bytes": 100228,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_10.png",
+   "bytes": 100626,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_cheer_11.png",
+   "bytes": 100595,
+   "size": [
+    832,
+    983
+   ]
+  },
+  {
+   "file": "girl_stir_00.png",
+   "bytes": 99151,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_01.png",
+   "bytes": 99218,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_02.png",
+   "bytes": 98059,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_03.png",
+   "bytes": 98537,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_04.png",
+   "bytes": 99019,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_05.png",
+   "bytes": 98270,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_06.png",
+   "bytes": 97738,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_07.png",
+   "bytes": 97241,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_08.png",
+   "bytes": 97824,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_09.png",
+   "bytes": 97751,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_10.png",
+   "bytes": 97231,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_stir_11.png",
+   "bytes": 97292,
+   "size": [
+    737,
+    895
+   ]
+  },
+  {
+   "file": "girl_think_00.png",
+   "bytes": 101119,
+   "size": [
+    822,
+    903
+   ]
+  },
+  {
+   "file": "girl_think_01.png",
+   "bytes": 100972,
+   "size": [
+    822,
+    903
+   ]
+  },
+  {
+   "file": "girl_think_02.png",
+   "bytes": 101408,
+   "size": [
+    822,
+    903
+   ]
+  },
+  {
+   "file": "girl_think_03.png",
+   "bytes": 101049,
+   "size": [
+    822,
+    903
+   ]
+  },
+  {
+   "file": "girl_think_04.png",
+   "bytes": 100499,
+   "size": [
+    822,
+    903
+   ]
+  },
+  {
+   "file": "girl_think_05.png",
+   "bytes": 100805,
+   "size": [
+    822,
+    903
+   ]
+  },
+  {
+   "file": "princess_walk_00.png",
+   "bytes": 108407,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_01.png",
+   "bytes": 109555,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_02.png",
+   "bytes": 109334,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_03.png",
+   "bytes": 108219,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_04.png",
+   "bytes": 108870,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_05.png",
+   "bytes": 109445,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_06.png",
+   "bytes": 108893,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_07.png",
+   "bytes": 109957,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_08.png",
+   "bytes": 109540,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_09.png",
+   "bytes": 109167,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_10.png",
+   "bytes": 108519,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_11.png",
+   "bytes": 107918,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_12.png",
+   "bytes": 107348,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_13.png",
+   "bytes": 108203,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_14.png",
+   "bytes": 109135,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_walk_15.png",
+   "bytes": 109171,
+   "size": [
+    834,
+    815
+   ]
+  },
+  {
+   "file": "princess_idle_00.png",
+   "bytes": 106100,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_01.png",
+   "bytes": 107141,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_02.png",
+   "bytes": 106755,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_03.png",
+   "bytes": 107339,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_04.png",
+   "bytes": 107061,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_05.png",
+   "bytes": 106536,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_06.png",
+   "bytes": 106713,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_07.png",
+   "bytes": 105883,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_08.png",
+   "bytes": 107376,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_09.png",
+   "bytes": 106667,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_10.png",
+   "bytes": 106304,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_idle_11.png",
+   "bytes": 106255,
+   "size": [
+    836,
+    819
+   ]
+  },
+  {
+   "file": "princess_happy_00.png",
+   "bytes": 110638,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_01.png",
+   "bytes": 112981,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_02.png",
+   "bytes": 113193,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_03.png",
+   "bytes": 113565,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_04.png",
+   "bytes": 114548,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_05.png",
+   "bytes": 112444,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_06.png",
+   "bytes": 111181,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_07.png",
+   "bytes": 109360,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_08.png",
+   "bytes": 108081,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_09.png",
+   "bytes": 108834,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_10.png",
+   "bytes": 107967,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_happy_11.png",
+   "bytes": 109006,
+   "size": [
+    822,
+    925
+   ]
+  },
+  {
+   "file": "princess_order_00.png",
+   "bytes": 106576,
+   "size": [
+    837,
+    815
+   ]
+  },
+  {
+   "file": "princess_order_01.png",
+   "bytes": 107162,
+   "size": [
+    837,
+    815
+   ]
+  },
+  {
+   "file": "princess_order_02.png",
+   "bytes": 106699,
+   "size": [
+    837,
+    815
+   ]
+  },
+  {
+   "file": "princess_order_03.png",
+   "bytes": 107298,
+   "size": [
+    837,
+    815
+   ]
+  },
+  {
+   "file": "princess_order_04.png",
+   "bytes": 106048,
+   "size": [
+    837,
+    815
+   ]
+  },
+  {
+   "file": "princess_order_05.png",
+   "bytes": 106236,
+   "size": [
+    837,
+    815
+   ]
+  }
+ ],
+ "total_bytes": 19294452,
+ "notes": "Transparent sprites, one shared crop box per set (no jitter). ground_px = the point between the feet on the floor, in that set's pixels: align it to the floor spot. px_per_unit is identical for every set and character, so draw all sprites at the same scale factor to keep relative sizes."
+}

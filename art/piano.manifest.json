@@ -1,0 +1,73 @@
+{
+ "owner": "piano",
+ "dispatch": "D-2026-10-30-dg-piano-art",
+ "generator": "art3d/blender/piano/build_piano.py + post_piano.py",
+ "files": [
+  {
+   "file": "piano_body.png",
+   "width": 1600,
+   "height": 1119,
+   "bytes": 1156546
+  },
+  {
+   "file": "key_animal_c.png",
+   "width": 260,
+   "height": 195,
+   "bytes": 50059
+  },
+  {
+   "file": "key_animal_d.png",
+   "width": 254,
+   "height": 260,
+   "bytes": 56498
+  },
+  {
+   "file": "key_animal_e.png",
+   "width": 260,
+   "height": 197,
+   "bytes": 43827
+  },
+  {
+   "file": "key_animal_f.png",
+   "width": 260,
+   "height": 236,
+   "bytes": 65460
+  },
+  {
+   "file": "key_animal_g.png",
+   "width": 260,
+   "height": 236,
+   "bytes": 46930
+  },
+  {
+   "file": "key_animal_a.png",
+   "width": 260,
+   "height": 183,
+   "bytes": 44057
+  },
+  {
+   "file": "key_animal_b.png",
+   "width": 260,
+   "height": 248,
+   "bytes": 60784
+  },
+  {
+   "file": "key_animal_c2.png",
+   "width": 260,
+   "height": 224,
+   "bytes": 45070
+  }
+ ],
+ "key_bed": {
+  "x": 140,
+  "y": 452,
+  "w": 1320,
+  "h": 371,
+  "note": "px in piano_body.png; flat recessed bed, draw the 13 keys inside"
+ },
+ "piano_body_size": [
+  1600,
+  1119
+ ],
+ "total_bytes": 1569231
+}

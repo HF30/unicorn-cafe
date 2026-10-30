@@ -1,0 +1,32 @@
+{
+  "sessionLimitMinutes": 0,
+  "sessionLimitOptions": [
+    0,
+    10,
+    15,
+    20,
+    30
+  ],
+  "windDownMinutes": 2,
+  "trace": {
+    "corridorRatio": 0.15,
+    "minInside": 0.85,
+    "minCoverage": 0.8,
+    "free": {
+      "corridorRatio": 0.15,
+      "minInside": 0.85,
+      "minCoverage": 0.8,
+      "minSize": 0.12
+    }
+  },
+  "retry": {
+    "maxBeforeDemo": 2
+  },
+  "adultGate": {
+    "holdMs": 3000,
+    "spoken": false
+  },
+  "rewards": {
+    "stickerChancePerDay": 0.34
+  }
+}

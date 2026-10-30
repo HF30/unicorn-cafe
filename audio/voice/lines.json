@@ -1,0 +1,11926 @@
+[
+ {
+  "id": "welcome",
+  "text": "Good morning, chef! Tap our customer to hear their order. Tap the little speaker whenever you want to hear me again."
+ },
+ {
+  "id": "trace_intro",
+  "text": "Follow the sparkly path with your finger. Start at the green dot. Then tap the tick. Tap the curled arrow to start again."
+ },
+ {
+  "id": "trace_hint",
+  "text": "Let’s follow the whole path together. Try the glowing guide."
+ },
+ {
+  "id": "count_intro",
+  "text": "Tap the food to put it in the basket. Tap the basket when you have enough."
+ },
+ {
+  "id": "pay_intro",
+  "text": "Each coin is worth one. Tap coins to pay, then tap the till."
+ },
+ {
+  "id": "cook_intro",
+  "text": "Drag each ingredient into the pan. Then tap the spoon to stir."
+ },
+ {
+  "id": "serve_thanks",
+  "text": "Thank you, chef! A sparkle for your café!"
+ },
+ {
+  "id": "session_winddown",
+  "text": "The café is closing soon. Let’s finish our last customer."
+ },
+ {
+  "id": "session_goodbye",
+  "text": "Our café is closed. Thank you, chef! See you next time."
+ },
+ {
+  "id": "list",
+  "text": "Now trace your shopping list."
+ },
+ {
+  "id": "hint_count",
+  "text": "Count the food with me. You can tap the basket food to put one back."
+ },
+ {
+  "id": "hint_pay",
+  "text": "One coin for each item. You can tap a paid coin to take one back."
+ },
+ {
+  "id": "demo",
+  "text": "Watch me, then you can finish."
+ },
+ {
+  "id": "stir",
+  "text": "Tap the spoon three times, then bring the plate to our customer."
+ },
+ {
+  "id": "reward",
+  "text": "Tap the sparkle to visit the café."
+ },
+ {
+  "id": "wait",
+  "text": "Our café looks lovely! Tap a decoration to make it sparkle while we wait for closing time."
+ },
+ {
+  "id": "ticket_start",
+  "text": "Let’s write the order ticket."
+ },
+ {
+  "id": "ticket_pencil",
+  "text": "Let’s write the order ticket. Tap the pencil."
+ },
+ {
+  "id": "sticker_book",
+  "text": "Your sticker book! Every customer you serve earns a sticker. Tap the curled arrow to visit the café."
+ },
+ {
+  "id": "lovely",
+  "text": "Lovely tracing!"
+ },
+ {
+  "id": "your_turn",
+  "text": "Your turn. Finish the last path, then tap the tick."
+ },
+ {
+  "id": "watch_count",
+  "text": "Watch me count."
+ },
+ {
+  "id": "watch_me",
+  "text": "Watch me."
+ },
+ {
+  "id": "add_one_more",
+  "text": "Add one more, then tap the basket."
+ },
+ {
+  "id": "pay_one_more",
+  "text": "Pay one more coin, then tap the tick."
+ },
+ {
+  "id": "drag_pan",
+  "text": "Drag the food into the pan."
+ },
+ {
+  "id": "drag_pan_first",
+  "text": "Drag the food into the pan first."
+ },
+ {
+  "id": "stir_done",
+  "text": "Delicious! Tap the plate to serve."
+ },
+ {
+  "id": "serve_plate",
+  "text": "Tap the plate to give our customer their food."
+ },
+ {
+  "id": "sparkle_deco",
+  "text": "Sparkle, sparkle! Thank you for caring for our café."
+ },
+ {
+  "id": "altogether",
+  "text": "How many altogether?"
+ },
+ {
+  "id": "buddy_nap",
+  "text": "Buddy is having a little nap."
+ },
+ {
+  "id": "buddy_happy",
+  "text": "Look, Buddy is so happy!"
+ },
+ {
+  "id": "buddy_woof",
+  "text": "Buddy says woof woof, great job!"
+ },
+ {
+  "id": "buddy_follow",
+  "text": "Buddy wants to come too!"
+ },
+ {
+  "id": "buddy_shh",
+  "text": "Shh, Buddy is sleeping."
+ },
+ {
+  "id": "buddy_good",
+  "text": "Good boy, Buddy!"
+ },
+ {
+  "id": "buddy_cooking",
+  "text": "Buddy loves your cooking!"
+ },
+ {
+  "id": "buddy_night",
+  "text": "Night night, Buddy."
+ },
+ {
+  "id": "kitchen_tap",
+  "text": "Tap a food to open it."
+ },
+ {
+  "id": "kitchen_word",
+  "text": "Trace the whole word."
+ },
+ {
+  "id": "scoop_that_many",
+  "text": "Put in that many scoops."
+ },
+ {
+  "id": "scoop_tick",
+  "text": "Now tap the tick."
+ },
+ {
+  "id": "new_day",
+  "text": "Tap the sun for a new day!"
+ },
+ {
+  "id": "read_note",
+  "text": "Read the note!"
+ },
+ {
+  "id": "read_tap_dots",
+  "text": "Tap each dot to hear the sounds."
+ },
+ {
+  "id": "read_blend",
+  "text": "Now blend them together."
+ },
+ {
+  "id": "read_pick",
+  "text": "Which picture is it?"
+ },
+ {
+  "id": "read_got",
+  "text": "You read the word!"
+ },
+ {
+  "id": "read_listen",
+  "text": "Listen again."
+ },
+ {
+  "id": "blend_q",
+  "text": "What word is it?"
+ },
+ {
+  "id": "trace_copy",
+  "text": "Look, then copy it on your pad."
+ },
+ {
+  "id": "trace_study",
+  "text": "Look closely and remember it."
+ },
+ {
+  "id": "trace_memory",
+  "text": "Now write it from memory!"
+ },
+ {
+  "id": "trace_hear_word",
+  "text": "Listen, then write the word."
+ },
+ {
+  "id": "piano_listen",
+  "text": "Listen to the unicorn, then play it back!"
+ },
+ {
+  "id": "piano_turn",
+  "text": "Your turn!"
+ },
+ {
+  "id": "piano_done",
+  "text": "Beautiful music!"
+ },
+ {
+  "id": "note_c",
+  "text": "C"
+ },
+ {
+  "id": "note_d",
+  "text": "D"
+ },
+ {
+  "id": "note_e",
+  "text": "E"
+ },
+ {
+  "id": "note_f",
+  "text": "F"
+ },
+ {
+  "id": "note_g",
+  "text": "G"
+ },
+ {
+  "id": "note_a",
+  "text": "A"
+ },
+ {
+  "id": "note_b",
+  "text": "B"
+ },
+ {
+  "id": "animal_cat",
+  "text": "cat"
+ },
+ {
+  "id": "animal_duck",
+  "text": "duck"
+ },
+ {
+  "id": "animal_elephant",
+  "text": "elephant"
+ },
+ {
+  "id": "animal_frog",
+  "text": "frog"
+ },
+ {
+  "id": "animal_goat",
+  "text": "goat"
+ },
+ {
+  "id": "animal_alligator",
+  "text": "alligator"
+ },
+ {
+  "id": "animal_bear",
+  "text": "bear"
+ },
+ {
+  "id": "animal_chick",
+  "text": "chick"
+ },
+ {
+  "id": "num_0",
+  "text": "zero"
+ },
+ {
+  "id": "num_1",
+  "text": "one"
+ },
+ {
+  "id": "num_2",
+  "text": "two"
+ },
+ {
+  "id": "num_3",
+  "text": "three"
+ },
+ {
+  "id": "num_4",
+  "text": "four"
+ },
+ {
+  "id": "num_5",
+  "text": "five"
+ },
+ {
+  "id": "num_6",
+  "text": "six"
+ },
+ {
+  "id": "num_7",
+  "text": "seven"
+ },
+ {
+  "id": "num_8",
+  "text": "eight"
+ },
+ {
+  "id": "num_9",
+  "text": "nine"
+ },
+ {
+  "id": "num_10",
+  "text": "ten"
+ },
+ {
+  "id": "num_11",
+  "text": "eleven"
+ },
+ {
+  "id": "num_12",
+  "text": "twelve"
+ },
+ {
+  "id": "we_need_1",
+  "text": "We need one.",
+  "parts": [
+   "c_weneed",
+   "num_1"
+  ]
+ },
+ {
+  "id": "it_costs_1",
+  "text": "It costs one coin.",
+  "parts": [
+   "c_itcosts",
+   "num_1",
+   "c_coin"
+  ]
+ },
+ {
+  "id": "you_have_1",
+  "text": "You have one coin.",
+  "parts": [
+   "c_youhave",
+   "num_1",
+   "c_coin"
+  ]
+ },
+ {
+  "id": "food_costs_1",
+  "text": "The food costs one coin.",
+  "parts": [
+   "c_foodcosts",
+   "num_1",
+   "c_coin"
+  ]
+ },
+ {
+  "id": "we_need_2",
+  "text": "We need two.",
+  "parts": [
+   "c_weneed",
+   "num_2"
+  ]
+ },
+ {
+  "id": "it_costs_2",
+  "text": "It costs two coins.",
+  "parts": [
+   "c_itcosts",
+   "num_2",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "you_have_2",
+  "text": "You have two coins.",
+  "parts": [
+   "c_youhave",
+   "num_2",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "food_costs_2",
+  "text": "The food costs two coins.",
+  "parts": [
+   "c_foodcosts",
+   "num_2",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "we_need_3",
+  "text": "We need three.",
+  "parts": [
+   "c_weneed",
+   "num_3"
+  ]
+ },
+ {
+  "id": "it_costs_3",
+  "text": "It costs three coins.",
+  "parts": [
+   "c_itcosts",
+   "num_3",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "you_have_3",
+  "text": "You have three coins.",
+  "parts": [
+   "c_youhave",
+   "num_3",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "food_costs_3",
+  "text": "The food costs three coins.",
+  "parts": [
+   "c_foodcosts",
+   "num_3",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "we_need_4",
+  "text": "We need four.",
+  "parts": [
+   "c_weneed",
+   "num_4"
+  ]
+ },
+ {
+  "id": "it_costs_4",
+  "text": "It costs four coins.",
+  "parts": [
+   "c_itcosts",
+   "num_4",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "you_have_4",
+  "text": "You have four coins.",
+  "parts": [
+   "c_youhave",
+   "num_4",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "food_costs_4",
+  "text": "The food costs four coins.",
+  "parts": [
+   "c_foodcosts",
+   "num_4",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "we_need_5",
+  "text": "We need five.",
+  "parts": [
+   "c_weneed",
+   "num_5"
+  ]
+ },
+ {
+  "id": "it_costs_5",
+  "text": "It costs five coins.",
+  "parts": [
+   "c_itcosts",
+   "num_5",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "you_have_5",
+  "text": "You have five coins.",
+  "parts": [
+   "c_youhave",
+   "num_5",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "food_costs_5",
+  "text": "The food costs five coins.",
+  "parts": [
+   "c_foodcosts",
+   "num_5",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "we_need_6",
+  "text": "We need six.",
+  "parts": [
+   "c_weneed",
+   "num_6"
+  ]
+ },
+ {
+  "id": "it_costs_6",
+  "text": "It costs six coins.",
+  "parts": [
+   "c_itcosts",
+   "num_6",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "you_have_6",
+  "text": "You have six coins.",
+  "parts": [
+   "c_youhave",
+   "num_6",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "food_costs_6",
+  "text": "The food costs six coins.",
+  "parts": [
+   "c_foodcosts",
+   "num_6",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "we_need_7",
+  "text": "We need seven.",
+  "parts": [
+   "c_weneed",
+   "num_7"
+  ]
+ },
+ {
+  "id": "it_costs_7",
+  "text": "It costs seven coins.",
+  "parts": [
+   "c_itcosts",
+   "num_7",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "you_have_7",
+  "text": "You have seven coins.",
+  "parts": [
+   "c_youhave",
+   "num_7",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "food_costs_7",
+  "text": "The food costs seven coins.",
+  "parts": [
+   "c_foodcosts",
+   "num_7",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "we_need_8",
+  "text": "We need eight.",
+  "parts": [
+   "c_weneed",
+   "num_8"
+  ]
+ },
+ {
+  "id": "it_costs_8",
+  "text": "It costs eight coins.",
+  "parts": [
+   "c_itcosts",
+   "num_8",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "you_have_8",
+  "text": "You have eight coins.",
+  "parts": [
+   "c_youhave",
+   "num_8",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "food_costs_8",
+  "text": "The food costs eight coins.",
+  "parts": [
+   "c_foodcosts",
+   "num_8",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "we_need_9",
+  "text": "We need nine.",
+  "parts": [
+   "c_weneed",
+   "num_9"
+  ]
+ },
+ {
+  "id": "it_costs_9",
+  "text": "It costs nine coins.",
+  "parts": [
+   "c_itcosts",
+   "num_9",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "you_have_9",
+  "text": "You have nine coins.",
+  "parts": [
+   "c_youhave",
+   "num_9",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "food_costs_9",
+  "text": "The food costs nine coins.",
+  "parts": [
+   "c_foodcosts",
+   "num_9",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "we_need_10",
+  "text": "We need ten.",
+  "parts": [
+   "c_weneed",
+   "num_10"
+  ]
+ },
+ {
+  "id": "it_costs_10",
+  "text": "It costs ten coins.",
+  "parts": [
+   "c_itcosts",
+   "num_10",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "you_have_10",
+  "text": "You have ten coins.",
+  "parts": [
+   "c_youhave",
+   "num_10",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "food_costs_10",
+  "text": "The food costs ten coins.",
+  "parts": [
+   "c_foodcosts",
+   "num_10",
+   "c_coins"
+  ]
+ },
+ {
+  "id": "count_to_1",
+  "text": "one.",
+  "parts": [
+   "num_1"
+  ]
+ },
+ {
+  "id": "count_to_2",
+  "text": "one, two.",
+  "parts": [
+   "num_1",
+   "num_2"
+  ]
+ },
+ {
+  "id": "count_to_3",
+  "text": "one, two, three.",
+  "parts": [
+   "num_1",
+   "num_2",
+   "num_3"
+  ]
+ },
+ {
+  "id": "count_to_4",
+  "text": "one, two, three, four.",
+  "parts": [
+   "num_1",
+   "num_2",
+   "num_3",
+   "num_4"
+  ]
+ },
+ {
+  "id": "count_to_5",
+  "text": "one, two, three, four, five.",
+  "parts": [
+   "num_1",
+   "num_2",
+   "num_3",
+   "num_4",
+   "num_5"
+  ]
+ },
+ {
+  "id": "count_to_6",
+  "text": "one, two, three, four, five, six.",
+  "parts": [
+   "num_1",
+   "num_2",
+   "num_3",
+   "num_4",
+   "num_5",
+   "num_6"
+  ]
+ },
+ {
+  "id": "count_to_7",
+  "text": "one, two, three, four, five, six, seven.",
+  "parts": [
+   "num_1",
+   "num_2",
+   "num_3",
+   "num_4",
+   "num_5",
+   "num_6",
+   "num_7"
+  ]
+ },
+ {
+  "id": "count_to_8",
+  "text": "one, two, three, four, five, six, seven, eight.",
+  "parts": [
+   "num_1",
+   "num_2",
+   "num_3",
+   "num_4",
+   "num_5",
+   "num_6",
+   "num_7",
+   "num_8"
+  ]
+ },
+ {
+  "id": "count_to_9",
+  "text": "one, two, three, four, five, six, seven, eight, nine.",
+  "parts": [
+   "num_1",
+   "num_2",
+   "num_3",
+   "num_4",
+   "num_5",
+   "num_6",
+   "num_7",
+   "num_8",
+   "num_9"
+  ]
+ },
+ {
+  "id": "count_to_10",
+  "text": "one, two, three, four, five, six, seven, eight, nine, ten.",
+  "parts": [
+   "num_1",
+   "num_2",
+   "num_3",
+   "num_4",
+   "num_5",
+   "num_6",
+   "num_7",
+   "num_8",
+   "num_9",
+   "num_10"
+  ]
+ },
+ {
+  "id": "count_to_11",
+  "text": "one, two, three, four, five, six, seven, eight, nine, ten, eleven.",
+  "parts": [
+   "num_1",
+   "num_2",
+   "num_3",
+   "num_4",
+   "num_5",
+   "num_6",
+   "num_7",
+   "num_8",
+   "num_9",
+   "num_10",
+   "num_11"
+  ]
+ },
+ {
+  "id": "scoop_1",
+  "text": "Put in one scoop.",
+  "parts": [
+   "c_putin",
+   "num_1",
+   "c_scoop"
+  ]
+ },
+ {
+  "id": "scoop_2",
+  "text": "Put in two scoops.",
+  "parts": [
+   "c_putin",
+   "num_2",
+   "c_scoops"
+  ]
+ },
+ {
+  "id": "scoop_3",
+  "text": "Put in three scoops.",
+  "parts": [
+   "c_putin",
+   "num_3",
+   "c_scoops"
+  ]
+ },
+ {
+  "id": "scoop_4",
+  "text": "Put in four scoops.",
+  "parts": [
+   "c_putin",
+   "num_4",
+   "c_scoops"
+  ]
+ },
+ {
+  "id": "scoop_5",
+  "text": "Put in five scoops.",
+  "parts": [
+   "c_putin",
+   "num_5",
+   "c_scoops"
+  ]
+ },
+ {
+  "id": "scoop_6",
+  "text": "Put in six scoops.",
+  "parts": [
+   "c_putin",
+   "num_6",
+   "c_scoops"
+  ]
+ },
+ {
+  "id": "scoop_7",
+  "text": "Put in seven scoops.",
+  "parts": [
+   "c_putin",
+   "num_7",
+   "c_scoops"
+  ]
+ },
+ {
+  "id": "scoop_8",
+  "text": "Put in eight scoops.",
+  "parts": [
+   "c_putin",
+   "num_8",
+   "c_scoops"
+  ]
+ },
+ {
+  "id": "scoop_9",
+  "text": "Put in nine scoops.",
+  "parts": [
+   "c_putin",
+   "num_9",
+   "c_scoops"
+  ]
+ },
+ {
+  "id": "scoop_10",
+  "text": "Put in ten scoops.",
+  "parts": [
+   "c_putin",
+   "num_10",
+   "c_scoops"
+  ]
+ },
+ {
+  "id": "use_2_1",
+  "text": "You have two. Use one.",
+  "parts": [
+   "c_youhave",
+   "num_2",
+   "c_use",
+   "num_1"
+  ]
+ },
+ {
+  "id": "use_3_1",
+  "text": "You have three. Use one.",
+  "parts": [
+   "c_youhave",
+   "num_3",
+   "c_use",
+   "num_1"
+  ]
+ },
+ {
+  "id": "use_3_2",
+  "text": "You have three. Use two.",
+  "parts": [
+   "c_youhave",
+   "num_3",
+   "c_use",
+   "num_2"
+  ]
+ },
+ {
+  "id": "use_4_1",
+  "text": "You have four. Use one.",
+  "parts": [
+   "c_youhave",
+   "num_4",
+   "c_use",
+   "num_1"
+  ]
+ },
+ {
+  "id": "use_4_2",
+  "text": "You have four. Use two.",
+  "parts": [
+   "c_youhave",
+   "num_4",
+   "c_use",
+   "num_2"
+  ]
+ },
+ {
+  "id": "use_4_3",
+  "text": "You have four. Use three.",
+  "parts": [
+   "c_youhave",
+   "num_4",
+   "c_use",
+   "num_3"
+  ]
+ },
+ {
+  "id": "use_5_1",
+  "text": "You have five. Use one.",
+  "parts": [
+   "c_youhave",
+   "num_5",
+   "c_use",
+   "num_1"
+  ]
+ },
+ {
+  "id": "use_5_2",
+  "text": "You have five. Use two.",
+  "parts": [
+   "c_youhave",
+   "num_5",
+   "c_use",
+   "num_2"
+  ]
+ },
+ {
+  "id": "use_5_3",
+  "text": "You have five. Use three.",
+  "parts": [
+   "c_youhave",
+   "num_5",
+   "c_use",
+   "num_3"
+  ]
+ },
+ {
+  "id": "use_5_4",
+  "text": "You have five. Use four.",
+  "parts": [
+   "c_youhave",
+   "num_5",
+   "c_use",
+   "num_4"
+  ]
+ },
+ {
+  "id": "use_6_1",
+  "text": "You have six. Use one.",
+  "parts": [
+   "c_youhave",
+   "num_6",
+   "c_use",
+   "num_1"
+  ]
+ },
+ {
+  "id": "use_6_2",
+  "text": "You have six. Use two.",
+  "parts": [
+   "c_youhave",
+   "num_6",
+   "c_use",
+   "num_2"
+  ]
+ },
+ {
+  "id": "use_6_3",
+  "text": "You have six. Use three.",
+  "parts": [
+   "c_youhave",
+   "num_6",
+   "c_use",
+   "num_3"
+  ]
+ },
+ {
+  "id": "use_6_4",
+  "text": "You have six. Use four.",
+  "parts": [
+   "c_youhave",
+   "num_6",
+   "c_use",
+   "num_4"
+  ]
+ },
+ {
+  "id": "use_6_5",
+  "text": "You have six. Use five.",
+  "parts": [
+   "c_youhave",
+   "num_6",
+   "c_use",
+   "num_5"
+  ]
+ },
+ {
+  "id": "use_7_1",
+  "text": "You have seven. Use one.",
+  "parts": [
+   "c_youhave",
+   "num_7",
+   "c_use",
+   "num_1"
+  ]
+ },
+ {
+  "id": "use_7_2",
+  "text": "You have seven. Use two.",
+  "parts": [
+   "c_youhave",
+   "num_7",
+   "c_use",
+   "num_2"
+  ]
+ },
+ {
+  "id": "use_7_3",
+  "text": "You have seven. Use three.",
+  "parts": [
+   "c_youhave",
+   "num_7",
+   "c_use",
+   "num_3"
+  ]
+ },
+ {
+  "id": "use_7_4",
+  "text": "You have seven. Use four.",
+  "parts": [
+   "c_youhave",
+   "num_7",
+   "c_use",
+   "num_4"
+  ]
+ },
+ {
+  "id": "use_7_5",
+  "text": "You have seven. Use five.",
+  "parts": [
+   "c_youhave",
+   "num_7",
+   "c_use",
+   "num_5"
+  ]
+ },
+ {
+  "id": "use_7_6",
+  "text": "You have seven. Use six.",
+  "parts": [
+   "c_youhave",
+   "num_7",
+   "c_use",
+   "num_6"
+  ]
+ },
+ {
+  "id": "use_8_1",
+  "text": "You have eight. Use one.",
+  "parts": [
+   "c_youhave",
+   "num_8",
+   "c_use",
+   "num_1"
+  ]
+ },
+ {
+  "id": "use_8_2",
+  "text": "You have eight. Use two.",
+  "parts": [
+   "c_youhave",
+   "num_8",
+   "c_use",
+   "num_2"
+  ]
+ },
+ {
+  "id": "use_8_3",
+  "text": "You have eight. Use three.",
+  "parts": [
+   "c_youhave",
+   "num_8",
+   "c_use",
+   "num_3"
+  ]
+ },
+ {
+  "id": "use_8_4",
+  "text": "You have eight. Use four.",
+  "parts": [
+   "c_youhave",
+   "num_8",
+   "c_use",
+   "num_4"
+  ]
+ },
+ {
+  "id": "use_8_5",
+  "text": "You have eight. Use five.",
+  "parts": [
+   "c_youhave",
+   "num_8",
+   "c_use",
+   "num_5"
+  ]
+ },
+ {
+  "id": "use_8_6",
+  "text": "You have eight. Use six.",
+  "parts": [
+   "c_youhave",
+   "num_8",
+   "c_use",
+   "num_6"
+  ]
+ },
+ {
+  "id": "use_8_7",
+  "text": "You have eight. Use seven.",
+  "parts": [
+   "c_youhave",
+   "num_8",
+   "c_use",
+   "num_7"
+  ]
+ },
+ {
+  "id": "use_9_1",
+  "text": "You have nine. Use one.",
+  "parts": [
+   "c_youhave",
+   "num_9",
+   "c_use",
+   "num_1"
+  ]
+ },
+ {
+  "id": "use_9_2",
+  "text": "You have nine. Use two.",
+  "parts": [
+   "c_youhave",
+   "num_9",
+   "c_use",
+   "num_2"
+  ]
+ },
+ {
+  "id": "use_9_3",
+  "text": "You have nine. Use three.",
+  "parts": [
+   "c_youhave",
+   "num_9",
+   "c_use",
+   "num_3"
+  ]
+ },
+ {
+  "id": "use_9_4",
+  "text": "You have nine. Use four.",
+  "parts": [
+   "c_youhave",
+   "num_9",
+   "c_use",
+   "num_4"
+  ]
+ },
+ {
+  "id": "use_9_5",
+  "text": "You have nine. Use five.",
+  "parts": [
+   "c_youhave",
+   "num_9",
+   "c_use",
+   "num_5"
+  ]
+ },
+ {
+  "id": "use_9_6",
+  "text": "You have nine. Use six.",
+  "parts": [
+   "c_youhave",
+   "num_9",
+   "c_use",
+   "num_6"
+  ]
+ },
+ {
+  "id": "use_9_7",
+  "text": "You have nine. Use seven.",
+  "parts": [
+   "c_youhave",
+   "num_9",
+   "c_use",
+   "num_7"
+  ]
+ },
+ {
+  "id": "use_9_8",
+  "text": "You have nine. Use eight.",
+  "parts": [
+   "c_youhave",
+   "num_9",
+   "c_use",
+   "num_8"
+  ]
+ },
+ {
+  "id": "use_10_1",
+  "text": "You have ten. Use one.",
+  "parts": [
+   "c_youhave",
+   "num_10",
+   "c_use",
+   "num_1"
+  ]
+ },
+ {
+  "id": "use_10_2",
+  "text": "You have ten. Use two.",
+  "parts": [
+   "c_youhave",
+   "num_10",
+   "c_use",
+   "num_2"
+  ]
+ },
+ {
+  "id": "use_10_3",
+  "text": "You have ten. Use three.",
+  "parts": [
+   "c_youhave",
+   "num_10",
+   "c_use",
+   "num_3"
+  ]
+ },
+ {
+  "id": "use_10_4",
+  "text": "You have ten. Use four.",
+  "parts": [
+   "c_youhave",
+   "num_10",
+   "c_use",
+   "num_4"
+  ]
+ },
+ {
+  "id": "use_10_5",
+  "text": "You have ten. Use five.",
+  "parts": [
+   "c_youhave",
+   "num_10",
+   "c_use",
+   "num_5"
+  ]
+ },
+ {
+  "id": "use_10_6",
+  "text": "You have ten. Use six.",
+  "parts": [
+   "c_youhave",
+   "num_10",
+   "c_use",
+   "num_6"
+  ]
+ },
+ {
+  "id": "use_10_7",
+  "text": "You have ten. Use seven.",
+  "parts": [
+   "c_youhave",
+   "num_10",
+   "c_use",
+   "num_7"
+  ]
+ },
+ {
+  "id": "use_10_8",
+  "text": "You have ten. Use eight.",
+  "parts": [
+   "c_youhave",
+   "num_10",
+   "c_use",
+   "num_8"
+  ]
+ },
+ {
+  "id": "use_10_9",
+  "text": "You have ten. Use nine.",
+  "parts": [
+   "c_youhave",
+   "num_10",
+   "c_use",
+   "num_9"
+  ]
+ },
+ {
+  "id": "ps_s",
+  "text": "sss."
+ },
+ {
+  "id": "ps_a",
+  "text": "ah."
+ },
+ {
+  "id": "ps_t",
+  "text": "tah."
+ },
+ {
+  "id": "ps_p",
+  "text": "pah."
+ },
+ {
+  "id": "ps_i",
+  "text": "ih."
+ },
+ {
+  "id": "ps_n",
+  "text": "nnn."
+ },
+ {
+  "id": "ps_m",
+  "text": "mmm."
+ },
+ {
+  "id": "ps_d",
+  "text": "dah."
+ },
+ {
+  "id": "ps_g",
+  "text": "gah."
+ },
+ {
+  "id": "ps_o",
+  "text": "oh."
+ },
+ {
+  "id": "ps_c",
+  "text": "kah."
+ },
+ {
+  "id": "ps_k",
+  "text": "kah."
+ },
+ {
+  "id": "ps_ck",
+  "text": "kah."
+ },
+ {
+  "id": "ps_e",
+  "text": "eh."
+ },
+ {
+  "id": "ps_u",
+  "text": "uh."
+ },
+ {
+  "id": "ps_r",
+  "text": "rrr."
+ },
+ {
+  "id": "ps_h",
+  "text": "hah."
+ },
+ {
+  "id": "ps_b",
+  "text": "bah."
+ },
+ {
+  "id": "ps_f",
+  "text": "fff."
+ },
+ {
+  "id": "ps_ff",
+  "text": "fff."
+ },
+ {
+  "id": "ps_l",
+  "text": "lll."
+ },
+ {
+  "id": "ps_ll",
+  "text": "lll."
+ },
+ {
+  "id": "ps_ss",
+  "text": "sss."
+ },
+ {
+  "id": "ps_j",
+  "text": "jah."
+ },
+ {
+  "id": "ps_v",
+  "text": "vvv."
+ },
+ {
+  "id": "ps_w",
+  "text": "wah."
+ },
+ {
+  "id": "ps_x",
+  "text": "ks."
+ },
+ {
+  "id": "ps_y",
+  "text": "yah."
+ },
+ {
+  "id": "ps_z",
+  "text": "zzz."
+ },
+ {
+  "id": "ps_zz",
+  "text": "zzz."
+ },
+ {
+  "id": "ps_qu",
+  "text": "kwah."
+ },
+ {
+  "id": "ps_ch",
+  "text": "chh."
+ },
+ {
+  "id": "ps_sh",
+  "text": "shh."
+ },
+ {
+  "id": "ps_th",
+  "text": "thh."
+ },
+ {
+  "id": "ps_ng",
+  "text": "ng."
+ },
+ {
+  "id": "ps_ai",
+  "text": "ay."
+ },
+ {
+  "id": "ps_ee",
+  "text": "eee."
+ },
+ {
+  "id": "ps_igh",
+  "text": "eye."
+ },
+ {
+  "id": "ps_oa",
+  "text": "oh."
+ },
+ {
+  "id": "ps_oo",
+  "text": "oo."
+ },
+ {
+  "id": "ps_ar",
+  "text": "ahr."
+ },
+ {
+  "id": "ps_or",
+  "text": "orr."
+ },
+ {
+  "id": "ps_ur",
+  "text": "er."
+ },
+ {
+  "id": "ps_ow",
+  "text": "ow."
+ },
+ {
+  "id": "ps_oi",
+  "text": "oy."
+ },
+ {
+  "id": "ps_ear",
+  "text": "eer."
+ },
+ {
+  "id": "ps_air",
+  "text": "air."
+ },
+ {
+  "id": "ps_ure",
+  "text": "yoor."
+ },
+ {
+  "id": "ps_er",
+  "text": "er."
+ },
+ {
+  "id": "ps_ay",
+  "text": "ay."
+ },
+ {
+  "id": "ps_ou",
+  "text": "ow."
+ },
+ {
+  "id": "ps_ie",
+  "text": "eye."
+ },
+ {
+  "id": "ps_ea",
+  "text": "eee."
+ },
+ {
+  "id": "ps_oy",
+  "text": "oy."
+ },
+ {
+  "id": "ps_ir",
+  "text": "er."
+ },
+ {
+  "id": "ps_ue",
+  "text": "oo."
+ },
+ {
+  "id": "ps_aw",
+  "text": "aw."
+ },
+ {
+  "id": "ps_wh",
+  "text": "wah."
+ },
+ {
+  "id": "ps_ew",
+  "text": "oo."
+ },
+ {
+  "id": "ps_a_e",
+  "text": "ay."
+ },
+ {
+  "id": "ps_i_e",
+  "text": "eye."
+ },
+ {
+  "id": "ps_o_e",
+  "text": "oh."
+ },
+ {
+  "id": "ps_u_e",
+  "text": "yoo."
+ },
+ {
+  "id": "ps_q",
+  "text": "kwah."
+ },
+ {
+  "id": "say_hat",
+  "text": "hat"
+ },
+ {
+  "id": "say_sun",
+  "text": "sun"
+ },
+ {
+  "id": "say_ham",
+  "text": "ham",
+  "parts": [
+   "item_ham"
+  ]
+ },
+ {
+  "id": "say_dot",
+  "text": "dot"
+ },
+ {
+  "id": "say_lake",
+  "text": "lake"
+ },
+ {
+  "id": "say_cat",
+  "text": "cat",
+  "parts": [
+   "animal_cat"
+  ]
+ },
+ {
+  "id": "say_bun",
+  "text": "bun",
+  "parts": [
+   "item_bun"
+  ]
+ },
+ {
+  "id": "say_jam",
+  "text": "jam",
+  "parts": [
+   "item_jam"
+  ]
+ },
+ {
+  "id": "say_pot",
+  "text": "pot",
+  "parts": [
+   "item_pot"
+  ]
+ },
+ {
+  "id": "say_cake",
+  "text": "cake"
+ },
+ {
+  "id": "say_pan",
+  "text": "pan",
+  "parts": [
+   "item_pan"
+  ]
+ },
+ {
+  "id": "say_cup",
+  "text": "cup",
+  "parts": [
+   "item_cup"
+  ]
+ },
+ {
+  "id": "say_fig",
+  "text": "fig"
+ },
+ {
+  "id": "say_nut",
+  "text": "nut",
+  "parts": [
+   "item_nut"
+  ]
+ },
+ {
+  "id": "say_dip",
+  "text": "dip",
+  "parts": [
+   "item_dip"
+  ]
+ },
+ {
+  "id": "say_tap",
+  "text": "tap"
+ },
+ {
+  "id": "say_tin",
+  "text": "tin",
+  "parts": [
+   "item_tin"
+  ]
+ },
+ {
+  "id": "say_map",
+  "text": "map"
+ },
+ {
+  "id": "say_mat",
+  "text": "mat"
+ },
+ {
+  "id": "say_can",
+  "text": "can",
+  "parts": [
+   "item_can"
+  ]
+ },
+ {
+  "id": "say_cap",
+  "text": "cap"
+ },
+ {
+  "id": "say_pig",
+  "text": "pig"
+ },
+ {
+  "id": "say_dog",
+  "text": "dog"
+ },
+ {
+  "id": "say_cod",
+  "text": "cod"
+ },
+ {
+  "id": "say_mug",
+  "text": "mug",
+  "parts": [
+   "item_mug"
+  ]
+ },
+ {
+  "id": "say_rug",
+  "text": "rug"
+ },
+ {
+  "id": "say_net",
+  "text": "net"
+ },
+ {
+  "id": "say_rat",
+  "text": "rat"
+ },
+ {
+  "id": "say_duck",
+  "text": "duck",
+  "parts": [
+   "animal_duck"
+  ]
+ },
+ {
+  "id": "say_sock",
+  "text": "sock"
+ },
+ {
+  "id": "say_the",
+  "text": "the"
+ },
+ {
+  "id": "say_to",
+  "text": "to"
+ },
+ {
+  "id": "say_bag",
+  "text": "bag"
+ },
+ {
+  "id": "say_bed",
+  "text": "bed"
+ },
+ {
+  "id": "say_lid",
+  "text": "lid"
+ },
+ {
+  "id": "say_bell",
+  "text": "bell"
+ },
+ {
+  "id": "say_hill",
+  "text": "hill"
+ },
+ {
+  "id": "say_no",
+  "text": "no"
+ },
+ {
+  "id": "say_go",
+  "text": "go"
+ },
+ {
+  "id": "say_I",
+  "text": "I"
+ },
+ {
+  "id": "say_jug",
+  "text": "jug"
+ },
+ {
+  "id": "say_van",
+  "text": "van"
+ },
+ {
+  "id": "say_box",
+  "text": "box"
+ },
+ {
+  "id": "say_yam",
+  "text": "yam"
+ },
+ {
+  "id": "say_zip",
+  "text": "zip"
+ },
+ {
+  "id": "say_he",
+  "text": "he"
+ },
+ {
+  "id": "say_she",
+  "text": "she"
+ },
+ {
+  "id": "say_chip",
+  "text": "chip"
+ },
+ {
+  "id": "say_fish",
+  "text": "fish"
+ },
+ {
+  "id": "say_dish",
+  "text": "dish"
+ },
+ {
+  "id": "say_shop",
+  "text": "shop"
+ },
+ {
+  "id": "say_ship",
+  "text": "ship"
+ },
+ {
+  "id": "say_moth",
+  "text": "moth"
+ },
+ {
+  "id": "say_ring",
+  "text": "ring"
+ },
+ {
+  "id": "say_king",
+  "text": "king"
+ },
+ {
+  "id": "say_we",
+  "text": "we"
+ },
+ {
+  "id": "say_me",
+  "text": "me"
+ },
+ {
+  "id": "say_be",
+  "text": "be"
+ },
+ {
+  "id": "say_rain",
+  "text": "rain"
+ },
+ {
+  "id": "say_tail",
+  "text": "tail"
+ },
+ {
+  "id": "say_seed",
+  "text": "seed"
+ },
+ {
+  "id": "say_feet",
+  "text": "feet"
+ },
+ {
+  "id": "say_goat",
+  "text": "goat",
+  "parts": [
+   "animal_goat"
+  ]
+ },
+ {
+  "id": "say_oats",
+  "text": "oats"
+ },
+ {
+  "id": "say_moon",
+  "text": "moon"
+ },
+ {
+  "id": "say_cook",
+  "text": "cook"
+ },
+ {
+  "id": "say_book",
+  "text": "book"
+ },
+ {
+  "id": "say_was",
+  "text": "was"
+ },
+ {
+  "id": "say_my",
+  "text": "my"
+ },
+ {
+  "id": "say_you",
+  "text": "you"
+ },
+ {
+  "id": "say_jar",
+  "text": "jar"
+ },
+ {
+  "id": "say_tart",
+  "text": "tart"
+ },
+ {
+  "id": "say_corn",
+  "text": "corn"
+ },
+ {
+  "id": "say_fork",
+  "text": "fork"
+ },
+ {
+  "id": "say_cow",
+  "text": "cow"
+ },
+ {
+  "id": "say_coin",
+  "text": "coin",
+  "parts": [
+   "c_coin"
+  ]
+ },
+ {
+  "id": "say_ear",
+  "text": "ear"
+ },
+ {
+  "id": "say_hair",
+  "text": "hair"
+ },
+ {
+  "id": "say_chair",
+  "text": "chair"
+ },
+ {
+  "id": "say_dinner",
+  "text": "dinner"
+ },
+ {
+  "id": "say_her",
+  "text": "her"
+ },
+ {
+  "id": "say_they",
+  "text": "they"
+ },
+ {
+  "id": "say_all",
+  "text": "all"
+ },
+ {
+  "id": "say_are",
+  "text": "are"
+ },
+ {
+  "id": "say_milk",
+  "text": "milk"
+ },
+ {
+  "id": "say_mint",
+  "text": "mint"
+ },
+ {
+  "id": "say_plum",
+  "text": "plum"
+ },
+ {
+  "id": "say_crisp",
+  "text": "crisp"
+ },
+ {
+  "id": "say_drink",
+  "text": "drink"
+ },
+ {
+  "id": "say_toast",
+  "text": "toast"
+ },
+ {
+  "id": "say_lunch",
+  "text": "lunch"
+ },
+ {
+  "id": "say_frog",
+  "text": "frog",
+  "parts": [
+   "animal_frog"
+  ]
+ },
+ {
+  "id": "say_sweets",
+  "text": "sweets"
+ },
+ {
+  "id": "say_said",
+  "text": "said"
+ },
+ {
+  "id": "say_have",
+  "text": "have"
+ },
+ {
+  "id": "say_like",
+  "text": "like"
+ },
+ {
+  "id": "say_so",
+  "text": "so"
+ },
+ {
+  "id": "say_do",
+  "text": "do"
+ },
+ {
+  "id": "say_some",
+  "text": "some"
+ },
+ {
+  "id": "say_come",
+  "text": "come"
+ },
+ {
+  "id": "say_were",
+  "text": "were"
+ },
+ {
+  "id": "say_there",
+  "text": "there"
+ },
+ {
+  "id": "say_little",
+  "text": "little"
+ },
+ {
+  "id": "say_one",
+  "text": "one"
+ },
+ {
+  "id": "say_when",
+  "text": "when"
+ },
+ {
+  "id": "say_out",
+  "text": "out"
+ },
+ {
+  "id": "say_what",
+  "text": "what"
+ },
+ {
+  "id": "say_tray",
+  "text": "tray"
+ },
+ {
+  "id": "say_soup",
+  "text": "soup"
+ },
+ {
+  "id": "say_pie",
+  "text": "pie"
+ },
+ {
+  "id": "say_tea",
+  "text": "tea"
+ },
+ {
+  "id": "say_toy",
+  "text": "toy"
+ },
+ {
+  "id": "say_bird",
+  "text": "bird"
+ },
+ {
+  "id": "say_straw",
+  "text": "straw"
+ },
+ {
+  "id": "say_whisk",
+  "text": "whisk"
+ },
+ {
+  "id": "say_stew",
+  "text": "stew"
+ },
+ {
+  "id": "say_plate",
+  "text": "plate"
+ },
+ {
+  "id": "say_ice",
+  "text": "ice"
+ },
+ {
+  "id": "say_cone",
+  "text": "cone"
+ },
+ {
+  "id": "say_cube",
+  "text": "cube"
+ },
+ {
+  "id": "say_oh",
+  "text": "oh"
+ },
+ {
+  "id": "say_their",
+  "text": "their"
+ },
+ {
+  "id": "say_people",
+  "text": "people"
+ },
+ {
+  "id": "say_could",
+  "text": "could"
+ },
+ {
+  "id": "say_called",
+  "text": "called"
+ },
+ {
+  "id": "say_asked",
+  "text": "asked"
+ },
+ {
+  "id": "word_jam",
+  "text": "jam.",
+  "parts": [
+   "ps_j",
+   "ps_a",
+   "ps_m",
+   "item_jam"
+  ]
+ },
+ {
+  "id": "word_bun",
+  "text": "bun.",
+  "parts": [
+   "ps_b",
+   "ps_u",
+   "ps_n",
+   "item_bun"
+  ]
+ },
+ {
+  "id": "word_ham",
+  "text": "ham.",
+  "parts": [
+   "ps_h",
+   "ps_a",
+   "ps_m",
+   "item_ham"
+  ]
+ },
+ {
+  "id": "word_cup",
+  "text": "cup.",
+  "parts": [
+   "ps_c",
+   "ps_u",
+   "ps_p",
+   "item_cup"
+  ]
+ },
+ {
+  "id": "word_pot",
+  "text": "pot.",
+  "parts": [
+   "ps_p",
+   "ps_o",
+   "ps_t",
+   "item_pot"
+  ]
+ },
+ {
+  "id": "word_pan",
+  "text": "pan.",
+  "parts": [
+   "ps_p",
+   "ps_a",
+   "ps_n",
+   "item_pan"
+  ]
+ },
+ {
+  "id": "word_can",
+  "text": "can.",
+  "parts": [
+   "ps_c",
+   "ps_a",
+   "ps_n",
+   "item_can"
+  ]
+ },
+ {
+  "id": "word_tin",
+  "text": "tin.",
+  "parts": [
+   "ps_t",
+   "ps_i",
+   "ps_n",
+   "item_tin"
+  ]
+ },
+ {
+  "id": "word_mug",
+  "text": "mug.",
+  "parts": [
+   "ps_m",
+   "ps_u",
+   "ps_g",
+   "item_mug"
+  ]
+ },
+ {
+  "id": "word_nut",
+  "text": "nut.",
+  "parts": [
+   "ps_n",
+   "ps_u",
+   "ps_t",
+   "item_nut"
+  ]
+ },
+ {
+  "id": "word_cob",
+  "text": "cob.",
+  "parts": [
+   "ps_c",
+   "ps_o",
+   "ps_b",
+   "item_cob"
+  ]
+ },
+ {
+  "id": "word_dip",
+  "text": "dip.",
+  "parts": [
+   "ps_d",
+   "ps_i",
+   "ps_p",
+   "item_dip"
+  ]
+ },
+ {
+  "id": "order_1_jam",
+  "text": "one jam, please.",
+  "parts": [
+   "num_1",
+   "item_jam",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_jam",
+  "text": "We need one jam.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_jam"
+  ]
+ },
+ {
+  "id": "order_2_jam",
+  "text": "two jams, please.",
+  "parts": [
+   "num_2",
+   "items_jam",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_jam",
+  "text": "We need two jams.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_jam"
+  ]
+ },
+ {
+  "id": "order_3_jam",
+  "text": "three jams, please.",
+  "parts": [
+   "num_3",
+   "items_jam",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_jam",
+  "text": "We need three jams.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_jam"
+  ]
+ },
+ {
+  "id": "order_4_jam",
+  "text": "four jams, please.",
+  "parts": [
+   "num_4",
+   "items_jam",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_jam",
+  "text": "We need four jams.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_jam"
+  ]
+ },
+ {
+  "id": "order_5_jam",
+  "text": "five jams, please.",
+  "parts": [
+   "num_5",
+   "items_jam",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_jam",
+  "text": "We need five jams.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_jam"
+  ]
+ },
+ {
+  "id": "order_6_jam",
+  "text": "six jams, please.",
+  "parts": [
+   "num_6",
+   "items_jam",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_jam",
+  "text": "We need six jams.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_jam"
+  ]
+ },
+ {
+  "id": "order_7_jam",
+  "text": "seven jams, please.",
+  "parts": [
+   "num_7",
+   "items_jam",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_jam",
+  "text": "We need seven jams.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_jam"
+  ]
+ },
+ {
+  "id": "order_8_jam",
+  "text": "eight jams, please.",
+  "parts": [
+   "num_8",
+   "items_jam",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_jam",
+  "text": "We need eight jams.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_jam"
+  ]
+ },
+ {
+  "id": "order_9_jam",
+  "text": "nine jams, please.",
+  "parts": [
+   "num_9",
+   "items_jam",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_jam",
+  "text": "We need nine jams.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_jam"
+  ]
+ },
+ {
+  "id": "order_10_jam",
+  "text": "ten jams, please.",
+  "parts": [
+   "num_10",
+   "items_jam",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_jam",
+  "text": "We need ten jams.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_jam"
+  ]
+ },
+ {
+  "id": "order_add_1_1_jam",
+  "text": "one jam, and one more jam. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_jam",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_jam",
+  "text": "one jam, and two more jams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_jam",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_jam",
+  "text": "one jam, and three more jams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_jam",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_jam",
+  "text": "one jam, and four more jams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_jam",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_jam",
+  "text": "one jam, and five more jams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_jam",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_jam",
+  "text": "one jam, and six more jams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_jam",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_jam",
+  "text": "one jam, and seven more jams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_jam",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_jam",
+  "text": "one jam, and eight more jams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_jam",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_jam",
+  "text": "one jam, and nine more jams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_jam",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_jam",
+  "text": "two jams, and one more jam. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_jam",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_jam",
+  "text": "two jams, and two more jams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_jam",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_jam",
+  "text": "two jams, and three more jams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_jam",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_jam",
+  "text": "two jams, and four more jams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_jam",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_jam",
+  "text": "two jams, and five more jams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_jam",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_jam",
+  "text": "two jams, and six more jams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_jam",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_jam",
+  "text": "two jams, and seven more jams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_jam",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_jam",
+  "text": "two jams, and eight more jams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_jam",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_jam",
+  "text": "three jams, and one more jam. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_jam",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_jam",
+  "text": "three jams, and two more jams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_jam",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_jam",
+  "text": "three jams, and three more jams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_jam",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_jam",
+  "text": "three jams, and four more jams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_jam",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_jam",
+  "text": "three jams, and five more jams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_jam",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_jam",
+  "text": "three jams, and six more jams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_jam",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_jam",
+  "text": "three jams, and seven more jams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_jam",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_jam",
+  "text": "four jams, and one more jam. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_jam",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_jam",
+  "text": "four jams, and two more jams. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_jam",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_jam",
+  "text": "four jams, and three more jams. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_jam",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_jam",
+  "text": "four jams, and four more jams. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_jam",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_jam",
+  "text": "four jams, and five more jams. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_jam",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_jam",
+  "text": "four jams, and six more jams. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_jam",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_jam",
+  "text": "five jams, and one more jam. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_jam",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_jam",
+  "text": "five jams, and two more jams. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_jam",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_jam",
+  "text": "five jams, and three more jams. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_jam",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_jam",
+  "text": "five jams, and four more jams. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_jam",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_jam",
+  "text": "five jams, and five more jams. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_jam",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_jam",
+  "text": "six jams, and one more jam. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_jam",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_jam",
+  "text": "six jams, and two more jams. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_jam",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_jam",
+  "text": "six jams, and three more jams. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_jam",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_jam",
+  "text": "six jams, and four more jams. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_jam",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_jam",
+  "text": "seven jams, and one more jam. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_jam",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_jam",
+  "text": "seven jams, and two more jams. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_jam",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_jam",
+  "text": "seven jams, and three more jams. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_jam",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_jam",
+  "text": "eight jams, and one more jam. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_jam",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_jam",
+  "text": "eight jams, and two more jams. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_jam",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_jam",
+  "text": "nine jams, and one more jam. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_jam",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_jam",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_bun",
+  "text": "one bun, please.",
+  "parts": [
+   "num_1",
+   "item_bun",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_bun",
+  "text": "We need one bun.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_bun"
+  ]
+ },
+ {
+  "id": "order_2_bun",
+  "text": "two buns, please.",
+  "parts": [
+   "num_2",
+   "items_bun",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_bun",
+  "text": "We need two buns.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_bun"
+  ]
+ },
+ {
+  "id": "order_3_bun",
+  "text": "three buns, please.",
+  "parts": [
+   "num_3",
+   "items_bun",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_bun",
+  "text": "We need three buns.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_bun"
+  ]
+ },
+ {
+  "id": "order_4_bun",
+  "text": "four buns, please.",
+  "parts": [
+   "num_4",
+   "items_bun",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_bun",
+  "text": "We need four buns.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_bun"
+  ]
+ },
+ {
+  "id": "order_5_bun",
+  "text": "five buns, please.",
+  "parts": [
+   "num_5",
+   "items_bun",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_bun",
+  "text": "We need five buns.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_bun"
+  ]
+ },
+ {
+  "id": "order_6_bun",
+  "text": "six buns, please.",
+  "parts": [
+   "num_6",
+   "items_bun",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_bun",
+  "text": "We need six buns.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_bun"
+  ]
+ },
+ {
+  "id": "order_7_bun",
+  "text": "seven buns, please.",
+  "parts": [
+   "num_7",
+   "items_bun",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_bun",
+  "text": "We need seven buns.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_bun"
+  ]
+ },
+ {
+  "id": "order_8_bun",
+  "text": "eight buns, please.",
+  "parts": [
+   "num_8",
+   "items_bun",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_bun",
+  "text": "We need eight buns.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_bun"
+  ]
+ },
+ {
+  "id": "order_9_bun",
+  "text": "nine buns, please.",
+  "parts": [
+   "num_9",
+   "items_bun",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_bun",
+  "text": "We need nine buns.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_bun"
+  ]
+ },
+ {
+  "id": "order_10_bun",
+  "text": "ten buns, please.",
+  "parts": [
+   "num_10",
+   "items_bun",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_bun",
+  "text": "We need ten buns.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_bun"
+  ]
+ },
+ {
+  "id": "order_add_1_1_bun",
+  "text": "one bun, and one more bun. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_bun",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_bun",
+  "text": "one bun, and two more buns. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_bun",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_bun",
+  "text": "one bun, and three more buns. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_bun",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_bun",
+  "text": "one bun, and four more buns. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_bun",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_bun",
+  "text": "one bun, and five more buns. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_bun",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_bun",
+  "text": "one bun, and six more buns. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_bun",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_bun",
+  "text": "one bun, and seven more buns. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_bun",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_bun",
+  "text": "one bun, and eight more buns. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_bun",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_bun",
+  "text": "one bun, and nine more buns. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_bun",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_bun",
+  "text": "two buns, and one more bun. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_bun",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_bun",
+  "text": "two buns, and two more buns. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_bun",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_bun",
+  "text": "two buns, and three more buns. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_bun",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_bun",
+  "text": "two buns, and four more buns. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_bun",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_bun",
+  "text": "two buns, and five more buns. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_bun",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_bun",
+  "text": "two buns, and six more buns. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_bun",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_bun",
+  "text": "two buns, and seven more buns. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_bun",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_bun",
+  "text": "two buns, and eight more buns. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_bun",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_bun",
+  "text": "three buns, and one more bun. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_bun",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_bun",
+  "text": "three buns, and two more buns. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_bun",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_bun",
+  "text": "three buns, and three more buns. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_bun",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_bun",
+  "text": "three buns, and four more buns. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_bun",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_bun",
+  "text": "three buns, and five more buns. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_bun",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_bun",
+  "text": "three buns, and six more buns. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_bun",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_bun",
+  "text": "three buns, and seven more buns. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_bun",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_bun",
+  "text": "four buns, and one more bun. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_bun",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_bun",
+  "text": "four buns, and two more buns. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_bun",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_bun",
+  "text": "four buns, and three more buns. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_bun",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_bun",
+  "text": "four buns, and four more buns. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_bun",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_bun",
+  "text": "four buns, and five more buns. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_bun",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_bun",
+  "text": "four buns, and six more buns. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_bun",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_bun",
+  "text": "five buns, and one more bun. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_bun",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_bun",
+  "text": "five buns, and two more buns. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_bun",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_bun",
+  "text": "five buns, and three more buns. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_bun",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_bun",
+  "text": "five buns, and four more buns. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_bun",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_bun",
+  "text": "five buns, and five more buns. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_bun",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_bun",
+  "text": "six buns, and one more bun. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_bun",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_bun",
+  "text": "six buns, and two more buns. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_bun",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_bun",
+  "text": "six buns, and three more buns. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_bun",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_bun",
+  "text": "six buns, and four more buns. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_bun",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_bun",
+  "text": "seven buns, and one more bun. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_bun",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_bun",
+  "text": "seven buns, and two more buns. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_bun",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_bun",
+  "text": "seven buns, and three more buns. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_bun",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_bun",
+  "text": "eight buns, and one more bun. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_bun",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_bun",
+  "text": "eight buns, and two more buns. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_bun",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_bun",
+  "text": "nine buns, and one more bun. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_bun",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_bun",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_ham",
+  "text": "one ham, please.",
+  "parts": [
+   "num_1",
+   "item_ham",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_ham",
+  "text": "We need one ham.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_ham"
+  ]
+ },
+ {
+  "id": "order_2_ham",
+  "text": "two hams, please.",
+  "parts": [
+   "num_2",
+   "items_ham",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_ham",
+  "text": "We need two hams.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_ham"
+  ]
+ },
+ {
+  "id": "order_3_ham",
+  "text": "three hams, please.",
+  "parts": [
+   "num_3",
+   "items_ham",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_ham",
+  "text": "We need three hams.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_ham"
+  ]
+ },
+ {
+  "id": "order_4_ham",
+  "text": "four hams, please.",
+  "parts": [
+   "num_4",
+   "items_ham",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_ham",
+  "text": "We need four hams.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_ham"
+  ]
+ },
+ {
+  "id": "order_5_ham",
+  "text": "five hams, please.",
+  "parts": [
+   "num_5",
+   "items_ham",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_ham",
+  "text": "We need five hams.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_ham"
+  ]
+ },
+ {
+  "id": "order_6_ham",
+  "text": "six hams, please.",
+  "parts": [
+   "num_6",
+   "items_ham",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_ham",
+  "text": "We need six hams.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_ham"
+  ]
+ },
+ {
+  "id": "order_7_ham",
+  "text": "seven hams, please.",
+  "parts": [
+   "num_7",
+   "items_ham",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_ham",
+  "text": "We need seven hams.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_ham"
+  ]
+ },
+ {
+  "id": "order_8_ham",
+  "text": "eight hams, please.",
+  "parts": [
+   "num_8",
+   "items_ham",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_ham",
+  "text": "We need eight hams.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_ham"
+  ]
+ },
+ {
+  "id": "order_9_ham",
+  "text": "nine hams, please.",
+  "parts": [
+   "num_9",
+   "items_ham",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_ham",
+  "text": "We need nine hams.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_ham"
+  ]
+ },
+ {
+  "id": "order_10_ham",
+  "text": "ten hams, please.",
+  "parts": [
+   "num_10",
+   "items_ham",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_ham",
+  "text": "We need ten hams.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_ham"
+  ]
+ },
+ {
+  "id": "order_add_1_1_ham",
+  "text": "one ham, and one more ham. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_ham",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_ham",
+  "text": "one ham, and two more hams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_ham",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_ham",
+  "text": "one ham, and three more hams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_ham",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_ham",
+  "text": "one ham, and four more hams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_ham",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_ham",
+  "text": "one ham, and five more hams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_ham",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_ham",
+  "text": "one ham, and six more hams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_ham",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_ham",
+  "text": "one ham, and seven more hams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_ham",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_ham",
+  "text": "one ham, and eight more hams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_ham",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_ham",
+  "text": "one ham, and nine more hams. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_ham",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_ham",
+  "text": "two hams, and one more ham. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_ham",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_ham",
+  "text": "two hams, and two more hams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_ham",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_ham",
+  "text": "two hams, and three more hams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_ham",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_ham",
+  "text": "two hams, and four more hams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_ham",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_ham",
+  "text": "two hams, and five more hams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_ham",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_ham",
+  "text": "two hams, and six more hams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_ham",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_ham",
+  "text": "two hams, and seven more hams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_ham",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_ham",
+  "text": "two hams, and eight more hams. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_ham",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_ham",
+  "text": "three hams, and one more ham. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_ham",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_ham",
+  "text": "three hams, and two more hams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_ham",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_ham",
+  "text": "three hams, and three more hams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_ham",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_ham",
+  "text": "three hams, and four more hams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_ham",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_ham",
+  "text": "three hams, and five more hams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_ham",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_ham",
+  "text": "three hams, and six more hams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_ham",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_ham",
+  "text": "three hams, and seven more hams. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_ham",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_ham",
+  "text": "four hams, and one more ham. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_ham",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_ham",
+  "text": "four hams, and two more hams. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_ham",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_ham",
+  "text": "four hams, and three more hams. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_ham",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_ham",
+  "text": "four hams, and four more hams. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_ham",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_ham",
+  "text": "four hams, and five more hams. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_ham",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_ham",
+  "text": "four hams, and six more hams. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_ham",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_ham",
+  "text": "five hams, and one more ham. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_ham",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_ham",
+  "text": "five hams, and two more hams. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_ham",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_ham",
+  "text": "five hams, and three more hams. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_ham",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_ham",
+  "text": "five hams, and four more hams. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_ham",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_ham",
+  "text": "five hams, and five more hams. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_ham",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_ham",
+  "text": "six hams, and one more ham. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_ham",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_ham",
+  "text": "six hams, and two more hams. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_ham",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_ham",
+  "text": "six hams, and three more hams. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_ham",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_ham",
+  "text": "six hams, and four more hams. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_ham",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_ham",
+  "text": "seven hams, and one more ham. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_ham",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_ham",
+  "text": "seven hams, and two more hams. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_ham",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_ham",
+  "text": "seven hams, and three more hams. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_ham",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_ham",
+  "text": "eight hams, and one more ham. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_ham",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_ham",
+  "text": "eight hams, and two more hams. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_ham",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_ham",
+  "text": "nine hams, and one more ham. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_ham",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_ham",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_cup",
+  "text": "one cup, please.",
+  "parts": [
+   "num_1",
+   "item_cup",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_cup",
+  "text": "We need one cup.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_cup"
+  ]
+ },
+ {
+  "id": "order_2_cup",
+  "text": "two cups, please.",
+  "parts": [
+   "num_2",
+   "items_cup",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_cup",
+  "text": "We need two cups.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_cup"
+  ]
+ },
+ {
+  "id": "order_3_cup",
+  "text": "three cups, please.",
+  "parts": [
+   "num_3",
+   "items_cup",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_cup",
+  "text": "We need three cups.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_cup"
+  ]
+ },
+ {
+  "id": "order_4_cup",
+  "text": "four cups, please.",
+  "parts": [
+   "num_4",
+   "items_cup",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_cup",
+  "text": "We need four cups.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_cup"
+  ]
+ },
+ {
+  "id": "order_5_cup",
+  "text": "five cups, please.",
+  "parts": [
+   "num_5",
+   "items_cup",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_cup",
+  "text": "We need five cups.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_cup"
+  ]
+ },
+ {
+  "id": "order_6_cup",
+  "text": "six cups, please.",
+  "parts": [
+   "num_6",
+   "items_cup",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_cup",
+  "text": "We need six cups.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_cup"
+  ]
+ },
+ {
+  "id": "order_7_cup",
+  "text": "seven cups, please.",
+  "parts": [
+   "num_7",
+   "items_cup",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_cup",
+  "text": "We need seven cups.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_cup"
+  ]
+ },
+ {
+  "id": "order_8_cup",
+  "text": "eight cups, please.",
+  "parts": [
+   "num_8",
+   "items_cup",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_cup",
+  "text": "We need eight cups.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_cup"
+  ]
+ },
+ {
+  "id": "order_9_cup",
+  "text": "nine cups, please.",
+  "parts": [
+   "num_9",
+   "items_cup",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_cup",
+  "text": "We need nine cups.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_cup"
+  ]
+ },
+ {
+  "id": "order_10_cup",
+  "text": "ten cups, please.",
+  "parts": [
+   "num_10",
+   "items_cup",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_cup",
+  "text": "We need ten cups.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_cup"
+  ]
+ },
+ {
+  "id": "order_add_1_1_cup",
+  "text": "one cup, and one more cup. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cup",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_cup",
+  "text": "one cup, and two more cups. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cup",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_cup",
+  "text": "one cup, and three more cups. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cup",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_cup",
+  "text": "one cup, and four more cups. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cup",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_cup",
+  "text": "one cup, and five more cups. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cup",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_cup",
+  "text": "one cup, and six more cups. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cup",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_cup",
+  "text": "one cup, and seven more cups. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cup",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_cup",
+  "text": "one cup, and eight more cups. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cup",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_cup",
+  "text": "one cup, and nine more cups. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cup",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_cup",
+  "text": "two cups, and one more cup. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cup",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_cup",
+  "text": "two cups, and two more cups. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cup",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_cup",
+  "text": "two cups, and three more cups. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cup",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_cup",
+  "text": "two cups, and four more cups. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cup",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_cup",
+  "text": "two cups, and five more cups. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cup",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_cup",
+  "text": "two cups, and six more cups. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cup",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_cup",
+  "text": "two cups, and seven more cups. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cup",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_cup",
+  "text": "two cups, and eight more cups. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cup",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_cup",
+  "text": "three cups, and one more cup. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cup",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_cup",
+  "text": "three cups, and two more cups. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cup",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_cup",
+  "text": "three cups, and three more cups. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cup",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_cup",
+  "text": "three cups, and four more cups. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cup",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_cup",
+  "text": "three cups, and five more cups. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cup",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_cup",
+  "text": "three cups, and six more cups. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cup",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_cup",
+  "text": "three cups, and seven more cups. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cup",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_cup",
+  "text": "four cups, and one more cup. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cup",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_cup",
+  "text": "four cups, and two more cups. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cup",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_cup",
+  "text": "four cups, and three more cups. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cup",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_cup",
+  "text": "four cups, and four more cups. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cup",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_cup",
+  "text": "four cups, and five more cups. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cup",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_cup",
+  "text": "four cups, and six more cups. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cup",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_cup",
+  "text": "five cups, and one more cup. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_cup",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_cup",
+  "text": "five cups, and two more cups. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_cup",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_cup",
+  "text": "five cups, and three more cups. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_cup",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_cup",
+  "text": "five cups, and four more cups. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_cup",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_cup",
+  "text": "five cups, and five more cups. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_cup",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_cup",
+  "text": "six cups, and one more cup. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_cup",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_cup",
+  "text": "six cups, and two more cups. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_cup",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_cup",
+  "text": "six cups, and three more cups. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_cup",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_cup",
+  "text": "six cups, and four more cups. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_cup",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_cup",
+  "text": "seven cups, and one more cup. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_cup",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_cup",
+  "text": "seven cups, and two more cups. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_cup",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_cup",
+  "text": "seven cups, and three more cups. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_cup",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_cup",
+  "text": "eight cups, and one more cup. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_cup",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_cup",
+  "text": "eight cups, and two more cups. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_cup",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_cup",
+  "text": "nine cups, and one more cup. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_cup",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cup",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_pot",
+  "text": "one pot, please.",
+  "parts": [
+   "num_1",
+   "item_pot",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_pot",
+  "text": "We need one pot.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_pot"
+  ]
+ },
+ {
+  "id": "order_2_pot",
+  "text": "two pots, please.",
+  "parts": [
+   "num_2",
+   "items_pot",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_pot",
+  "text": "We need two pots.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_pot"
+  ]
+ },
+ {
+  "id": "order_3_pot",
+  "text": "three pots, please.",
+  "parts": [
+   "num_3",
+   "items_pot",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_pot",
+  "text": "We need three pots.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_pot"
+  ]
+ },
+ {
+  "id": "order_4_pot",
+  "text": "four pots, please.",
+  "parts": [
+   "num_4",
+   "items_pot",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_pot",
+  "text": "We need four pots.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_pot"
+  ]
+ },
+ {
+  "id": "order_5_pot",
+  "text": "five pots, please.",
+  "parts": [
+   "num_5",
+   "items_pot",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_pot",
+  "text": "We need five pots.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_pot"
+  ]
+ },
+ {
+  "id": "order_6_pot",
+  "text": "six pots, please.",
+  "parts": [
+   "num_6",
+   "items_pot",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_pot",
+  "text": "We need six pots.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_pot"
+  ]
+ },
+ {
+  "id": "order_7_pot",
+  "text": "seven pots, please.",
+  "parts": [
+   "num_7",
+   "items_pot",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_pot",
+  "text": "We need seven pots.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_pot"
+  ]
+ },
+ {
+  "id": "order_8_pot",
+  "text": "eight pots, please.",
+  "parts": [
+   "num_8",
+   "items_pot",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_pot",
+  "text": "We need eight pots.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_pot"
+  ]
+ },
+ {
+  "id": "order_9_pot",
+  "text": "nine pots, please.",
+  "parts": [
+   "num_9",
+   "items_pot",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_pot",
+  "text": "We need nine pots.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_pot"
+  ]
+ },
+ {
+  "id": "order_10_pot",
+  "text": "ten pots, please.",
+  "parts": [
+   "num_10",
+   "items_pot",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_pot",
+  "text": "We need ten pots.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_pot"
+  ]
+ },
+ {
+  "id": "order_add_1_1_pot",
+  "text": "one pot, and one more pot. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pot",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_pot",
+  "text": "one pot, and two more pots. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pot",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_pot",
+  "text": "one pot, and three more pots. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pot",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_pot",
+  "text": "one pot, and four more pots. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pot",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_pot",
+  "text": "one pot, and five more pots. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pot",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_pot",
+  "text": "one pot, and six more pots. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pot",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_pot",
+  "text": "one pot, and seven more pots. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pot",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_pot",
+  "text": "one pot, and eight more pots. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pot",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_pot",
+  "text": "one pot, and nine more pots. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pot",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_pot",
+  "text": "two pots, and one more pot. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pot",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_pot",
+  "text": "two pots, and two more pots. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pot",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_pot",
+  "text": "two pots, and three more pots. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pot",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_pot",
+  "text": "two pots, and four more pots. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pot",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_pot",
+  "text": "two pots, and five more pots. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pot",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_pot",
+  "text": "two pots, and six more pots. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pot",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_pot",
+  "text": "two pots, and seven more pots. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pot",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_pot",
+  "text": "two pots, and eight more pots. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pot",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_pot",
+  "text": "three pots, and one more pot. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pot",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_pot",
+  "text": "three pots, and two more pots. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pot",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_pot",
+  "text": "three pots, and three more pots. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pot",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_pot",
+  "text": "three pots, and four more pots. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pot",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_pot",
+  "text": "three pots, and five more pots. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pot",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_pot",
+  "text": "three pots, and six more pots. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pot",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_pot",
+  "text": "three pots, and seven more pots. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pot",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_pot",
+  "text": "four pots, and one more pot. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pot",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_pot",
+  "text": "four pots, and two more pots. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pot",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_pot",
+  "text": "four pots, and three more pots. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pot",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_pot",
+  "text": "four pots, and four more pots. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pot",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_pot",
+  "text": "four pots, and five more pots. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pot",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_pot",
+  "text": "four pots, and six more pots. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pot",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_pot",
+  "text": "five pots, and one more pot. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_pot",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_pot",
+  "text": "five pots, and two more pots. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_pot",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_pot",
+  "text": "five pots, and three more pots. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_pot",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_pot",
+  "text": "five pots, and four more pots. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_pot",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_pot",
+  "text": "five pots, and five more pots. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_pot",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_pot",
+  "text": "six pots, and one more pot. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_pot",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_pot",
+  "text": "six pots, and two more pots. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_pot",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_pot",
+  "text": "six pots, and three more pots. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_pot",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_pot",
+  "text": "six pots, and four more pots. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_pot",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_pot",
+  "text": "seven pots, and one more pot. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_pot",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_pot",
+  "text": "seven pots, and two more pots. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_pot",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_pot",
+  "text": "seven pots, and three more pots. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_pot",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_pot",
+  "text": "eight pots, and one more pot. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_pot",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_pot",
+  "text": "eight pots, and two more pots. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_pot",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_pot",
+  "text": "nine pots, and one more pot. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_pot",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pot",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_pan",
+  "text": "one pan, please.",
+  "parts": [
+   "num_1",
+   "item_pan",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_pan",
+  "text": "We need one pan.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_pan"
+  ]
+ },
+ {
+  "id": "order_2_pan",
+  "text": "two pans, please.",
+  "parts": [
+   "num_2",
+   "items_pan",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_pan",
+  "text": "We need two pans.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_pan"
+  ]
+ },
+ {
+  "id": "order_3_pan",
+  "text": "three pans, please.",
+  "parts": [
+   "num_3",
+   "items_pan",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_pan",
+  "text": "We need three pans.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_pan"
+  ]
+ },
+ {
+  "id": "order_4_pan",
+  "text": "four pans, please.",
+  "parts": [
+   "num_4",
+   "items_pan",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_pan",
+  "text": "We need four pans.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_pan"
+  ]
+ },
+ {
+  "id": "order_5_pan",
+  "text": "five pans, please.",
+  "parts": [
+   "num_5",
+   "items_pan",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_pan",
+  "text": "We need five pans.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_pan"
+  ]
+ },
+ {
+  "id": "order_6_pan",
+  "text": "six pans, please.",
+  "parts": [
+   "num_6",
+   "items_pan",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_pan",
+  "text": "We need six pans.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_pan"
+  ]
+ },
+ {
+  "id": "order_7_pan",
+  "text": "seven pans, please.",
+  "parts": [
+   "num_7",
+   "items_pan",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_pan",
+  "text": "We need seven pans.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_pan"
+  ]
+ },
+ {
+  "id": "order_8_pan",
+  "text": "eight pans, please.",
+  "parts": [
+   "num_8",
+   "items_pan",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_pan",
+  "text": "We need eight pans.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_pan"
+  ]
+ },
+ {
+  "id": "order_9_pan",
+  "text": "nine pans, please.",
+  "parts": [
+   "num_9",
+   "items_pan",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_pan",
+  "text": "We need nine pans.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_pan"
+  ]
+ },
+ {
+  "id": "order_10_pan",
+  "text": "ten pans, please.",
+  "parts": [
+   "num_10",
+   "items_pan",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_pan",
+  "text": "We need ten pans.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_pan"
+  ]
+ },
+ {
+  "id": "order_add_1_1_pan",
+  "text": "one pan, and one more pan. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pan",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_pan",
+  "text": "one pan, and two more pans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pan",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_pan",
+  "text": "one pan, and three more pans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pan",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_pan",
+  "text": "one pan, and four more pans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pan",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_pan",
+  "text": "one pan, and five more pans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pan",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_pan",
+  "text": "one pan, and six more pans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pan",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_pan",
+  "text": "one pan, and seven more pans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pan",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_pan",
+  "text": "one pan, and eight more pans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pan",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_pan",
+  "text": "one pan, and nine more pans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_pan",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_pan",
+  "text": "two pans, and one more pan. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pan",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_pan",
+  "text": "two pans, and two more pans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pan",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_pan",
+  "text": "two pans, and three more pans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pan",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_pan",
+  "text": "two pans, and four more pans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pan",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_pan",
+  "text": "two pans, and five more pans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pan",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_pan",
+  "text": "two pans, and six more pans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pan",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_pan",
+  "text": "two pans, and seven more pans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pan",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_pan",
+  "text": "two pans, and eight more pans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_pan",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_pan",
+  "text": "three pans, and one more pan. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pan",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_pan",
+  "text": "three pans, and two more pans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pan",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_pan",
+  "text": "three pans, and three more pans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pan",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_pan",
+  "text": "three pans, and four more pans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pan",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_pan",
+  "text": "three pans, and five more pans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pan",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_pan",
+  "text": "three pans, and six more pans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pan",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_pan",
+  "text": "three pans, and seven more pans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_pan",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_pan",
+  "text": "four pans, and one more pan. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pan",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_pan",
+  "text": "four pans, and two more pans. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pan",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_pan",
+  "text": "four pans, and three more pans. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pan",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_pan",
+  "text": "four pans, and four more pans. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pan",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_pan",
+  "text": "four pans, and five more pans. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pan",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_pan",
+  "text": "four pans, and six more pans. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_pan",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_pan",
+  "text": "five pans, and one more pan. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_pan",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_pan",
+  "text": "five pans, and two more pans. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_pan",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_pan",
+  "text": "five pans, and three more pans. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_pan",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_pan",
+  "text": "five pans, and four more pans. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_pan",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_pan",
+  "text": "five pans, and five more pans. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_pan",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_pan",
+  "text": "six pans, and one more pan. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_pan",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_pan",
+  "text": "six pans, and two more pans. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_pan",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_pan",
+  "text": "six pans, and three more pans. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_pan",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_pan",
+  "text": "six pans, and four more pans. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_pan",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_pan",
+  "text": "seven pans, and one more pan. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_pan",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_pan",
+  "text": "seven pans, and two more pans. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_pan",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_pan",
+  "text": "seven pans, and three more pans. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_pan",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_pan",
+  "text": "eight pans, and one more pan. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_pan",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_pan",
+  "text": "eight pans, and two more pans. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_pan",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_pan",
+  "text": "nine pans, and one more pan. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_pan",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_pan",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_can",
+  "text": "one can, please.",
+  "parts": [
+   "num_1",
+   "item_can",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_can",
+  "text": "We need one can.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_can"
+  ]
+ },
+ {
+  "id": "order_2_can",
+  "text": "two cans, please.",
+  "parts": [
+   "num_2",
+   "items_can",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_can",
+  "text": "We need two cans.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_can"
+  ]
+ },
+ {
+  "id": "order_3_can",
+  "text": "three cans, please.",
+  "parts": [
+   "num_3",
+   "items_can",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_can",
+  "text": "We need three cans.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_can"
+  ]
+ },
+ {
+  "id": "order_4_can",
+  "text": "four cans, please.",
+  "parts": [
+   "num_4",
+   "items_can",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_can",
+  "text": "We need four cans.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_can"
+  ]
+ },
+ {
+  "id": "order_5_can",
+  "text": "five cans, please.",
+  "parts": [
+   "num_5",
+   "items_can",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_can",
+  "text": "We need five cans.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_can"
+  ]
+ },
+ {
+  "id": "order_6_can",
+  "text": "six cans, please.",
+  "parts": [
+   "num_6",
+   "items_can",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_can",
+  "text": "We need six cans.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_can"
+  ]
+ },
+ {
+  "id": "order_7_can",
+  "text": "seven cans, please.",
+  "parts": [
+   "num_7",
+   "items_can",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_can",
+  "text": "We need seven cans.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_can"
+  ]
+ },
+ {
+  "id": "order_8_can",
+  "text": "eight cans, please.",
+  "parts": [
+   "num_8",
+   "items_can",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_can",
+  "text": "We need eight cans.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_can"
+  ]
+ },
+ {
+  "id": "order_9_can",
+  "text": "nine cans, please.",
+  "parts": [
+   "num_9",
+   "items_can",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_can",
+  "text": "We need nine cans.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_can"
+  ]
+ },
+ {
+  "id": "order_10_can",
+  "text": "ten cans, please.",
+  "parts": [
+   "num_10",
+   "items_can",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_can",
+  "text": "We need ten cans.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_can"
+  ]
+ },
+ {
+  "id": "order_add_1_1_can",
+  "text": "one can, and one more can. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_can",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_can",
+  "text": "one can, and two more cans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_can",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_can",
+  "text": "one can, and three more cans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_can",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_can",
+  "text": "one can, and four more cans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_can",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_can",
+  "text": "one can, and five more cans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_can",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_can",
+  "text": "one can, and six more cans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_can",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_can",
+  "text": "one can, and seven more cans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_can",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_can",
+  "text": "one can, and eight more cans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_can",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_can",
+  "text": "one can, and nine more cans. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_can",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_can",
+  "text": "two cans, and one more can. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_can",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_can",
+  "text": "two cans, and two more cans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_can",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_can",
+  "text": "two cans, and three more cans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_can",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_can",
+  "text": "two cans, and four more cans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_can",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_can",
+  "text": "two cans, and five more cans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_can",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_can",
+  "text": "two cans, and six more cans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_can",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_can",
+  "text": "two cans, and seven more cans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_can",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_can",
+  "text": "two cans, and eight more cans. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_can",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_can",
+  "text": "three cans, and one more can. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_can",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_can",
+  "text": "three cans, and two more cans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_can",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_can",
+  "text": "three cans, and three more cans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_can",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_can",
+  "text": "three cans, and four more cans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_can",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_can",
+  "text": "three cans, and five more cans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_can",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_can",
+  "text": "three cans, and six more cans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_can",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_can",
+  "text": "three cans, and seven more cans. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_can",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_can",
+  "text": "four cans, and one more can. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_can",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_can",
+  "text": "four cans, and two more cans. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_can",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_can",
+  "text": "four cans, and three more cans. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_can",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_can",
+  "text": "four cans, and four more cans. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_can",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_can",
+  "text": "four cans, and five more cans. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_can",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_can",
+  "text": "four cans, and six more cans. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_can",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_can",
+  "text": "five cans, and one more can. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_can",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_can",
+  "text": "five cans, and two more cans. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_can",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_can",
+  "text": "five cans, and three more cans. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_can",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_can",
+  "text": "five cans, and four more cans. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_can",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_can",
+  "text": "five cans, and five more cans. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_can",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_can",
+  "text": "six cans, and one more can. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_can",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_can",
+  "text": "six cans, and two more cans. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_can",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_can",
+  "text": "six cans, and three more cans. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_can",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_can",
+  "text": "six cans, and four more cans. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_can",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_can",
+  "text": "seven cans, and one more can. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_can",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_can",
+  "text": "seven cans, and two more cans. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_can",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_can",
+  "text": "seven cans, and three more cans. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_can",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_can",
+  "text": "eight cans, and one more can. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_can",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_can",
+  "text": "eight cans, and two more cans. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_can",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_can",
+  "text": "nine cans, and one more can. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_can",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_can",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_tin",
+  "text": "one tin, please.",
+  "parts": [
+   "num_1",
+   "item_tin",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_tin",
+  "text": "We need one tin.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_tin"
+  ]
+ },
+ {
+  "id": "order_2_tin",
+  "text": "two tins, please.",
+  "parts": [
+   "num_2",
+   "items_tin",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_tin",
+  "text": "We need two tins.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_tin"
+  ]
+ },
+ {
+  "id": "order_3_tin",
+  "text": "three tins, please.",
+  "parts": [
+   "num_3",
+   "items_tin",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_tin",
+  "text": "We need three tins.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_tin"
+  ]
+ },
+ {
+  "id": "order_4_tin",
+  "text": "four tins, please.",
+  "parts": [
+   "num_4",
+   "items_tin",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_tin",
+  "text": "We need four tins.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_tin"
+  ]
+ },
+ {
+  "id": "order_5_tin",
+  "text": "five tins, please.",
+  "parts": [
+   "num_5",
+   "items_tin",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_tin",
+  "text": "We need five tins.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_tin"
+  ]
+ },
+ {
+  "id": "order_6_tin",
+  "text": "six tins, please.",
+  "parts": [
+   "num_6",
+   "items_tin",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_tin",
+  "text": "We need six tins.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_tin"
+  ]
+ },
+ {
+  "id": "order_7_tin",
+  "text": "seven tins, please.",
+  "parts": [
+   "num_7",
+   "items_tin",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_tin",
+  "text": "We need seven tins.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_tin"
+  ]
+ },
+ {
+  "id": "order_8_tin",
+  "text": "eight tins, please.",
+  "parts": [
+   "num_8",
+   "items_tin",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_tin",
+  "text": "We need eight tins.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_tin"
+  ]
+ },
+ {
+  "id": "order_9_tin",
+  "text": "nine tins, please.",
+  "parts": [
+   "num_9",
+   "items_tin",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_tin",
+  "text": "We need nine tins.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_tin"
+  ]
+ },
+ {
+  "id": "order_10_tin",
+  "text": "ten tins, please.",
+  "parts": [
+   "num_10",
+   "items_tin",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_tin",
+  "text": "We need ten tins.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_tin"
+  ]
+ },
+ {
+  "id": "order_add_1_1_tin",
+  "text": "one tin, and one more tin. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_tin",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_tin",
+  "text": "one tin, and two more tins. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_tin",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_tin",
+  "text": "one tin, and three more tins. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_tin",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_tin",
+  "text": "one tin, and four more tins. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_tin",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_tin",
+  "text": "one tin, and five more tins. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_tin",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_tin",
+  "text": "one tin, and six more tins. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_tin",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_tin",
+  "text": "one tin, and seven more tins. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_tin",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_tin",
+  "text": "one tin, and eight more tins. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_tin",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_tin",
+  "text": "one tin, and nine more tins. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_tin",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_tin",
+  "text": "two tins, and one more tin. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_tin",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_tin",
+  "text": "two tins, and two more tins. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_tin",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_tin",
+  "text": "two tins, and three more tins. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_tin",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_tin",
+  "text": "two tins, and four more tins. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_tin",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_tin",
+  "text": "two tins, and five more tins. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_tin",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_tin",
+  "text": "two tins, and six more tins. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_tin",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_tin",
+  "text": "two tins, and seven more tins. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_tin",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_tin",
+  "text": "two tins, and eight more tins. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_tin",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_tin",
+  "text": "three tins, and one more tin. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_tin",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_tin",
+  "text": "three tins, and two more tins. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_tin",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_tin",
+  "text": "three tins, and three more tins. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_tin",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_tin",
+  "text": "three tins, and four more tins. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_tin",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_tin",
+  "text": "three tins, and five more tins. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_tin",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_tin",
+  "text": "three tins, and six more tins. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_tin",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_tin",
+  "text": "three tins, and seven more tins. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_tin",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_tin",
+  "text": "four tins, and one more tin. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_tin",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_tin",
+  "text": "four tins, and two more tins. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_tin",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_tin",
+  "text": "four tins, and three more tins. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_tin",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_tin",
+  "text": "four tins, and four more tins. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_tin",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_tin",
+  "text": "four tins, and five more tins. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_tin",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_tin",
+  "text": "four tins, and six more tins. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_tin",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_tin",
+  "text": "five tins, and one more tin. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_tin",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_tin",
+  "text": "five tins, and two more tins. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_tin",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_tin",
+  "text": "five tins, and three more tins. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_tin",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_tin",
+  "text": "five tins, and four more tins. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_tin",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_tin",
+  "text": "five tins, and five more tins. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_tin",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_tin",
+  "text": "six tins, and one more tin. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_tin",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_tin",
+  "text": "six tins, and two more tins. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_tin",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_tin",
+  "text": "six tins, and three more tins. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_tin",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_tin",
+  "text": "six tins, and four more tins. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_tin",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_tin",
+  "text": "seven tins, and one more tin. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_tin",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_tin",
+  "text": "seven tins, and two more tins. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_tin",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_tin",
+  "text": "seven tins, and three more tins. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_tin",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_tin",
+  "text": "eight tins, and one more tin. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_tin",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_tin",
+  "text": "eight tins, and two more tins. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_tin",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_tin",
+  "text": "nine tins, and one more tin. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_tin",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_tin",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_mug",
+  "text": "one mug, please.",
+  "parts": [
+   "num_1",
+   "item_mug",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_mug",
+  "text": "We need one mug.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_mug"
+  ]
+ },
+ {
+  "id": "order_2_mug",
+  "text": "two mugs, please.",
+  "parts": [
+   "num_2",
+   "items_mug",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_mug",
+  "text": "We need two mugs.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_mug"
+  ]
+ },
+ {
+  "id": "order_3_mug",
+  "text": "three mugs, please.",
+  "parts": [
+   "num_3",
+   "items_mug",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_mug",
+  "text": "We need three mugs.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_mug"
+  ]
+ },
+ {
+  "id": "order_4_mug",
+  "text": "four mugs, please.",
+  "parts": [
+   "num_4",
+   "items_mug",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_mug",
+  "text": "We need four mugs.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_mug"
+  ]
+ },
+ {
+  "id": "order_5_mug",
+  "text": "five mugs, please.",
+  "parts": [
+   "num_5",
+   "items_mug",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_mug",
+  "text": "We need five mugs.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_mug"
+  ]
+ },
+ {
+  "id": "order_6_mug",
+  "text": "six mugs, please.",
+  "parts": [
+   "num_6",
+   "items_mug",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_mug",
+  "text": "We need six mugs.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_mug"
+  ]
+ },
+ {
+  "id": "order_7_mug",
+  "text": "seven mugs, please.",
+  "parts": [
+   "num_7",
+   "items_mug",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_mug",
+  "text": "We need seven mugs.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_mug"
+  ]
+ },
+ {
+  "id": "order_8_mug",
+  "text": "eight mugs, please.",
+  "parts": [
+   "num_8",
+   "items_mug",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_mug",
+  "text": "We need eight mugs.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_mug"
+  ]
+ },
+ {
+  "id": "order_9_mug",
+  "text": "nine mugs, please.",
+  "parts": [
+   "num_9",
+   "items_mug",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_mug",
+  "text": "We need nine mugs.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_mug"
+  ]
+ },
+ {
+  "id": "order_10_mug",
+  "text": "ten mugs, please.",
+  "parts": [
+   "num_10",
+   "items_mug",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_mug",
+  "text": "We need ten mugs.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_mug"
+  ]
+ },
+ {
+  "id": "order_add_1_1_mug",
+  "text": "one mug, and one more mug. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_mug",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_mug",
+  "text": "one mug, and two more mugs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_mug",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_mug",
+  "text": "one mug, and three more mugs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_mug",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_mug",
+  "text": "one mug, and four more mugs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_mug",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_mug",
+  "text": "one mug, and five more mugs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_mug",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_mug",
+  "text": "one mug, and six more mugs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_mug",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_mug",
+  "text": "one mug, and seven more mugs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_mug",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_mug",
+  "text": "one mug, and eight more mugs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_mug",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_mug",
+  "text": "one mug, and nine more mugs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_mug",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_mug",
+  "text": "two mugs, and one more mug. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_mug",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_mug",
+  "text": "two mugs, and two more mugs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_mug",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_mug",
+  "text": "two mugs, and three more mugs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_mug",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_mug",
+  "text": "two mugs, and four more mugs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_mug",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_mug",
+  "text": "two mugs, and five more mugs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_mug",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_mug",
+  "text": "two mugs, and six more mugs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_mug",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_mug",
+  "text": "two mugs, and seven more mugs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_mug",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_mug",
+  "text": "two mugs, and eight more mugs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_mug",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_mug",
+  "text": "three mugs, and one more mug. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_mug",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_mug",
+  "text": "three mugs, and two more mugs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_mug",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_mug",
+  "text": "three mugs, and three more mugs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_mug",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_mug",
+  "text": "three mugs, and four more mugs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_mug",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_mug",
+  "text": "three mugs, and five more mugs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_mug",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_mug",
+  "text": "three mugs, and six more mugs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_mug",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_mug",
+  "text": "three mugs, and seven more mugs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_mug",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_mug",
+  "text": "four mugs, and one more mug. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_mug",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_mug",
+  "text": "four mugs, and two more mugs. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_mug",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_mug",
+  "text": "four mugs, and three more mugs. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_mug",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_mug",
+  "text": "four mugs, and four more mugs. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_mug",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_mug",
+  "text": "four mugs, and five more mugs. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_mug",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_mug",
+  "text": "four mugs, and six more mugs. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_mug",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_mug",
+  "text": "five mugs, and one more mug. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_mug",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_mug",
+  "text": "five mugs, and two more mugs. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_mug",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_mug",
+  "text": "five mugs, and three more mugs. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_mug",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_mug",
+  "text": "five mugs, and four more mugs. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_mug",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_mug",
+  "text": "five mugs, and five more mugs. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_mug",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_mug",
+  "text": "six mugs, and one more mug. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_mug",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_mug",
+  "text": "six mugs, and two more mugs. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_mug",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_mug",
+  "text": "six mugs, and three more mugs. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_mug",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_mug",
+  "text": "six mugs, and four more mugs. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_mug",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_mug",
+  "text": "seven mugs, and one more mug. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_mug",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_mug",
+  "text": "seven mugs, and two more mugs. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_mug",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_mug",
+  "text": "seven mugs, and three more mugs. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_mug",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_mug",
+  "text": "eight mugs, and one more mug. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_mug",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_mug",
+  "text": "eight mugs, and two more mugs. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_mug",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_mug",
+  "text": "nine mugs, and one more mug. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_mug",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_mug",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_nut",
+  "text": "one nut, please.",
+  "parts": [
+   "num_1",
+   "item_nut",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_nut",
+  "text": "We need one nut.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_nut"
+  ]
+ },
+ {
+  "id": "order_2_nut",
+  "text": "two nuts, please.",
+  "parts": [
+   "num_2",
+   "items_nut",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_nut",
+  "text": "We need two nuts.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_nut"
+  ]
+ },
+ {
+  "id": "order_3_nut",
+  "text": "three nuts, please.",
+  "parts": [
+   "num_3",
+   "items_nut",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_nut",
+  "text": "We need three nuts.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_nut"
+  ]
+ },
+ {
+  "id": "order_4_nut",
+  "text": "four nuts, please.",
+  "parts": [
+   "num_4",
+   "items_nut",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_nut",
+  "text": "We need four nuts.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_nut"
+  ]
+ },
+ {
+  "id": "order_5_nut",
+  "text": "five nuts, please.",
+  "parts": [
+   "num_5",
+   "items_nut",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_nut",
+  "text": "We need five nuts.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_nut"
+  ]
+ },
+ {
+  "id": "order_6_nut",
+  "text": "six nuts, please.",
+  "parts": [
+   "num_6",
+   "items_nut",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_nut",
+  "text": "We need six nuts.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_nut"
+  ]
+ },
+ {
+  "id": "order_7_nut",
+  "text": "seven nuts, please.",
+  "parts": [
+   "num_7",
+   "items_nut",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_nut",
+  "text": "We need seven nuts.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_nut"
+  ]
+ },
+ {
+  "id": "order_8_nut",
+  "text": "eight nuts, please.",
+  "parts": [
+   "num_8",
+   "items_nut",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_nut",
+  "text": "We need eight nuts.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_nut"
+  ]
+ },
+ {
+  "id": "order_9_nut",
+  "text": "nine nuts, please.",
+  "parts": [
+   "num_9",
+   "items_nut",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_nut",
+  "text": "We need nine nuts.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_nut"
+  ]
+ },
+ {
+  "id": "order_10_nut",
+  "text": "ten nuts, please.",
+  "parts": [
+   "num_10",
+   "items_nut",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_nut",
+  "text": "We need ten nuts.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_nut"
+  ]
+ },
+ {
+  "id": "order_add_1_1_nut",
+  "text": "one nut, and one more nut. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_nut",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_nut",
+  "text": "one nut, and two more nuts. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_nut",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_nut",
+  "text": "one nut, and three more nuts. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_nut",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_nut",
+  "text": "one nut, and four more nuts. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_nut",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_nut",
+  "text": "one nut, and five more nuts. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_nut",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_nut",
+  "text": "one nut, and six more nuts. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_nut",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_nut",
+  "text": "one nut, and seven more nuts. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_nut",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_nut",
+  "text": "one nut, and eight more nuts. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_nut",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_nut",
+  "text": "one nut, and nine more nuts. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_nut",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_nut",
+  "text": "two nuts, and one more nut. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_nut",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_nut",
+  "text": "two nuts, and two more nuts. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_nut",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_nut",
+  "text": "two nuts, and three more nuts. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_nut",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_nut",
+  "text": "two nuts, and four more nuts. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_nut",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_nut",
+  "text": "two nuts, and five more nuts. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_nut",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_nut",
+  "text": "two nuts, and six more nuts. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_nut",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_nut",
+  "text": "two nuts, and seven more nuts. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_nut",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_nut",
+  "text": "two nuts, and eight more nuts. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_nut",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_nut",
+  "text": "three nuts, and one more nut. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_nut",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_nut",
+  "text": "three nuts, and two more nuts. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_nut",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_nut",
+  "text": "three nuts, and three more nuts. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_nut",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_nut",
+  "text": "three nuts, and four more nuts. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_nut",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_nut",
+  "text": "three nuts, and five more nuts. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_nut",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_nut",
+  "text": "three nuts, and six more nuts. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_nut",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_nut",
+  "text": "three nuts, and seven more nuts. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_nut",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_nut",
+  "text": "four nuts, and one more nut. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_nut",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_nut",
+  "text": "four nuts, and two more nuts. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_nut",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_nut",
+  "text": "four nuts, and three more nuts. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_nut",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_nut",
+  "text": "four nuts, and four more nuts. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_nut",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_nut",
+  "text": "four nuts, and five more nuts. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_nut",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_nut",
+  "text": "four nuts, and six more nuts. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_nut",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_nut",
+  "text": "five nuts, and one more nut. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_nut",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_nut",
+  "text": "five nuts, and two more nuts. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_nut",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_nut",
+  "text": "five nuts, and three more nuts. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_nut",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_nut",
+  "text": "five nuts, and four more nuts. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_nut",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_nut",
+  "text": "five nuts, and five more nuts. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_nut",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_nut",
+  "text": "six nuts, and one more nut. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_nut",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_nut",
+  "text": "six nuts, and two more nuts. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_nut",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_nut",
+  "text": "six nuts, and three more nuts. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_nut",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_nut",
+  "text": "six nuts, and four more nuts. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_nut",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_nut",
+  "text": "seven nuts, and one more nut. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_nut",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_nut",
+  "text": "seven nuts, and two more nuts. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_nut",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_nut",
+  "text": "seven nuts, and three more nuts. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_nut",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_nut",
+  "text": "eight nuts, and one more nut. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_nut",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_nut",
+  "text": "eight nuts, and two more nuts. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_nut",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_nut",
+  "text": "nine nuts, and one more nut. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_nut",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_nut",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_cob",
+  "text": "one cob, please.",
+  "parts": [
+   "num_1",
+   "item_cob",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_cob",
+  "text": "We need one cob.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_cob"
+  ]
+ },
+ {
+  "id": "order_2_cob",
+  "text": "two cobs, please.",
+  "parts": [
+   "num_2",
+   "items_cob",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_cob",
+  "text": "We need two cobs.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_cob"
+  ]
+ },
+ {
+  "id": "order_3_cob",
+  "text": "three cobs, please.",
+  "parts": [
+   "num_3",
+   "items_cob",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_cob",
+  "text": "We need three cobs.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_cob"
+  ]
+ },
+ {
+  "id": "order_4_cob",
+  "text": "four cobs, please.",
+  "parts": [
+   "num_4",
+   "items_cob",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_cob",
+  "text": "We need four cobs.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_cob"
+  ]
+ },
+ {
+  "id": "order_5_cob",
+  "text": "five cobs, please.",
+  "parts": [
+   "num_5",
+   "items_cob",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_cob",
+  "text": "We need five cobs.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_cob"
+  ]
+ },
+ {
+  "id": "order_6_cob",
+  "text": "six cobs, please.",
+  "parts": [
+   "num_6",
+   "items_cob",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_cob",
+  "text": "We need six cobs.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_cob"
+  ]
+ },
+ {
+  "id": "order_7_cob",
+  "text": "seven cobs, please.",
+  "parts": [
+   "num_7",
+   "items_cob",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_cob",
+  "text": "We need seven cobs.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_cob"
+  ]
+ },
+ {
+  "id": "order_8_cob",
+  "text": "eight cobs, please.",
+  "parts": [
+   "num_8",
+   "items_cob",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_cob",
+  "text": "We need eight cobs.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_cob"
+  ]
+ },
+ {
+  "id": "order_9_cob",
+  "text": "nine cobs, please.",
+  "parts": [
+   "num_9",
+   "items_cob",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_cob",
+  "text": "We need nine cobs.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_cob"
+  ]
+ },
+ {
+  "id": "order_10_cob",
+  "text": "ten cobs, please.",
+  "parts": [
+   "num_10",
+   "items_cob",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_cob",
+  "text": "We need ten cobs.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_cob"
+  ]
+ },
+ {
+  "id": "order_add_1_1_cob",
+  "text": "one cob, and one more cob. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cob",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_cob",
+  "text": "one cob, and two more cobs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cob",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_cob",
+  "text": "one cob, and three more cobs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cob",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_cob",
+  "text": "one cob, and four more cobs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cob",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_cob",
+  "text": "one cob, and five more cobs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cob",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_cob",
+  "text": "one cob, and six more cobs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cob",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_cob",
+  "text": "one cob, and seven more cobs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cob",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_cob",
+  "text": "one cob, and eight more cobs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cob",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_cob",
+  "text": "one cob, and nine more cobs. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_cob",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_cob",
+  "text": "two cobs, and one more cob. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cob",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_cob",
+  "text": "two cobs, and two more cobs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cob",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_cob",
+  "text": "two cobs, and three more cobs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cob",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_cob",
+  "text": "two cobs, and four more cobs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cob",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_cob",
+  "text": "two cobs, and five more cobs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cob",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_cob",
+  "text": "two cobs, and six more cobs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cob",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_cob",
+  "text": "two cobs, and seven more cobs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cob",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_cob",
+  "text": "two cobs, and eight more cobs. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_cob",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_cob",
+  "text": "three cobs, and one more cob. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cob",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_cob",
+  "text": "three cobs, and two more cobs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cob",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_cob",
+  "text": "three cobs, and three more cobs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cob",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_cob",
+  "text": "three cobs, and four more cobs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cob",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_cob",
+  "text": "three cobs, and five more cobs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cob",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_cob",
+  "text": "three cobs, and six more cobs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cob",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_cob",
+  "text": "three cobs, and seven more cobs. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_cob",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_cob",
+  "text": "four cobs, and one more cob. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cob",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_cob",
+  "text": "four cobs, and two more cobs. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cob",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_cob",
+  "text": "four cobs, and three more cobs. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cob",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_cob",
+  "text": "four cobs, and four more cobs. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cob",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_cob",
+  "text": "four cobs, and five more cobs. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cob",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_cob",
+  "text": "four cobs, and six more cobs. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_cob",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_cob",
+  "text": "five cobs, and one more cob. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_cob",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_cob",
+  "text": "five cobs, and two more cobs. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_cob",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_cob",
+  "text": "five cobs, and three more cobs. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_cob",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_cob",
+  "text": "five cobs, and four more cobs. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_cob",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_cob",
+  "text": "five cobs, and five more cobs. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_cob",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_cob",
+  "text": "six cobs, and one more cob. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_cob",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_cob",
+  "text": "six cobs, and two more cobs. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_cob",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_cob",
+  "text": "six cobs, and three more cobs. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_cob",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_cob",
+  "text": "six cobs, and four more cobs. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_cob",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_cob",
+  "text": "seven cobs, and one more cob. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_cob",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_cob",
+  "text": "seven cobs, and two more cobs. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_cob",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_cob",
+  "text": "seven cobs, and three more cobs. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_cob",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_cob",
+  "text": "eight cobs, and one more cob. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_cob",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_cob",
+  "text": "eight cobs, and two more cobs. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_cob",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_cob",
+  "text": "nine cobs, and one more cob. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_cob",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_cob",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_1_dip",
+  "text": "one dip, please.",
+  "parts": [
+   "num_1",
+   "item_dip",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_1_dip",
+  "text": "We need one dip.",
+  "parts": [
+   "c_weneed",
+   "num_1",
+   "item_dip"
+  ]
+ },
+ {
+  "id": "order_2_dip",
+  "text": "two dips, please.",
+  "parts": [
+   "num_2",
+   "items_dip",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_2_dip",
+  "text": "We need two dips.",
+  "parts": [
+   "c_weneed",
+   "num_2",
+   "items_dip"
+  ]
+ },
+ {
+  "id": "order_3_dip",
+  "text": "three dips, please.",
+  "parts": [
+   "num_3",
+   "items_dip",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_3_dip",
+  "text": "We need three dips.",
+  "parts": [
+   "c_weneed",
+   "num_3",
+   "items_dip"
+  ]
+ },
+ {
+  "id": "order_4_dip",
+  "text": "four dips, please.",
+  "parts": [
+   "num_4",
+   "items_dip",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_4_dip",
+  "text": "We need four dips.",
+  "parts": [
+   "c_weneed",
+   "num_4",
+   "items_dip"
+  ]
+ },
+ {
+  "id": "order_5_dip",
+  "text": "five dips, please.",
+  "parts": [
+   "num_5",
+   "items_dip",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_5_dip",
+  "text": "We need five dips.",
+  "parts": [
+   "c_weneed",
+   "num_5",
+   "items_dip"
+  ]
+ },
+ {
+  "id": "order_6_dip",
+  "text": "six dips, please.",
+  "parts": [
+   "num_6",
+   "items_dip",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_6_dip",
+  "text": "We need six dips.",
+  "parts": [
+   "c_weneed",
+   "num_6",
+   "items_dip"
+  ]
+ },
+ {
+  "id": "order_7_dip",
+  "text": "seven dips, please.",
+  "parts": [
+   "num_7",
+   "items_dip",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_7_dip",
+  "text": "We need seven dips.",
+  "parts": [
+   "c_weneed",
+   "num_7",
+   "items_dip"
+  ]
+ },
+ {
+  "id": "order_8_dip",
+  "text": "eight dips, please.",
+  "parts": [
+   "num_8",
+   "items_dip",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_8_dip",
+  "text": "We need eight dips.",
+  "parts": [
+   "c_weneed",
+   "num_8",
+   "items_dip"
+  ]
+ },
+ {
+  "id": "order_9_dip",
+  "text": "nine dips, please.",
+  "parts": [
+   "num_9",
+   "items_dip",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_9_dip",
+  "text": "We need nine dips.",
+  "parts": [
+   "c_weneed",
+   "num_9",
+   "items_dip"
+  ]
+ },
+ {
+  "id": "order_10_dip",
+  "text": "ten dips, please.",
+  "parts": [
+   "num_10",
+   "items_dip",
+   "c_please"
+  ]
+ },
+ {
+  "id": "need_10_dip",
+  "text": "We need ten dips.",
+  "parts": [
+   "c_weneed",
+   "num_10",
+   "items_dip"
+  ]
+ },
+ {
+  "id": "order_add_1_1_dip",
+  "text": "one dip, and one more dip. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_dip",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_2_dip",
+  "text": "one dip, and two more dips. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_dip",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_3_dip",
+  "text": "one dip, and three more dips. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_dip",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_4_dip",
+  "text": "one dip, and four more dips. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_dip",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_5_dip",
+  "text": "one dip, and five more dips. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_dip",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_6_dip",
+  "text": "one dip, and six more dips. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_dip",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_7_dip",
+  "text": "one dip, and seven more dips. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_dip",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_8_dip",
+  "text": "one dip, and eight more dips. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_dip",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_1_9_dip",
+  "text": "one dip, and nine more dips. How many altogether?",
+  "parts": [
+   "num_1",
+   "item_dip",
+   "c_and",
+   "num_9",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_1_dip",
+  "text": "two dips, and one more dip. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_dip",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_2_dip",
+  "text": "two dips, and two more dips. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_dip",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_3_dip",
+  "text": "two dips, and three more dips. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_dip",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_4_dip",
+  "text": "two dips, and four more dips. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_dip",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_5_dip",
+  "text": "two dips, and five more dips. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_dip",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_6_dip",
+  "text": "two dips, and six more dips. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_dip",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_7_dip",
+  "text": "two dips, and seven more dips. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_dip",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_2_8_dip",
+  "text": "two dips, and eight more dips. How many altogether?",
+  "parts": [
+   "num_2",
+   "items_dip",
+   "c_and",
+   "num_8",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_1_dip",
+  "text": "three dips, and one more dip. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_dip",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_2_dip",
+  "text": "three dips, and two more dips. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_dip",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_3_dip",
+  "text": "three dips, and three more dips. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_dip",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_4_dip",
+  "text": "three dips, and four more dips. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_dip",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_5_dip",
+  "text": "three dips, and five more dips. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_dip",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_6_dip",
+  "text": "three dips, and six more dips. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_dip",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_3_7_dip",
+  "text": "three dips, and seven more dips. How many altogether?",
+  "parts": [
+   "num_3",
+   "items_dip",
+   "c_and",
+   "num_7",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_1_dip",
+  "text": "four dips, and one more dip. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_dip",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_2_dip",
+  "text": "four dips, and two more dips. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_dip",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_3_dip",
+  "text": "four dips, and three more dips. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_dip",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_4_dip",
+  "text": "four dips, and four more dips. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_dip",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_5_dip",
+  "text": "four dips, and five more dips. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_dip",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_4_6_dip",
+  "text": "four dips, and six more dips. How many altogether?",
+  "parts": [
+   "num_4",
+   "items_dip",
+   "c_and",
+   "num_6",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_1_dip",
+  "text": "five dips, and one more dip. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_dip",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_2_dip",
+  "text": "five dips, and two more dips. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_dip",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_3_dip",
+  "text": "five dips, and three more dips. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_dip",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_4_dip",
+  "text": "five dips, and four more dips. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_dip",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_5_5_dip",
+  "text": "five dips, and five more dips. How many altogether?",
+  "parts": [
+   "num_5",
+   "items_dip",
+   "c_and",
+   "num_5",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_1_dip",
+  "text": "six dips, and one more dip. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_dip",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_2_dip",
+  "text": "six dips, and two more dips. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_dip",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_3_dip",
+  "text": "six dips, and three more dips. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_dip",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_6_4_dip",
+  "text": "six dips, and four more dips. How many altogether?",
+  "parts": [
+   "num_6",
+   "items_dip",
+   "c_and",
+   "num_4",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_1_dip",
+  "text": "seven dips, and one more dip. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_dip",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_2_dip",
+  "text": "seven dips, and two more dips. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_dip",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_7_3_dip",
+  "text": "seven dips, and three more dips. How many altogether?",
+  "parts": [
+   "num_7",
+   "items_dip",
+   "c_and",
+   "num_3",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_1_dip",
+  "text": "eight dips, and one more dip. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_dip",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_8_2_dip",
+  "text": "eight dips, and two more dips. How many altogether?",
+  "parts": [
+   "num_8",
+   "items_dip",
+   "c_and",
+   "num_2",
+   "c_more",
+   "items_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "order_add_9_1_dip",
+  "text": "nine dips, and one more dip. How many altogether?",
+  "parts": [
+   "num_9",
+   "items_dip",
+   "c_and",
+   "num_1",
+   "c_more",
+   "item_dip",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_1_1",
+  "text": "one and one. How many altogether?",
+  "parts": [
+   "num_1",
+   "c_and",
+   "num_1",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_1_2",
+  "text": "one and two. How many altogether?",
+  "parts": [
+   "num_1",
+   "c_and",
+   "num_2",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_1_3",
+  "text": "one and three. How many altogether?",
+  "parts": [
+   "num_1",
+   "c_and",
+   "num_3",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_1_4",
+  "text": "one and four. How many altogether?",
+  "parts": [
+   "num_1",
+   "c_and",
+   "num_4",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_1_5",
+  "text": "one and five. How many altogether?",
+  "parts": [
+   "num_1",
+   "c_and",
+   "num_5",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_1_6",
+  "text": "one and six. How many altogether?",
+  "parts": [
+   "num_1",
+   "c_and",
+   "num_6",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_1_7",
+  "text": "one and seven. How many altogether?",
+  "parts": [
+   "num_1",
+   "c_and",
+   "num_7",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_1_8",
+  "text": "one and eight. How many altogether?",
+  "parts": [
+   "num_1",
+   "c_and",
+   "num_8",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_1_9",
+  "text": "one and nine. How many altogether?",
+  "parts": [
+   "num_1",
+   "c_and",
+   "num_9",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_2_1",
+  "text": "two and one. How many altogether?",
+  "parts": [
+   "num_2",
+   "c_and",
+   "num_1",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_2_2",
+  "text": "two and two. How many altogether?",
+  "parts": [
+   "num_2",
+   "c_and",
+   "num_2",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_2_3",
+  "text": "two and three. How many altogether?",
+  "parts": [
+   "num_2",
+   "c_and",
+   "num_3",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_2_4",
+  "text": "two and four. How many altogether?",
+  "parts": [
+   "num_2",
+   "c_and",
+   "num_4",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_2_5",
+  "text": "two and five. How many altogether?",
+  "parts": [
+   "num_2",
+   "c_and",
+   "num_5",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_2_6",
+  "text": "two and six. How many altogether?",
+  "parts": [
+   "num_2",
+   "c_and",
+   "num_6",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_2_7",
+  "text": "two and seven. How many altogether?",
+  "parts": [
+   "num_2",
+   "c_and",
+   "num_7",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_2_8",
+  "text": "two and eight. How many altogether?",
+  "parts": [
+   "num_2",
+   "c_and",
+   "num_8",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_3_1",
+  "text": "three and one. How many altogether?",
+  "parts": [
+   "num_3",
+   "c_and",
+   "num_1",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_3_2",
+  "text": "three and two. How many altogether?",
+  "parts": [
+   "num_3",
+   "c_and",
+   "num_2",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_3_3",
+  "text": "three and three. How many altogether?",
+  "parts": [
+   "num_3",
+   "c_and",
+   "num_3",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_3_4",
+  "text": "three and four. How many altogether?",
+  "parts": [
+   "num_3",
+   "c_and",
+   "num_4",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_3_5",
+  "text": "three and five. How many altogether?",
+  "parts": [
+   "num_3",
+   "c_and",
+   "num_5",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_3_6",
+  "text": "three and six. How many altogether?",
+  "parts": [
+   "num_3",
+   "c_and",
+   "num_6",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_3_7",
+  "text": "three and seven. How many altogether?",
+  "parts": [
+   "num_3",
+   "c_and",
+   "num_7",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_4_1",
+  "text": "four and one. How many altogether?",
+  "parts": [
+   "num_4",
+   "c_and",
+   "num_1",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_4_2",
+  "text": "four and two. How many altogether?",
+  "parts": [
+   "num_4",
+   "c_and",
+   "num_2",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_4_3",
+  "text": "four and three. How many altogether?",
+  "parts": [
+   "num_4",
+   "c_and",
+   "num_3",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_4_4",
+  "text": "four and four. How many altogether?",
+  "parts": [
+   "num_4",
+   "c_and",
+   "num_4",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_4_5",
+  "text": "four and five. How many altogether?",
+  "parts": [
+   "num_4",
+   "c_and",
+   "num_5",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_4_6",
+  "text": "four and six. How many altogether?",
+  "parts": [
+   "num_4",
+   "c_and",
+   "num_6",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_5_1",
+  "text": "five and one. How many altogether?",
+  "parts": [
+   "num_5",
+   "c_and",
+   "num_1",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_5_2",
+  "text": "five and two. How many altogether?",
+  "parts": [
+   "num_5",
+   "c_and",
+   "num_2",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_5_3",
+  "text": "five and three. How many altogether?",
+  "parts": [
+   "num_5",
+   "c_and",
+   "num_3",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_5_4",
+  "text": "five and four. How many altogether?",
+  "parts": [
+   "num_5",
+   "c_and",
+   "num_4",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_5_5",
+  "text": "five and five. How many altogether?",
+  "parts": [
+   "num_5",
+   "c_and",
+   "num_5",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_6_1",
+  "text": "six and one. How many altogether?",
+  "parts": [
+   "num_6",
+   "c_and",
+   "num_1",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_6_2",
+  "text": "six and two. How many altogether?",
+  "parts": [
+   "num_6",
+   "c_and",
+   "num_2",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_6_3",
+  "text": "six and three. How many altogether?",
+  "parts": [
+   "num_6",
+   "c_and",
+   "num_3",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_6_4",
+  "text": "six and four. How many altogether?",
+  "parts": [
+   "num_6",
+   "c_and",
+   "num_4",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_7_1",
+  "text": "seven and one. How many altogether?",
+  "parts": [
+   "num_7",
+   "c_and",
+   "num_1",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_7_2",
+  "text": "seven and two. How many altogether?",
+  "parts": [
+   "num_7",
+   "c_and",
+   "num_2",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_7_3",
+  "text": "seven and three. How many altogether?",
+  "parts": [
+   "num_7",
+   "c_and",
+   "num_3",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_8_1",
+  "text": "eight and one. How many altogether?",
+  "parts": [
+   "num_8",
+   "c_and",
+   "num_1",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_8_2",
+  "text": "eight and two. How many altogether?",
+  "parts": [
+   "num_8",
+   "c_and",
+   "num_2",
+   "altogether"
+  ]
+ },
+ {
+  "id": "add_9_1",
+  "text": "nine and one. How many altogether?",
+  "parts": [
+   "num_9",
+   "c_and",
+   "num_1",
+   "altogether"
+  ]
+ }
+]

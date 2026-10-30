@@ -1,0 +1,345 @@
+{
+ "owner": "props",
+ "dispatch": "D-2026-10-29-dg-art-props",
+ "generator": "art3d/blender/props/build_props.py + post_props.py",
+ "files": [
+  {
+   "file": "item_jam.png",
+   "width": 443,
+   "height": 512,
+   "bytes": 179526
+  },
+  {
+   "file": "item_bun.png",
+   "width": 512,
+   "height": 434,
+   "bytes": 141512
+  },
+  {
+   "file": "item_ham.png",
+   "width": 512,
+   "height": 290,
+   "bytes": 83613
+  },
+  {
+   "file": "item_cup.png",
+   "width": 485,
+   "height": 512,
+   "bytes": 174946
+  },
+  {
+   "file": "item_pot.png",
+   "width": 414,
+   "height": 512,
+   "bytes": 136618
+  },
+  {
+   "file": "item_pan.png",
+   "width": 512,
+   "height": 288,
+   "bytes": 75276
+  },
+  {
+   "file": "item_can.png",
+   "width": 362,
+   "height": 512,
+   "bytes": 162243
+  },
+  {
+   "file": "item_tin.png",
+   "width": 512,
+   "height": 494,
+   "bytes": 169427
+  },
+  {
+   "file": "item_mug.png",
+   "width": 458,
+   "height": 512,
+   "bytes": 146364
+  },
+  {
+   "file": "item_nut.png",
+   "width": 419,
+   "height": 512,
+   "bytes": 148257
+  },
+  {
+   "file": "item_cob.png",
+   "width": 433,
+   "height": 512,
+   "bytes": 173347
+  },
+  {
+   "file": "item_dip.png",
+   "width": 512,
+   "height": 510,
+   "bytes": 166450
+  },
+  {
+   "file": "dish_jam.png",
+   "width": 768,
+   "height": 622,
+   "bytes": 322651
+  },
+  {
+   "file": "dish_bun.png",
+   "width": 768,
+   "height": 538,
+   "bytes": 288441
+  },
+  {
+   "file": "dish_ham.png",
+   "width": 768,
+   "height": 538,
+   "bytes": 290426
+  },
+  {
+   "file": "dish_cup.png",
+   "width": 768,
+   "height": 573,
+   "bytes": 304226
+  },
+  {
+   "file": "dish_pot.png",
+   "width": 768,
+   "height": 679,
+   "bytes": 323917
+  },
+  {
+   "file": "dish_pan.png",
+   "width": 768,
+   "height": 538,
+   "bytes": 288628
+  },
+  {
+   "file": "dish_can.png",
+   "width": 768,
+   "height": 602,
+   "bytes": 321359
+  },
+  {
+   "file": "dish_tin.png",
+   "width": 768,
+   "height": 549,
+   "bytes": 291113
+  },
+  {
+   "file": "dish_mug.png",
+   "width": 768,
+   "height": 585,
+   "bytes": 296156
+  },
+  {
+   "file": "dish_nut.png",
+   "width": 768,
+   "height": 655,
+   "bytes": 317221
+  },
+  {
+   "file": "dish_cob.png",
+   "width": 768,
+   "height": 567,
+   "bytes": 313924
+  },
+  {
+   "file": "dish_dip.png",
+   "width": 768,
+   "height": 592,
+   "bytes": 304838
+  },
+  {
+   "file": "coin.png",
+   "width": 512,
+   "height": 505,
+   "bytes": 189221
+  },
+  {
+   "file": "basket.png",
+   "width": 732,
+   "height": 768,
+   "bytes": 394408
+  },
+  {
+   "file": "basket_full.png",
+   "width": 732,
+   "height": 768,
+   "bytes": 463156
+  },
+  {
+   "file": "pan.png",
+   "width": 768,
+   "height": 449,
+   "bytes": 164620
+  },
+  {
+   "file": "pan_cooking_00.png",
+   "width": 768,
+   "height": 597,
+   "bytes": 236507
+  },
+  {
+   "file": "pan_cooking_01.png",
+   "width": 768,
+   "height": 597,
+   "bytes": 234841
+  },
+  {
+   "file": "pan_cooking_02.png",
+   "width": 768,
+   "height": 597,
+   "bytes": 234392
+  },
+  {
+   "file": "pan_cooking_03.png",
+   "width": 768,
+   "height": 597,
+   "bytes": 234791
+  },
+  {
+   "file": "pan_cooking_04.png",
+   "width": 768,
+   "height": 597,
+   "bytes": 240195
+  },
+  {
+   "file": "pan_cooking_05.png",
+   "width": 768,
+   "height": 597,
+   "bytes": 257489
+  },
+  {
+   "file": "pan_cooking_06.png",
+   "width": 768,
+   "height": 597,
+   "bytes": 269739
+  },
+  {
+   "file": "pan_cooking_07.png",
+   "width": 768,
+   "height": 597,
+   "bytes": 254636
+  },
+  {
+   "file": "spoon.png",
+   "width": 512,
+   "height": 294,
+   "bytes": 39867
+  },
+  {
+   "file": "plate.png",
+   "width": 768,
+   "height": 538,
+   "bytes": 243975
+  },
+  {
+   "file": "sticker_00.png",
+   "width": 512,
+   "height": 489,
+   "bytes": 117146
+  },
+  {
+   "file": "sticker_01.png",
+   "width": 512,
+   "height": 466,
+   "bytes": 100229
+  },
+  {
+   "file": "sticker_02.png",
+   "width": 512,
+   "height": 356,
+   "bytes": 136528
+  },
+  {
+   "file": "sticker_03.png",
+   "width": 494,
+   "height": 512,
+   "bytes": 150782
+  },
+  {
+   "file": "sticker_04.png",
+   "width": 512,
+   "height": 489,
+   "bytes": 121437
+  },
+  {
+   "file": "sticker_05.png",
+   "width": 512,
+   "height": 466,
+   "bytes": 97578
+  },
+  {
+   "file": "sticker_06.png",
+   "width": 512,
+   "height": 356,
+   "bytes": 138923
+  },
+  {
+   "file": "sticker_07.png",
+   "width": 494,
+   "height": 512,
+   "bytes": 146417
+  },
+  {
+   "file": "sticker_08.png",
+   "width": 512,
+   "height": 399,
+   "bytes": 141194
+  },
+  {
+   "file": "sticker_09.png",
+   "width": 499,
+   "height": 512,
+   "bytes": 145788
+  },
+  {
+   "file": "sticker_10.png",
+   "width": 512,
+   "height": 489,
+   "bytes": 123577
+  },
+  {
+   "file": "sticker_11.png",
+   "width": 512,
+   "height": 466,
+   "bytes": 141555
+  },
+  {
+   "file": "ui_settings.png",
+   "width": 512,
+   "height": 507,
+   "bytes": 165001
+  },
+  {
+   "file": "ui_music.png",
+   "width": 512,
+   "height": 507,
+   "bytes": 155310
+  },
+  {
+   "file": "ui_music_off.png",
+   "width": 512,
+   "height": 507,
+   "bytes": 170618
+  },
+  {
+   "file": "ui_back.png",
+   "width": 512,
+   "height": 507,
+   "bytes": 153365
+  },
+  {
+   "file": "ui_check.png",
+   "width": 512,
+   "height": 507,
+   "bytes": 157974
+  },
+  {
+   "file": "ui_undo.png",
+   "width": 512,
+   "height": 507,
+   "bytes": 166048
+  }
+ ],
+ "total_bytes": 11407786,
+ "missing": []
+}
