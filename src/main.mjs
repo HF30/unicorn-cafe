@@ -7,7 +7,7 @@ import prompts from '../content/prompts.json' with {type:'json'};
 import {scoreTrace,scoreFree,strokeArrows} from './trace.mjs';
 import {sessionPhase} from './session.mjs';
 import {maxLevel,guideFor,phrasesFor,followNotes} from './curriculum.mjs';
-import {mathTask,shapeTask,coinWays,payOk} from './maths.mjs';
+import {mathTask,shapeTask,coinWays,payOk,numChoices} from './maths.mjs';
 import {pickItem,recordItem,masteryLevel,nextGuide,dayKey,levelItems} from './mastery.mjs';
 import {surpriseSticker} from './rewards.mjs';
 import {readTask,pictureArt,decodable,decodableFoods,cumulativeGpcs} from './reading.mjs';
@@ -118,7 +118,10 @@ function stickerBook(){stage_='book';const scene=frame('bg_cafe',5,[girl({anim:'
 const recipeCard=(r,cls='')=>`<div class="recipe-card ${cls}" data-recipe="${r.id}" aria-label="Recipe: ${r.name}"><div class="rc-name">${r.name}</div><div class="rc-rings">${r.ingredients.map(i=>`<span class="ring">${Array.from({length:i.qty},()=>art(i.art,'rc-img')).join('')}</span>`).join('')}</div></div>`;
 function newOrder(){if(checkClock())return;if(afterReward(customer)==='closing'){goodbye(true);return;}customer++;const tw=foodList();pending=chooseRead();const food=orderFood(tw,pending.t,Math.random);mpend=chooseMath();const mk=mpend.market;
  const rcp=pickRecipe(recipes,recipeTier(recipes,level('read'),level('trace')),pending.t,Math.random); // the recipe never contains the read task's answer word (RC5)
- order={food,word:food,recipe:rcp};order.n=mk&&mk.t.mechanic==='market'?mk.t.answer:1+Math.floor(Math.random()*5);newRecipe=false;showOrder();}
+ const kIng=new Set(rcp.ingredients.map(i=>i.word)).size; // every ingredient of her recipe is bought at least once: count = max(maths n, distinct ingredients) (SPEC §17 MK1; D-2026-10-30-dg-v32-polish)
+ if(mk&&mk.t.mechanic==='market'&&mk.t.answer<kIng){const t2=mathTask(cur,'count:'+kIng,Math.random);mpend.market=t2.mechanic==='market'?{...mk,t:t2}:{...mk,t:{...mk.t,n:kIng,answer:kIng,choices:numChoices(kIng,1,Math.max(mk.t.tenframe?10:5,kIng+1),Math.random)}};} // a count below the recipe size picks the recipe-compatible count task; the range is never exceeded (market levels reach 5+, recipes have 4 at most)
+ const mk2=mpend.market;
+ order={food,word:food,recipe:rcp};order.n=Math.max(mk2&&mk2.t.mechanic==='market'?mk2.t.answer:1+Math.floor(Math.random()*5),kIng);newRecipe=false;showOrder();}
 function showOrder(){stage_='order';const rcp=order.recipe;
  const talk=cust({anim:'order',keepPos:true});const scene=frame('bg_cafe',0,[girl({anim:'idle'}),talk,buddy()],'counter');
  scene.innerHTML=`<div class="panel orderpanel">${recipeCard(rcp)}${button('ticket','&#128221;','Read the note','primary')}</div>`;

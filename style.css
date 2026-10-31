@@ -337,3 +337,4 @@ img.followbasket{width:auto;height:auto;max-height:200px;min-width:0;max-width:6
 .startover.holding .so-fill{animation:sofill var(--hold,2s) linear forwards}
 .startover .so-text{position:relative;z-index:1}
 @keyframes sofill{to{width:100%}}
+.startover-box{padding-right:104px}.adult h1{padding-right:104px}

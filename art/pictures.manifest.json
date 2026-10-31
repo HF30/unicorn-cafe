@@ -478,12 +478,6 @@
    "bytes": 81625
   },
   {
-   "file": "pic_flour.png",
-   "width": 444,
-   "height": 451,
-   "bytes": 77147
-  },
-  {
    "file": "pic_egg.png",
    "width": 512,
    "height": 424,
@@ -590,8 +584,14 @@
    "width": 389,
    "height": 274,
    "bytes": 77985
+  },
+  {
+   "file": "pic_flour.png",
+   "width": 443,
+   "height": 450,
+   "bytes": 81492
   }
  ],
- "total_bytes": 7666415,
+ "total_bytes": 7670760,
  "missing": []
 }
