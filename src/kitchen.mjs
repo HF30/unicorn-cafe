@@ -33,3 +33,5 @@ export function pickRecipe(recipes, tier, task, rng = Math.random) {
 }
 // One step per trace: ingredients in order, rep 1..qty -> {word, rep, qty}.
 export const traceSteps = recipe => (recipe.ingredients || []).flatMap(i => Array.from({length: i.qty}, (_, k) => ({word: i.word, rep: k + 1, qty: i.qty})));
+// The art of the i-th food picture on the market and till (SPEC §17 MK1): the recipe's ingredient arts, cycling.
+export const shopArt = (recipe, i) => { const ing = (recipe && recipe.ingredients) || []; return ing.length ? ing[(((i | 0) % ing.length) + ing.length) % ing.length].art : undefined; };

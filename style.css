@@ -331,7 +331,7 @@ img.followbasket{width:auto;height:auto;max-height:200px;min-width:0;max-width:6
 .potdot.on{background:#3fae6a;border-color:#2c8650}
 .qtydots{display:flex;justify-content:center;gap:5px;margin-top:4px;pointer-events:none}
 .qtydots .potdot{width:14px;height:14px;border-width:2px}
-.startover-box{margin-top:26px;padding-top:18px;border-top:3px dashed #e1d3e7}
+.startover-box{margin:0 0 14px;padding-bottom:10px;border-bottom:3px dashed #e1d3e7;display:flex;align-items:center;gap:20px}.startover-box p{margin:0;font-size:16px;line-height:1.35}.adult h1{margin-bottom:10px}
 .adult .startover{position:relative;overflow:hidden;min-width:260px;background:#ffe4e1;box-shadow:0 7px 0 #e0a6a0;font-size:22px;font-weight:800;color:#8a3b3b;touch-action:none}
 .startover .so-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:#f5a8a0;z-index:0}
 .startover.holding .so-fill{animation:sofill var(--hold,2s) linear forwards}

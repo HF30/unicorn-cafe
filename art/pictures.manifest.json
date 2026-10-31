@@ -28,12 +28,6 @@
    "bytes": 80562
   },
   {
-   "file": "pic_fig.png",
-   "width": 512,
-   "height": 495,
-   "bytes": 80315
-  },
-  {
    "file": "pic_tap.png",
    "width": 388,
    "height": 389,
@@ -226,12 +220,6 @@
    "bytes": 79824
   },
   {
-   "file": "pic_oats.png",
-   "width": 420,
-   "height": 312,
-   "bytes": 79810
-  },
-  {
    "file": "pic_moon.png",
    "width": 512,
    "height": 472,
@@ -314,12 +302,6 @@
    "width": 512,
    "height": 301,
    "bytes": 77823
-  },
-  {
-   "file": "pic_plum.png",
-   "width": 512,
-   "height": 321,
-   "bytes": 77521
   },
   {
    "file": "pic_crisp.png",
@@ -496,66 +478,120 @@
    "bytes": 81625
   },
   {
-   "file": "pic_oil.png",
-   "width": 436,
-   "height": 512,
-   "bytes": 74899
-  },
-  {
-   "file": "pic_salt.png",
-   "width": 512,
-   "height": 423,
-   "bytes": 77167
-  },
-  {
    "file": "pic_flour.png",
    "width": 444,
    "height": 451,
    "bytes": 77147
   },
   {
-   "file": "pic_water.png",
-   "width": 389,
-   "height": 343,
-   "bytes": 81549
+   "file": "pic_egg.png",
+   "width": 512,
+   "height": 424,
+   "bytes": 80195
+  },
+  {
+   "file": "pic_sugar.png",
+   "width": 451,
+   "height": 326,
+   "bytes": 79552
   },
   {
    "file": "pic_lemon.png",
    "width": 512,
-   "height": 321,
-   "bytes": 71336
+   "height": 426,
+   "bytes": 65883
   },
   {
-   "file": "pic_sugar.png",
-   "width": 512,
-   "height": 292,
-   "bytes": 77821
+   "file": "pic_oil.png",
+   "width": 331,
+   "height": 512,
+   "bytes": 79882
+  },
+  {
+   "file": "pic_salt.png",
+   "width": 367,
+   "height": 451,
+   "bytes": 78744
+  },
+  {
+   "file": "pic_water.png",
+   "width": 322,
+   "height": 328,
+   "bytes": 80374
   },
   {
    "file": "pic_bread.png",
    "width": 512,
-   "height": 400,
-   "bytes": 78575
-  },
-  {
-   "file": "pic_egg.png",
-   "width": 512,
-   "height": 332,
-   "bytes": 72911
+   "height": 330,
+   "bytes": 72091
   },
   {
    "file": "pic_cream.png",
    "width": 512,
-   "height": 263,
-   "bytes": 72682
+   "height": 354,
+   "bytes": 79077
   },
   {
    "file": "pic_yeast.png",
    "width": 512,
-   "height": 370,
-   "bytes": 77352
+   "height": 478,
+   "bytes": 79514
+  },
+  {
+   "file": "pic_plum.png",
+   "width": 462,
+   "height": 481,
+   "bytes": 81190
+  },
+  {
+   "file": "pic_fig.png",
+   "width": 349,
+   "height": 512,
+   "bytes": 71140
+  },
+  {
+   "file": "pic_oats.png",
+   "width": 420,
+   "height": 321,
+   "bytes": 81436
+  },
+  {
+   "file": "dish_popcorn.png",
+   "width": 420,
+   "height": 417,
+   "bytes": 77466
+  },
+  {
+   "file": "dish_fruit_salad.png",
+   "width": 512,
+   "height": 367,
+   "bytes": 77742
+  },
+  {
+   "file": "dish_flatbread.png",
+   "width": 420,
+   "height": 316,
+   "bytes": 78522
+  },
+  {
+   "file": "dish_butter.png",
+   "width": 512,
+   "height": 362,
+   "bytes": 81372
+  },
+  {
+   "file": "dish_pancakes.png",
+   "width": 420,
+   "height": 330,
+   "bytes": 80977
+  },
+  {
+   "file": "dish_pizza.png",
+   "width": 389,
+   "height": 274,
+   "bytes": 77985
   }
  ],
- "total_bytes": 7185211,
+ "total_bytes": 7666415,
  "missing": []
 }

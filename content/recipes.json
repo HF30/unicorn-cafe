@@ -22,28 +22,61 @@
    "id": "popcorn",
    "name": "Popcorn",
    "tier": 1,
+   "dish": "dish_popcorn",
    "ingredients": [
     {
      "word": "corn",
-     "qty": 2,
+     "qty": 1,
      "art": "pic_corn"
     },
     {
      "word": "oil",
      "qty": 1,
      "art": "pic_oil"
+    }
+   ]
+  },
+  {
+   "id": "jam_toast",
+   "name": "Jam toast",
+   "tier": 1,
+   "dish": "pic_toast",
+   "ingredients": [
+    {
+     "word": "bread",
+     "qty": 1,
+     "art": "pic_bread"
     },
     {
-     "word": "salt",
+     "word": "jam",
      "qty": 1,
-     "art": "pic_salt"
+     "art": "item_jam"
+    }
+   ]
+  },
+  {
+   "id": "fruit_salad",
+   "name": "Fruit salad",
+   "tier": 1,
+   "dish": "dish_fruit_salad",
+   "ingredients": [
+    {
+     "word": "plum",
+     "qty": 1,
+     "art": "pic_plum"
+    },
+    {
+     "word": "fig",
+     "qty": 1,
+     "art": "pic_fig"
     }
    ]
   },
   {
    "id": "flatbread",
    "name": "Flatbread",
-   "tier": 1,
+   "tier": 2,
+   "dish": "dish_flatbread",
    "ingredients": [
     {
      "word": "flour",
@@ -54,18 +87,50 @@
      "word": "water",
      "qty": 1,
      "art": "pic_water"
+    }
+   ]
+  },
+  {
+   "id": "butter",
+   "name": "Butter",
+   "tier": 2,
+   "dish": "dish_butter",
+   "ingredients": [
+    {
+     "word": "cream",
+     "qty": 2,
+     "art": "pic_cream"
+    }
+   ]
+  },
+  {
+   "id": "pancakes",
+   "name": "Pancakes",
+   "tier": 2,
+   "dish": "dish_pancakes",
+   "ingredients": [
+    {
+     "word": "flour",
+     "qty": 1,
+     "art": "pic_flour"
     },
     {
-     "word": "salt",
+     "word": "milk",
      "qty": 1,
-     "art": "pic_salt"
+     "art": "pic_milk"
+    },
+    {
+     "word": "egg",
+     "qty": 1,
+     "art": "pic_egg"
     }
    ]
   },
   {
    "id": "lemonade",
    "name": "Lemonade",
-   "tier": 1,
+   "tier": 3,
+   "dish": "pic_drink",
    "ingredients": [
     {
      "word": "lemon",
@@ -85,87 +150,10 @@
    ]
   },
   {
-   "id": "jam_toast",
-   "name": "Jam toast",
-   "tier": 1,
-   "ingredients": [
-    {
-     "word": "bread",
-     "qty": 1,
-     "art": "pic_bread"
-    },
-    {
-     "word": "jam",
-     "qty": 2,
-     "art": "item_jam"
-    }
-   ]
-  },
-  {
-   "id": "pancakes",
-   "name": "Pancakes",
-   "tier": 2,
-   "ingredients": [
-    {
-     "word": "flour",
-     "qty": 1,
-     "art": "pic_flour"
-    },
-    {
-     "word": "milk",
-     "qty": 1,
-     "art": "pic_milk"
-    },
-    {
-     "word": "egg",
-     "qty": 2,
-     "art": "pic_egg"
-    }
-   ]
-  },
-  {
-   "id": "fruit_salad",
-   "name": "Fruit salad",
-   "tier": 2,
-   "ingredients": [
-    {
-     "word": "plum",
-     "qty": 2,
-     "art": "pic_plum"
-    },
-    {
-     "word": "fig",
-     "qty": 1,
-     "art": "pic_fig"
-    },
-    {
-     "word": "grape",
-     "qty": 1,
-     "art": "pat_grape"
-    }
-   ]
-  },
-  {
-   "id": "butter",
-   "name": "Butter",
-   "tier": 2,
-   "ingredients": [
-    {
-     "word": "cream",
-     "qty": 2,
-     "art": "pic_cream"
-    },
-    {
-     "word": "salt",
-     "qty": 1,
-     "art": "pic_salt"
-    }
-   ]
-  },
-  {
    "id": "simple_bread",
    "name": "Simple bread",
-   "tier": 2,
+   "tier": 3,
+   "dish": "pic_bread",
    "ingredients": [
     {
      "word": "flour",
@@ -188,6 +176,7 @@
    "id": "muffins",
    "name": "Muffins",
    "tier": 3,
+   "dish": "pat_cupcake",
    "ingredients": [
     {
      "word": "flour",
@@ -195,19 +184,14 @@
      "art": "pic_flour"
     },
     {
-     "word": "egg",
-     "qty": 1,
-     "art": "pic_egg"
-    },
-    {
      "word": "milk",
      "qty": 1,
      "art": "pic_milk"
     },
     {
-     "word": "jam",
-     "qty": 1,
-     "art": "item_jam"
+     "word": "egg",
+     "qty": 2,
+     "art": "pic_egg"
     }
    ]
   },
@@ -215,6 +199,7 @@
    "id": "pizza",
    "name": "Pizza",
    "tier": 3,
+   "dish": "dish_pizza",
    "ingredients": [
     {
      "word": "flour",
@@ -242,6 +227,7 @@
    "id": "soup",
    "name": "Soup",
    "tier": 3,
+   "dish": "pic_soup",
    "ingredients": [
     {
      "word": "water",
@@ -269,6 +255,7 @@
    "id": "cookies",
    "name": "Cookies",
    "tier": 3,
+   "dish": "pat_cookie",
    "ingredients": [
     {
      "word": "oats",
@@ -282,13 +269,8 @@
     },
     {
      "word": "egg",
-     "qty": 1,
+     "qty": 2,
      "art": "pic_egg"
-    },
-    {
-     "word": "jam",
-     "qty": 1,
-     "art": "item_jam"
     }
    ]
   }
